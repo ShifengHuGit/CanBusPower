@@ -1,0 +1,12 @@
+.\rvmdk\lcd19264.o: ..\LCD19264\LCD19264.c
+.\rvmdk\lcd19264.o: C:\Keil\ARM\RV31\INC\string.h
+.\rvmdk\lcd19264.o: ..\..\..\inc/hw_ints.h
+.\rvmdk\lcd19264.o: ..\..\..\inc/hw_memmap.h
+.\rvmdk\lcd19264.o: ..\..\..\inc/hw_sysctl.h
+.\rvmdk\lcd19264.o: ..\..\..\inc/hw_types.h
+.\rvmdk\lcd19264.o: ..\..\..\driverlib/can.h
+.\rvmdk\lcd19264.o: ..\..\..\driverlib/debug.h
+.\rvmdk\lcd19264.o: ..\..\..\driverlib/gpio.h
+.\rvmdk\lcd19264.o: ..\..\..\driverlib/interrupt.h
+.\rvmdk\lcd19264.o: ..\..\..\driverlib/sysctl.h
+.\rvmdk\lcd19264.o: ..\..\..\driverlib/systick.h

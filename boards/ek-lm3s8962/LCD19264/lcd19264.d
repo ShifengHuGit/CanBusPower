@@ -1,0 +1,12 @@
+lcd19264.o: LCD19264.c
+lcd19264.o: C:\Keil\ARM\RV31\INC\string.h
+lcd19264.o: ..\..\..\inc/hw_ints.h
+lcd19264.o: ..\..\..\inc/hw_memmap.h
+lcd19264.o: ..\..\..\inc/hw_sysctl.h
+lcd19264.o: ..\..\..\inc/hw_types.h
+lcd19264.o: ..\..\..\driverlib/can.h
+lcd19264.o: ..\..\..\driverlib/debug.h
+lcd19264.o: ..\..\..\driverlib/gpio.h
+lcd19264.o: ..\..\..\driverlib/interrupt.h
+lcd19264.o: ..\..\..\driverlib/sysctl.h
+lcd19264.o: ..\..\..\driverlib/systick.h

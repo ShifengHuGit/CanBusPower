@@ -1,0 +1,32 @@
+*** Creating Trace Output File '.\rvmdk\qs_ek-lm3s8962.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\rvmdk\audio.o"'
+### List of Objects: adding '".\rvmdk\can_net.o"'
+### List of Objects: adding '".\rvmdk\enet.o"'
+### List of Objects: adding '".\rvmdk\fs_qs.o"'
+### List of Objects: adding '".\rvmdk\game.o"'
+### List of Objects: adding '".\rvmdk\httpd.o"'
+### List of Objects: adding '".\rvmdk\images.o"'
+### List of Objects: adding '".\rvmdk\lwiplib.o"'
+### List of Objects: adding '".\rvmdk\qs_ek-lm3s8962.o"'
+### List of Objects: adding '".\rvmdk\random.o"'
+### List of Objects: adding '".\rvmdk\rit128x96x4.o"'
+### List of Objects: adding '".\rvmdk\screen_saver.o"'
+### List of Objects: adding '".\rvmdk\sounds.o"'
+### List of Objects: adding '".\rvmdk\startup_rvmdk.o"'
+### List of Objects: adding '"..\..\..\driverlib\rvmdk\driverlib.lib"'
+### ADS-LD Command completed:
+--device DLM ".\rvmdk\audio.o" ".\rvmdk\can_net.o" ".\rvmdk\enet.o" ".\rvmdk\fs_qs.o" ".\rvmdk\game.o" ".\rvmdk\httpd.o" ".\rvmdk\images.o" ".\rvmdk\lwiplib.o" ".\rvmdk\qs_ek-lm3s8962.o" ".\rvmdk\random.o" ".\rvmdk\rit128x96x4.o" ".\rvmdk\screen_saver.o" ".\rvmdk\sounds.o" ".\rvmdk\startup_rvmdk.o" "..\..\..\driverlib\rvmdk\driverlib.lib" --library_type=microlib --ro-base 0x00000000 --entry Reset_Handler --rw-base 0x20000000 --first __Vectors --strict --entry Reset_Handler --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\rvmdk\qs_ek-lm3s8962.map" -o ".\rvmdk\qs_ek-lm3s8962.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\rvmdk\qs_ek-lm3s8962.axf'
+### ADS-LD Command File: '.\rvmdk\qs_ek-lm3s8962.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\rvmdk\qs_ek-lm3s8962.lnp', Handle=0x00001050
+### Writing '.lnp' file
+### ADS-LD Command file '.\rvmdk\qs_ek-lm3s8962.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 1 errors
+### Updating obj list
+### LDADS_file() completed.

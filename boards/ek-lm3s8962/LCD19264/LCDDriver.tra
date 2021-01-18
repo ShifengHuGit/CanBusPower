@@ -1,0 +1,20 @@
+*** Creating Trace Output File 'LCDDriver.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"lcd19264.o"'
+### List of Objects: adding '"..\..\..\driverlib\rvmdk\driverlib.lib"'
+### ADS-LD Command completed:
+--device DLM "startup.o" "lcd19264.o" "..\..\..\driverlib\rvmdk\driverlib.lib" --ro-base 0x00000000 --entry Reset_Handler --rw-base 0x20000000 --first __Vectors --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\LCDDriver.map" -o "LCDDriver.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'LCDDriver.axf'
+### ADS-LD Command File: 'LCDDriver.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'LCDDriver.lnp', Handle=0x00000E50
+### Writing '.lnp' file
+### ADS-LD Command file 'LCDDriver.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

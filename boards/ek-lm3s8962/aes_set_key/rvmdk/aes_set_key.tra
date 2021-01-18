@@ -1,0 +1,22 @@
+*** Creating Trace Output File '.\rvmdk\aes_set_key.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\rvmdk\aes.o"'
+### List of Objects: adding '".\rvmdk\aes_set_key.o"'
+### List of Objects: adding '".\rvmdk\rit128x96x4.o"'
+### List of Objects: adding '".\rvmdk\startup_rvmdk.o"'
+### List of Objects: adding '"..\..\..\driverlib\rvmdk\driverlib.lib"'
+### ADS-LD Command completed:
+--device DLM ".\rvmdk\aes.o" ".\rvmdk\aes_set_key.o" ".\rvmdk\rit128x96x4.o" ".\rvmdk\startup_rvmdk.o" "..\..\..\driverlib\rvmdk\driverlib.lib" --library_type=microlib --ro-base 0x00000000 --entry Reset_Handler --rw-base 0x20000000 --first __Vectors --strict --entry Reset_Handler --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\rvmdk\aes_set_key.map" -o ".\rvmdk\aes_set_key.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\rvmdk\aes_set_key.axf'
+### ADS-LD Command File: '.\rvmdk\aes_set_key.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\rvmdk\aes_set_key.lnp', Handle=0x00000958
+### Writing '.lnp' file
+### ADS-LD Command file '.\rvmdk\aes_set_key.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

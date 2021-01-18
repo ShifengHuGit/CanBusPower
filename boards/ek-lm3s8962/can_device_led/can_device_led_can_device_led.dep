@@ -1,0 +1,5 @@
+Dependencies for Project 'can_device_led', Target 'can_device_led': (DO NOT MODIFY !)
+F (.\can_device_led.c)(0x5FF15D58)(-c --device DLM -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork -I..\..\.. -I "C:\Keil\ARM\INC\Luminary" -Drvmdk -DPART_LM3S2110 -o ".\rvmdk\can_device_led.o" --omf_browse ".\rvmdk\can_device_led.crf" --depend ".\rvmdk\can_device_led.d")
+F (.\startup_rvmdk.S)(0x5FF15D58)(--device DLM --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1" -I "C:\Keil\ARM\INC\Luminary" -o ".\rvmdk\startup_rvmdk.o")
+F (..\..\..\driverlib\rvmdk\driverlib.lib)(0x5FF1B86E)()
+F (.\readme.txt)(0x5FF15D58)()

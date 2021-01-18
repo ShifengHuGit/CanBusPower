@@ -1,0 +1,13 @@
+..\can_net.o: ..\qs_ek-lm3s8962\can_net.c
+..\can_net.o: ..\..\..\inc/hw_ints.h
+..\can_net.o: ..\..\..\inc/hw_memmap.h
+..\can_net.o: ..\..\..\inc/hw_types.h
+..\can_net.o: ..\..\..\driverlib/can.h
+..\can_net.o: ..\..\..\driverlib/debug.h
+..\can_net.o: ..\..\..\driverlib/gpio.h
+..\can_net.o: ..\..\..\driverlib/interrupt.h
+..\can_net.o: ..\..\..\driverlib/sysctl.h
+..\can_net.o: ..\..\..\driverlib/systick.h
+..\can_net.o: ..\can_device_qs/can_common.h
+..\can_net.o: ..\qs_ek-lm3s8962\audio.h
+..\can_net.o: ..\qs_ek-lm3s8962\can_net.h

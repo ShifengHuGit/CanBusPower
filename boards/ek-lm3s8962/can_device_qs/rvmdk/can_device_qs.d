@@ -1,0 +1,15 @@
+.\rvmdk\can_device_qs.o: can_device_qs.c
+.\rvmdk\can_device_qs.o: C:\Keil\ARM\RV31\INC\string.h
+.\rvmdk\can_device_qs.o: ..\..\..\inc/hw_ints.h
+.\rvmdk\can_device_qs.o: ..\..\..\inc/hw_memmap.h
+.\rvmdk\can_device_qs.o: ..\..\..\inc/hw_sysctl.h
+.\rvmdk\can_device_qs.o: ..\..\..\inc/hw_types.h
+.\rvmdk\can_device_qs.o: ..\..\..\driverlib/can.h
+.\rvmdk\can_device_qs.o: ..\..\..\driverlib/debug.h
+.\rvmdk\can_device_qs.o: ..\..\..\driverlib/gpio.h
+.\rvmdk\can_device_qs.o: ..\..\..\driverlib/interrupt.h
+.\rvmdk\can_device_qs.o: ..\..\..\driverlib/sysctl.h
+.\rvmdk\can_device_qs.o: ..\..\..\driverlib/systick.h
+.\rvmdk\can_device_qs.o: can_common.h
+.\rvmdk\can_device_qs.o: ..\..\..\driverlib/uart.h
+.\rvmdk\can_device_qs.o: 19264LCDdriver.h

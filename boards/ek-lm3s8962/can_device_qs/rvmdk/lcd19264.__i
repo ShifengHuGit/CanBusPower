@@ -1,0 +1,1 @@
+-c --device DLM -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork -I..\..\.. -I "C:\Keil\ARM\INC\Luminary" -Drvmdk -DPART_LM3S2110 -o ".\rvmdk\lcd19264.o" --omf_browse ".\rvmdk\lcd19264.crf" --depend ".\rvmdk\lcd19264.d" "..\LCD19264\LCD19264.c"

@@ -1,0 +1,2 @@
+Dependencies for Project 'LCDDriver', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x48D843B0)(--device DLM --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Luminary" --list "Startup.lst" --xref -o "Startup.o")

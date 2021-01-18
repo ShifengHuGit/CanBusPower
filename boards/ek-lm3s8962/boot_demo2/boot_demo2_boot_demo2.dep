@@ -1,0 +1,7 @@
+Dependencies for Project 'boot_demo2', Target 'boot_demo2': (DO NOT MODIFY !)
+F (.\boot_demo2.c)(0x5FF15D57)(-c --device DLM -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork -I.. -I..\..\.. -I "C:\Keil\ARM\INC\Luminary" -Drvmdk -DPART_LM3S8962 -o ".\rvmdk\boot_demo2.o" --omf_browse ".\rvmdk\boot_demo2.crf" --depend ".\rvmdk\boot_demo2.d")
+F (..\drivers\rit128x96x4.c)(0x5FF15D58)(-c --device DLM -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork -I.. -I..\..\.. -I "C:\Keil\ARM\INC\Luminary" -Drvmdk -DPART_LM3S8962 -o ".\rvmdk\rit128x96x4.o" --omf_browse ".\rvmdk\rit128x96x4.crf" --depend ".\rvmdk\rit128x96x4.d")
+F (.\startup_rvmdk.S)(0x5FF15D57)(--device DLM --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1" -I "C:\Keil\ARM\INC\Luminary" -o ".\rvmdk\startup_rvmdk.o")
+F (..\..\..\utils\ustdlib.c)(0x5FF15D60)(-c --device DLM -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork -I.. -I..\..\.. -I "C:\Keil\ARM\INC\Luminary" -Drvmdk -DPART_LM3S8962 -o ".\rvmdk\ustdlib.o" --omf_browse ".\rvmdk\ustdlib.crf" --depend ".\rvmdk\ustdlib.d")
+F (..\..\..\driverlib\rvmdk\driverlib.lib)(0x5FF1B86E)()
+F (.\readme.txt)(0x5FF15D57)()

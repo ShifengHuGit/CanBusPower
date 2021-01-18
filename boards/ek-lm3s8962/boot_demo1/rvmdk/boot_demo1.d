@@ -1,0 +1,12 @@
+.\rvmdk\boot_demo1.o: boot_demo1.c
+.\rvmdk\boot_demo1.o: ..\..\..\inc/hw_memmap.h
+.\rvmdk\boot_demo1.o: ..\..\..\inc/hw_types.h
+.\rvmdk\boot_demo1.o: ..\..\..\driverlib/debug.h
+.\rvmdk\boot_demo1.o: ..\..\..\driverlib/ethernet.h
+.\rvmdk\boot_demo1.o: ..\..\..\driverlib/sysctl.h
+.\rvmdk\boot_demo1.o: ..\..\..\driverlib/flash.h
+.\rvmdk\boot_demo1.o: ..\..\..\driverlib/gpio.h
+.\rvmdk\boot_demo1.o: ..\..\..\driverlib/uart.h
+.\rvmdk\boot_demo1.o: ..\..\..\utils/ustdlib.h
+.\rvmdk\boot_demo1.o: C:\Keil\ARM\RV31\INC\stdarg.h
+.\rvmdk\boot_demo1.o: ..\drivers/rit128x96x4.h

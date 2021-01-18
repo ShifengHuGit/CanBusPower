@@ -1,0 +1,472 @@
+ARM Linker, RVCT4.0 [Build 484] for uVision [Evaluation]
+
+==============================================================================
+
+Section Cross References
+
+    bitband.o(.text) refers to systick.o(i.SysTickValueGet) for SysTickValueGet
+    bitband.o(.text) refers to rit128x96x4.o(.text) for RIT128x96x4StringDraw
+    bitband.o(.text) refers to sysctl.o(i.SysCtlClockSet) for SysCtlClockSet
+    bitband.o(.text) refers to sysctl.o(i.SysCtlClockGet) for SysCtlClockGet
+    bitband.o(.text) refers to systick.o(i.SysTickPeriodSet) for SysTickPeriodSet
+    bitband.o(.text) refers to systick.o(i.SysTickEnable) for SysTickEnable
+    bitband.o(.text) refers to bitband.o(.constdata) for .constdata
+    bitband.o(.text) refers to bitband.o(.data) for .data
+    bitband.o(.constdata) refers to bitband.o(.conststring) for .conststring
+    rit128x96x4.o(.text) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    rit128x96x4.o(.text) refers to ssi.o(i.SSIDataPut) for SSIDataPut
+    rit128x96x4.o(.text) refers to ssi.o(i.SSIDataGet) for SSIDataGet
+    rit128x96x4.o(.text) refers to ssi.o(i.SSIDisable) for SSIDisable
+    rit128x96x4.o(.text) refers to sysctl.o(i.SysCtlClockGet) for SysCtlClockGet
+    rit128x96x4.o(.text) refers to ssi.o(i.SSIConfigSetExpClk) for SSIConfigSetExpClk
+    rit128x96x4.o(.text) refers to gpio.o(i.GPIOPinTypeSSI) for GPIOPinTypeSSI
+    rit128x96x4.o(.text) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    rit128x96x4.o(.text) refers to ssi.o(i.SSIEnable) for SSIEnable
+    rit128x96x4.o(.text) refers to ssi.o(i.SSIDataGetNonBlocking) for SSIDataGetNonBlocking
+    rit128x96x4.o(.text) refers to gpio.o(i.GPIOPinTypeGPIOOutput) for GPIOPinTypeGPIOOutput
+    rit128x96x4.o(.text) refers to sysctl.o(i.SysCtlPeripheralEnable) for SysCtlPeripheralEnable
+    rit128x96x4.o(.text) refers to rit128x96x4.o(.data) for .data
+    rit128x96x4.o(.text) refers to rit128x96x4.o(.constdata) for .constdata
+    startup_rvmdk.o(RESET) refers to startup_rvmdk.o(STACK) for StackMem
+    startup_rvmdk.o(RESET) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    gpio.o(i.GPIOPortIntRegister) refers to gpio.o(i.GPIOGetIntNumber) for GPIOGetIntNumber
+    gpio.o(i.GPIOPortIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    gpio.o(i.GPIOPortIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    gpio.o(i.GPIOPortIntUnregister) refers to gpio.o(i.GPIOGetIntNumber) for GPIOGetIntNumber
+    gpio.o(i.GPIOPortIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    gpio.o(i.GPIOPortIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    gpio.o(i.GPIOPinTypeADC) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeADC) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeCAN) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeCAN) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeComparator) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeComparator) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeGPIOInput) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeGPIOInput) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeGPIOOutput) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeGPIOOutput) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeGPIOOutputOD) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeGPIOOutputOD) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeI2C) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeI2C) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypePWM) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypePWM) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeQEI) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeQEI) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeSSI) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeSSI) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeTimer) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeTimer) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeUART) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeUART) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeUSBDigital) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeUSBDigital) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    ssi.o(i.SSIIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    ssi.o(i.SSIIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    ssi.o(i.SSIIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    ssi.o(i.SSIIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    sysctl.o(i.SysCtlPeripheralPresent) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlPeripheralReset) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlPeripheralEnable) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlPeripheralDisable) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlPeripheralSleepEnable) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlPeripheralSleepDisable) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlPeripheralDeepSleepEnable) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlPeripheralDeepSleepDisable) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    sysctl.o(i.SysCtlIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    sysctl.o(i.SysCtlIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    sysctl.o(i.SysCtlIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    sysctl.o(i.SysCtlSleep) refers to cpu.o(.emb_text) for CPUwfi
+    sysctl.o(i.SysCtlDeepSleep) refers to cpu.o(.emb_text) for CPUwfi
+    sysctl.o(i.SysCtlClockSet) refers to sysctl.o(.emb_text) for SysCtlDelay
+    sysctl.o(i.SysCtlClockGet) refers to sysctl.o(.constdata) for .constdata
+    systick.o(i.SysTickIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    systick.o(i.SysTickIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    interrupt.o(i.IntMasterEnable) refers to cpu.o(.emb_text) for CPUcpsie
+    interrupt.o(i.IntMasterDisable) refers to cpu.o(.emb_text) for CPUcpsid
+    interrupt.o(i.IntRegister) refers to interrupt.o(vtable) for vtable
+    interrupt.o(i.IntUnregister) refers to interrupt.o(i.IntDefaultHandler) for IntDefaultHandler
+    interrupt.o(i.IntUnregister) refers to interrupt.o(vtable) for vtable
+    interrupt.o(i.IntPriorityGroupingSet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPriorityGroupingGet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPrioritySet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPriorityGet) refers to interrupt.o(.constdata) for .constdata
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry6.o(.ARM.Collect$$$$00000006) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry.o(.ARM.Collect$$$$00000000) refers to init.o(.text) for __scatterload
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_rvmdk.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_rvmdk.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry6.o(.ARM.Collect$$$$00000006) refers to bitband.o(.text) for main
+    init.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup_rvmdk.o(HEAP), (0 bytes).
+    Removing startup_rvmdk.o(.text), (0 bytes).
+    Removing gpio.o(i.GPIODirModeGet), (34 bytes).
+    Removing gpio.o(i.GPIOIntTypeSet), (58 bytes).
+    Removing gpio.o(i.GPIOIntTypeGet), (48 bytes).
+    Removing gpio.o(i.GPIOPadConfigGet), (140 bytes).
+    Removing gpio.o(i.GPIOPinIntEnable), (12 bytes).
+    Removing gpio.o(i.GPIOPinIntDisable), (14 bytes).
+    Removing gpio.o(i.GPIOPinIntStatus), (14 bytes).
+    Removing gpio.o(i.GPIOPinIntClear), (6 bytes).
+    Removing gpio.o(i.GPIOPortIntRegister), (26 bytes).
+    Removing gpio.o(i.GPIOPortIntUnregister), (22 bytes).
+    Removing gpio.o(i.GPIOPinRead), (6 bytes).
+    Removing gpio.o(i.GPIOPinTypeADC), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeCAN), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeComparator), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeGPIOInput), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeGPIOOutputOD), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeI2C), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypePWM), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeQEI), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeTimer), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeUART), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeUSBDigital), (28 bytes).
+    Removing gpio.o(i.GPIOGetIntNumber), (164 bytes).
+    Removing ssi.o(i.SSIIntRegister), (32 bytes).
+    Removing ssi.o(i.SSIIntUnregister), (32 bytes).
+    Removing ssi.o(i.SSIIntEnable), (8 bytes).
+    Removing ssi.o(i.SSIIntDisable), (10 bytes).
+    Removing ssi.o(i.SSIIntStatus), (10 bytes).
+    Removing ssi.o(i.SSIIntClear), (4 bytes).
+    Removing ssi.o(i.SSIDataPutNonBlocking), (16 bytes).
+    Removing ssi.o(i.SSIDMAEnable), (8 bytes).
+    Removing ssi.o(i.SSIDMADisable), (10 bytes).
+    Removing sysctl.o(i.SysCtlSRAMSizeGet), (20 bytes).
+    Removing sysctl.o(i.SysCtlFlashSizeGet), (20 bytes).
+    Removing sysctl.o(i.SysCtlPinPresent), (16 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralPresent), (32 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralReset), (56 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralDisable), (32 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralSleepEnable), (32 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralSleepDisable), (32 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralDeepSleepEnable), (32 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralDeepSleepDisable), (32 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralClockGating), (24 bytes).
+    Removing sysctl.o(i.SysCtlIntRegister), (20 bytes).
+    Removing sysctl.o(i.SysCtlIntUnregister), (18 bytes).
+    Removing sysctl.o(i.SysCtlIntEnable), (16 bytes).
+    Removing sysctl.o(i.SysCtlIntDisable), (16 bytes).
+    Removing sysctl.o(i.SysCtlIntClear), (12 bytes).
+    Removing sysctl.o(i.SysCtlIntStatus), (16 bytes).
+    Removing sysctl.o(i.SysCtlLDOSet), (12 bytes).
+    Removing sysctl.o(i.SysCtlLDOGet), (12 bytes).
+    Removing sysctl.o(i.SysCtlLDOConfigSet), (12 bytes).
+    Removing sysctl.o(i.SysCtlReset), (16 bytes).
+    Removing sysctl.o(i.SysCtlSleep), (4 bytes).
+    Removing sysctl.o(i.SysCtlDeepSleep), (32 bytes).
+    Removing sysctl.o(i.SysCtlResetCauseGet), (12 bytes).
+    Removing sysctl.o(i.SysCtlResetCauseClear), (16 bytes).
+    Removing sysctl.o(i.SysCtlBrownOutConfigSet), (16 bytes).
+    Removing sysctl.o(i.SysCtlPWMClockSet), (20 bytes).
+    Removing sysctl.o(i.SysCtlPWMClockGet), (24 bytes).
+    Removing sysctl.o(i.SysCtlADCSpeedSet), (40 bytes).
+    Removing sysctl.o(i.SysCtlADCSpeedGet), (16 bytes).
+    Removing sysctl.o(i.SysCtlIOSCVerificationSet), (24 bytes).
+    Removing sysctl.o(i.SysCtlMOSCVerificationSet), (24 bytes).
+    Removing sysctl.o(i.SysCtlPLLVerificationSet), (24 bytes).
+    Removing sysctl.o(i.SysCtlClkVerificationClear), (16 bytes).
+    Removing sysctl.o(i.SysCtlGPIOAHBEnable), (16 bytes).
+    Removing sysctl.o(i.SysCtlGPIOAHBDisable), (20 bytes).
+    Removing sysctl.o(i.SysCtlUSBPLLEnable), (16 bytes).
+    Removing sysctl.o(i.SysCtlUSBPLLDisable), (16 bytes).
+    Removing systick.o(i.SysTickDisable), (14 bytes).
+    Removing systick.o(i.SysTickIntRegister), (24 bytes).
+    Removing systick.o(i.SysTickIntUnregister), (18 bytes).
+    Removing systick.o(i.SysTickIntEnable), (14 bytes).
+    Removing systick.o(i.SysTickIntDisable), (14 bytes).
+    Removing systick.o(i.SysTickPeriodGet), (10 bytes).
+    Removing cpu.o(.emb_text), (20 bytes).
+    Removing interrupt.o(i.IntDefaultHandler), (2 bytes).
+    Removing interrupt.o(i.IntMasterEnable), (10 bytes).
+    Removing interrupt.o(i.IntMasterDisable), (10 bytes).
+    Removing interrupt.o(i.IntRegister), (56 bytes).
+    Removing interrupt.o(i.IntUnregister), (20 bytes).
+    Removing interrupt.o(i.IntPriorityGroupingSet), (28 bytes).
+    Removing interrupt.o(i.IntPriorityGroupingGet), (36 bytes).
+    Removing interrupt.o(i.IntPrioritySet), (40 bytes).
+    Removing interrupt.o(i.IntPriorityGet), (28 bytes).
+    Removing interrupt.o(i.IntEnable), (104 bytes).
+    Removing interrupt.o(i.IntDisable), (104 bytes).
+    Removing interrupt.o(.constdata), (96 bytes).
+    Removing interrupt.o(vtable), (256 bytes).
+
+92 unused section(s) (total 2700 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      252  startup_rvmdk.o(RESET)
+    ../../microlib/init/entry.s              0x00000000   Number         0  entry2.o ABSOLUTE
+    ../../microlib/init/entry.s              0x00000000   Number         0  entry6.o ABSOLUTE
+    ../../microlib/init/entry.s              0x00000000   Number         0  entry.o ABSOLUTE
+    ..\drivers\rit128x96x4.c                 0x00000000   Number         0  rit128x96x4.o ABSOLUTE
+    bitband.c                                0x00000000   Number         0  bitband.o ABSOLUTE
+    cpu.c                                    0x00000000   Number         0  cpu.o ABSOLUTE
+    cpu.c                                    0x00000000   Number         0  cpu.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    gpio.c                                   0x00000000   Number         0  gpio.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    interrupt.c                              0x00000000   Number         0  interrupt.o ABSOLUTE
+    ssi.c                                    0x00000000   Number         0  ssi.o ABSOLUTE
+    startup_rvmdk.S                          0x00000000   Number         0  startup_rvmdk.o ABSOLUTE
+    sysctl.c                                 0x00000000   Number         0  sysctl.o ABSOLUTE
+    sysctl.c                                 0x00000000   Number         0  sysctl.o ABSOLUTE
+    systick.c                                0x00000000   Number         0  systick.o ABSOLUTE
+    NmiSR                                    0x000000f5   Thumb Code     0  startup_rvmdk.o(RESET)
+    FaultISR                                 0x000000f7   Thumb Code     0  startup_rvmdk.o(RESET)
+    IntDefaultHandler                        0x000000f9   Thumb Code     0  startup_rvmdk.o(RESET)
+    .ARM.Collect$$$$00000000                 0x000000fc   Section        4  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x00000100   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000006                 0x00000104   Section        8  entry6.o(.ARM.Collect$$$$00000006)
+    .ARM.Collect$$$$00002712                 0x0000010c   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x0000010c   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .emb_text                                0x00000110   Section        6  sysctl.o(.emb_text)
+    .text                                    0x00000118   Section      476  bitband.o(.text)
+    .text                                    0x000002f4   Section     1116  rit128x96x4.o(.text)
+    RITWriteCommand                          0x0000070d   Thumb Code    60  rit128x96x4.o(.text)
+    .text                                    0x00000750   Section       36  init.o(.text)
+    i.GPIODirModeSet                         0x00000774   Section       40  gpio.o(i.GPIODirModeSet)
+    i.GPIOPadConfigSet                       0x0000079c   Section      176  gpio.o(i.GPIOPadConfigSet)
+    i.GPIOPinTypeGPIOOutput                  0x0000084c   Section       28  gpio.o(i.GPIOPinTypeGPIOOutput)
+    i.GPIOPinTypeSSI                         0x00000868   Section       28  gpio.o(i.GPIOPinTypeSSI)
+    i.GPIOPinWrite                           0x00000884   Section        6  gpio.o(i.GPIOPinWrite)
+    i.SSIConfigSetExpClk                     0x0000088a   Section       74  ssi.o(i.SSIConfigSetExpClk)
+    i.SSIDataGet                             0x000008d4   Section       14  ssi.o(i.SSIDataGet)
+    i.SSIDataGetNonBlocking                  0x000008e2   Section       18  ssi.o(i.SSIDataGetNonBlocking)
+    i.SSIDataPut                             0x000008f4   Section       12  ssi.o(i.SSIDataPut)
+    i.SSIDisable                             0x00000900   Section       10  ssi.o(i.SSIDisable)
+    i.SSIEnable                              0x0000090a   Section       10  ssi.o(i.SSIEnable)
+    i.SysCtlClockGet                         0x00000914   Section      320  sysctl.o(i.SysCtlClockGet)
+    i.SysCtlClockSet                         0x00000a54   Section      312  sysctl.o(i.SysCtlClockSet)
+    i.SysCtlPeripheralEnable                 0x00000b8c   Section       32  sysctl.o(i.SysCtlPeripheralEnable)
+    i.SysTickEnable                          0x00000bac   Section       14  systick.o(i.SysTickEnable)
+    i.SysTickPeriodSet                       0x00000bba   Section       10  systick.o(i.SysTickPeriodSet)
+    i.SysTickValueGet                        0x00000bc4   Section        8  systick.o(i.SysTickValueGet)
+    i.__scatterload_copy                     0x00000bcc   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00000bda   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00000bdc   Section       14  handlers.o(i.__scatterload_zeroinit)
+    .constdata                               0x00000bec   Section        4  bitband.o(.constdata)
+    pcHex                                    0x00000bec   Data           4  bitband.o(.constdata)
+    .constdata                               0x00000bf0   Section      571  rit128x96x4.o(.constdata)
+    g_pucRIT128x96x4VerticalInc              0x00000bf0   Data           2  rit128x96x4.o(.constdata)
+    g_pucRIT128x96x4HorizontalInc            0x00000bf2   Data           2  rit128x96x4.o(.constdata)
+    pucCommand1                              0x00000bf4   Data           2  rit128x96x4.o(.constdata)
+    pucCommand1                              0x00000bf6   Data           3  rit128x96x4.o(.constdata)
+    pucCommand2                              0x00000bf9   Data           3  rit128x96x4.o(.constdata)
+    g_pucFont                                0x00000bfc   Data         480  rit128x96x4.o(.constdata)
+    g_pucRIT128x96x4Init                     0x00000ddc   Data          79  rit128x96x4.o(.constdata)
+    .constdata                               0x00000e2c   Section      156  sysctl.o(.constdata)
+    g_pulDCRegs                              0x00000e2c   Data          16  sysctl.o(.constdata)
+    g_pulSRCRRegs                            0x00000e3c   Data          12  sysctl.o(.constdata)
+    g_pulRCGCRegs                            0x00000e48   Data          12  sysctl.o(.constdata)
+    g_pulSCGCRegs                            0x00000e54   Data          12  sysctl.o(.constdata)
+    g_pulDCGCRegs                            0x00000e60   Data          12  sysctl.o(.constdata)
+    g_pulXtals                               0x00000e6c   Data          92  sysctl.o(.constdata)
+    .conststring                             0x00000ec8   Section       17  bitband.o(.conststring)
+    .data                                    0x20000000   Section        4  bitband.o(.data)
+    g_ulValue                                0x20000000   Data           4  bitband.o(.data)
+    .data                                    0x20000004   Section        9  rit128x96x4.o(.data)
+    g_bSSIEnabled                            0x20000004   Data           1  rit128x96x4.o(.data)
+    g_pucBuffer                              0x20000005   Data           8  rit128x96x4.o(.data)
+    STACK                                    0x20000010   Section      256  startup_rvmdk.o(STACK)
+    StackMem                                 0x20000010   Data           0  startup_rvmdk.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  bitband.o ABSOLUTE
+    __Vectors                                0x00000000   Data           0  startup_rvmdk.o(RESET)
+    __decompress                              - Undefined Weak Reference
+    Reset_Handler                            0x000000f1   Thumb Code     0  startup_rvmdk.o(RESET)
+    __main                                   0x000000fd   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    __main_after_scatterload                 0x00000101   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000101   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_init                               0x00000105   Thumb Code     0  entry6.o(.ARM.Collect$$$$00000006)
+    SysCtlDelay                              0x00000111   Thumb Code     6  sysctl.o(.emb_text)
+    Delay                                    0x00000119   Thumb Code    36  bitband.o(.text)
+    PrintValue                               0x0000013d   Thumb Code   124  bitband.o(.text)
+    main                                     0x000001b9   Thumb Code   260  bitband.o(.text)
+    RIT128x96x4Clear                         0x000002f5   Thumb Code   108  rit128x96x4.o(.text)
+    RIT128x96x4StringDraw                    0x00000361   Thumb Code   246  rit128x96x4.o(.text)
+    RIT128x96x4ImageDraw                     0x00000457   Thumb Code   146  rit128x96x4.o(.text)
+    RIT128x96x4Enable                        0x000004e9   Thumb Code    88  rit128x96x4.o(.text)
+    RIT128x96x4Disable                       0x00000541   Thumb Code    66  rit128x96x4.o(.text)
+    RIT128x96x4Init                          0x00000583   Thumb Code   252  rit128x96x4.o(.text)
+    RIT128x96x4DisplayOn                     0x0000067f   Thumb Code    86  rit128x96x4.o(.text)
+    RIT128x96x4DisplayOff                    0x000006d5   Thumb Code    56  rit128x96x4.o(.text)
+    __scatterload                            0x00000751   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x00000751   Thumb Code     0  init.o(.text)
+    GPIODirModeSet                           0x00000775   Thumb Code    40  gpio.o(i.GPIODirModeSet)
+    GPIOPadConfigSet                         0x0000079d   Thumb Code   176  gpio.o(i.GPIOPadConfigSet)
+    GPIOPinTypeGPIOOutput                    0x0000084d   Thumb Code    28  gpio.o(i.GPIOPinTypeGPIOOutput)
+    GPIOPinTypeSSI                           0x00000869   Thumb Code    28  gpio.o(i.GPIOPinTypeSSI)
+    GPIOPinWrite                             0x00000885   Thumb Code     6  gpio.o(i.GPIOPinWrite)
+    SSIConfigSetExpClk                       0x0000088b   Thumb Code    74  ssi.o(i.SSIConfigSetExpClk)
+    SSIDataGet                               0x000008d5   Thumb Code    14  ssi.o(i.SSIDataGet)
+    SSIDataGetNonBlocking                    0x000008e3   Thumb Code    18  ssi.o(i.SSIDataGetNonBlocking)
+    SSIDataPut                               0x000008f5   Thumb Code    12  ssi.o(i.SSIDataPut)
+    SSIDisable                               0x00000901   Thumb Code    10  ssi.o(i.SSIDisable)
+    SSIEnable                                0x0000090b   Thumb Code    10  ssi.o(i.SSIEnable)
+    SysCtlClockGet                           0x00000915   Thumb Code   292  sysctl.o(i.SysCtlClockGet)
+    SysCtlClockSet                           0x00000a55   Thumb Code   290  sysctl.o(i.SysCtlClockSet)
+    SysCtlPeripheralEnable                   0x00000b8d   Thumb Code    26  sysctl.o(i.SysCtlPeripheralEnable)
+    SysTickEnable                            0x00000bad   Thumb Code    14  systick.o(i.SysTickEnable)
+    SysTickPeriodSet                         0x00000bbb   Thumb Code    10  systick.o(i.SysTickPeriodSet)
+    SysTickValueGet                          0x00000bc5   Thumb Code     8  systick.o(i.SysTickValueGet)
+    __scatterload_copy                       0x00000bcd   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00000bdb   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00000bdd   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    Region$$Table$$Base                      0x00000edc   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00000efc   Number         0  anon$$obj.o(Region$$Table)
+    __initial_sp                             0x20000110   Data           0  startup_rvmdk.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000000f1
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00000f0c, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Base: 0x00000000, Size: 0x00000efc, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000fc   Code   RO           68  * RESET               startup_rvmdk.o
+    0x000000fc   0x00000004   Code   RO          908  * .ARM.Collect$$$$00000000  entry.o(mc_w.l)
+    0x00000100   0x00000004   Code   RO          911    .ARM.Collect$$$$00000001  entry2.o(mc_w.l)
+    0x00000104   0x00000008   Code   RO          914    .ARM.Collect$$$$00000006  entry6.o(mc_w.l)
+    0x0000010c   0x00000004   Code   RO          912    .ARM.Collect$$$$00002712  entry2.o(mc_w.l)
+    0x00000110   0x00000006   Code   RO          420    .emb_text           sysctl.o(driverlib.lib)
+    0x00000116   0x00000002   PAD
+    0x00000118   0x000001dc   Code   RO            1    .text               bitband.o
+    0x000002f4   0x0000045c   Code   RO           35    .text               rit128x96x4.o
+    0x00000750   0x00000024   Code   RO          915    .text               init.o(mc_w.l)
+    0x00000774   0x00000028   Code   RO           75    i.GPIODirModeSet    gpio.o(driverlib.lib)
+    0x0000079c   0x000000b0   Code   RO           79    i.GPIOPadConfigSet  gpio.o(driverlib.lib)
+    0x0000084c   0x0000001c   Code   RO           93    i.GPIOPinTypeGPIOOutput  gpio.o(driverlib.lib)
+    0x00000868   0x0000001c   Code   RO           98    i.GPIOPinTypeSSI    gpio.o(driverlib.lib)
+    0x00000884   0x00000006   Code   RO           88    i.GPIOPinWrite      gpio.o(driverlib.lib)
+    0x0000088a   0x0000004a   Code   RO          300    i.SSIConfigSetExpClk  ssi.o(driverlib.lib)
+    0x000008d4   0x0000000e   Code   RO          311    i.SSIDataGet        ssi.o(driverlib.lib)
+    0x000008e2   0x00000012   Code   RO          312    i.SSIDataGetNonBlocking  ssi.o(driverlib.lib)
+    0x000008f4   0x0000000c   Code   RO          309    i.SSIDataPut        ssi.o(driverlib.lib)
+    0x00000900   0x0000000a   Code   RO          302    i.SSIDisable        ssi.o(driverlib.lib)
+    0x0000090a   0x0000000a   Code   RO          301    i.SSIEnable         ssi.o(driverlib.lib)
+    0x00000914   0x00000140   Code   RO          449    i.SysCtlClockGet    sysctl.o(driverlib.lib)
+    0x00000a54   0x00000138   Code   RO          448    i.SysCtlClockSet    sysctl.o(driverlib.lib)
+    0x00000b8c   0x00000020   Code   RO          426    i.SysCtlPeripheralEnable  sysctl.o(driverlib.lib)
+    0x00000bac   0x0000000e   Code   RO          734    i.SysTickEnable     systick.o(driverlib.lib)
+    0x00000bba   0x0000000a   Code   RO          740    i.SysTickPeriodSet  systick.o(driverlib.lib)
+    0x00000bc4   0x00000008   Code   RO          742    i.SysTickValueGet   systick.o(driverlib.lib)
+    0x00000bcc   0x0000000e   Code   RO          918    i.__scatterload_copy  handlers.o(mc_w.l)
+    0x00000bda   0x00000002   Code   RO          919    i.__scatterload_null  handlers.o(mc_w.l)
+    0x00000bdc   0x0000000e   Code   RO          920    i.__scatterload_zeroinit  handlers.o(mc_w.l)
+    0x00000bea   0x00000002   PAD
+    0x00000bec   0x00000004   Data   RO            2    .constdata          bitband.o
+    0x00000bf0   0x0000023b   Data   RO           36    .constdata          rit128x96x4.o
+    0x00000e2b   0x00000001   PAD
+    0x00000e2c   0x0000009c   Data   RO          462    .constdata          sysctl.o(driverlib.lib)
+    0x00000ec8   0x00000011   Data   RO            3    .conststring        bitband.o
+    0x00000ed9   0x00000003   PAD
+    0x00000edc   0x00000020   Data   RO          917    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_RW (Base: 0x20000000, Size: 0x00000010, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000004   Data   RW            4    .data               bitband.o
+    0x20000004   0x00000009   Data   RW           37    .data               rit128x96x4.o
+
+
+    Execution Region ER_ZI (Base: 0x20000010, Size: 0x00000100, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000010   0x00000100   Zero   RW           66    STACK               startup_rvmdk.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       476         56         21          4          0       5498   bitband.o
+      1116         56        571          9          0       5108   rit128x96x4.o
+       252        242          0          0        256        200   startup_rvmdk.o
+
+    ----------------------------------------------------------------------
+      1844        354        628         16        256      10806   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         0          0          4          3          0          2   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         4          0          0          0          0          0   entry.o
+         8          4          0          0          0          0   entry2.o
+         8          4          0          0          0          0   entry6.o
+       278          0          0          0          0       4922   gpio.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+       138          0          0          0          0       3451   ssi.o
+       670         56        156          0          0       3903   sysctl.o
+        32          0          0          0          0       1396   systick.o
+
+    ----------------------------------------------------------------------
+      1208         72        156          0          0      13740   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+      1118         56        156          0          0      13672   driverlib.lib
+        86         16          0          0          0         68   mc_w.l
+
+    ----------------------------------------------------------------------
+      1208         72        156          0          0      13740   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      3052        426        784         16        256      23848   Grand Totals
+      3052        426        784         16        256      23848   ELF Image Totals
+      3052        426        784         16          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 3836 (   3.75kB)
+    Total RW  Size (RW Data + ZI Data)               272 (   0.27kB)
+    Total ROM Size (Code + RO Data + RW Data)       3852 (   3.76kB)
+
+==============================================================================
+

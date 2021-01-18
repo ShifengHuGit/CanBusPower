@@ -1,0 +1,1 @@
+-c --device DLM -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork -I.. -I..\..\.. -I "C:\Keil\ARM\INC\Luminary" -Drvmdk -DPART_LM3S8962 -o ".\rvmdk\uart_echo.o" --omf_browse ".\rvmdk\uart_echo.crf" --depend ".\rvmdk\uart_echo.d" "uart_echo.c"

@@ -1,0 +1,2759 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\rvmdk\qs_ek-lm3s8962.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\rvmdk\qs_ek-lm3s8962.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 484]: Last Updated: Sat Jan 09 21:30:05 2021
+<BR><P>
+<H3>Maximum Stack Usage =        400 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+lwIPEthernetIntHandler &rArr; stellarisif_input &rArr; ip_input &rArr; tcp_input &rArr; tcp_process &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[2f22e0c]">Reset_Handler</a>
+ <LI><a href="#[2f22fec]">NmiSR</a>
+ <LI><a href="#[2f22fb0]">FaultISR</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[2305218]">UARTCharPut</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2305218]">UARTCharPut</a><BR>
+ <LI><a href="#[2f23e74]">SSIDataPut</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2f23e74]">SSIDataPut</a><BR>
+ <LI><a href="#[2f23eec]">SSIDataGet</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2f23eec]">SSIDataGet</a><BR>
+ <LI><a href="#[2f24e64]">UARTConfigSetExpClk</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2f24e64]">UARTConfigSetExpClk</a><BR>
+ <LI><a href="#[2f8b358]">SysCtlDelay</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2f8b358]">SysCtlDelay</a><BR>
+ <LI><a href="#[2f22fec]">NmiSR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2f22fec]">NmiSR</a><BR>
+ <LI><a href="#[2f22fb0]">FaultISR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2f22fb0]">FaultISR</a><BR>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2f22f74]">IntDefaultHandler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[2f22e0c]">Reset_Handler</a>
+ <LI><a href="#[2f22fec]">NmiSR</a>
+ <LI><a href="#[2f22fb0]">FaultISR</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f25260]">SysTickIntHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[230a948]">CANHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f26214]">lwIPEthernetIntHandler</a>
+ <LI><a href="#[2f22f74]">IntDefaultHandler</a>
+ <LI><a href="#[2f25224]">main</a>
+ <LI><a href="#[23046d8]">http_sent</a>
+ <LI><a href="#[230469c]">http_recv</a>
+ <LI><a href="#[23047c8]">conn_err</a>
+ <LI><a href="#[2304714]">http_poll</a>
+ <LI><a href="#[2304660]">http_accept</a>
+ <LI><a href="#[2301ac8]">dhcp_recv</a>
+ <LI><a href="#[2301a8c]">tcp_accept_null</a>
+ <LI><a href="#[2301a50]">tcp_recv_null</a>
+ <LI><a href="#[2301924]">low_level_output</a>
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[2f22e0c]"></a>Reset_Handler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[300dca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[300dca0]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR><BR>[Calls]<UL><LI><a href="#[300cfbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f22e0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[300dc64]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[300cfbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[300d214]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[300d0e8]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry6.o(.ARM.Collect$$$$00000006))
+
+<P><STRONG><a name="[2f8b358]"></a>SysCtlDelay</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sysctl.o(.emb_text))
+<BR><BR>[Calls]<UL><LI><a href="#[2f8b358]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f24fcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
+<LI><a href="#[2f8b358]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+</UL>
+
+<P><STRONG><a name="[2f9455c]"></a>CPUcpsid</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, cpu.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+</UL>
+
+<P><STRONG><a name="[2f94520]"></a>CPUcpsie</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, cpu.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+</UL>
+
+<P><STRONG><a name="[2f8aae8]"></a>CPUwfi</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
+
+<P><STRONG><a name="[230be60]"></a>AudioVolume</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, audio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = AudioVolume
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230badc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMSyncUpdate
+<LI><a href="#[230bb18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputState
+<LI><a href="#[230bb54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputInvert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230bc80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioPlaySound
+<LI><a href="#[230bcbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioPlaySong
+<LI><a href="#[230bde8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolumeDown
+<LI><a href="#[230be24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolumeUp
+</UL>
+
+<P><STRONG><a name="[230be24]"></a>AudioVolumeUp</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, audio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = AudioVolumeUp &rArr; AudioVolume
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230be60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolume
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230649c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_open
+<LI><a href="#[230a948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
+</UL>
+
+<P><STRONG><a name="[230bde8]"></a>AudioVolumeDown</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, audio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = AudioVolumeDown &rArr; AudioVolume
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230be60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolume
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230649c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_open
+<LI><a href="#[230a948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
+</UL>
+
+<P><STRONG><a name="[230bdac]"></a>AudioVolumeGet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, audio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2306424]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_read
+</UL>
+
+<P><STRONG><a name="[230bd70]"></a>AudioHandler</STRONG> (Thumb, 160 bytes, Stack size 24 bytes, audio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = AudioHandler &rArr; AudioMute
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230badc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMSyncUpdate
+<LI><a href="#[230bb90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenPeriodSet
+<LI><a href="#[230c5e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickIntHandler
+</UL>
+
+<P><STRONG><a name="[230bd34]"></a>AudioOff</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, audio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = AudioOff &rArr; AudioMute
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230c5e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+</UL>
+
+<P><STRONG><a name="[230bcf8]"></a>AudioOn</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, audio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = AudioOn &rArr; AudioMute
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230bb18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputState
+<LI><a href="#[230bbcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenEnable
+<LI><a href="#[230bc08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenDisable
+<LI><a href="#[230bc44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenConfigure
+<LI><a href="#[230c5e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+<LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[230bcbc]"></a>AudioPlaySong</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, audio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = AudioPlaySong &rArr; AudioVolume
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230be60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolume
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2305308]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayGame
+</UL>
+
+<P><STRONG><a name="[230bc80]"></a>AudioPlaySound</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, audio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = AudioPlaySound &rArr; AudioVolume
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230be60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolume
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2305308]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayGame
+<LI><a href="#[2305b3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawBullets
+</UL>
+
+<P><STRONG><a name="[230aa38]"></a>CANMain</STRONG> (Thumb, 102 bytes, Stack size 24 bytes, can_net.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[230a6f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSet
+<LI><a href="#[230a72c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageGet
+</UL>
+
+<P><STRONG><a name="[230a9fc]"></a>CANGetTargetVersion</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, can_net.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[230a6f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSet
+<LI><a href="#[230a72c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageGet
+</UL>
+
+<P><STRONG><a name="[230a9c0]"></a>CANUpdateTargetLED</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, can_net.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = CANUpdateTargetLED &rArr; CANMessageSet &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230a6f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2305b3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawBullets
+<LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+</UL>
+
+<P><STRONG><a name="[230a984]"></a>CANConfigureNetwork</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, can_net.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = CANConfigureNetwork &rArr; CANMessageSet &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230a6f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230a90c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+</UL>
+
+<P><STRONG><a name="[230a948]"></a>CANHandler</STRONG> (Thumb, 180 bytes, Stack size 16 bytes, can_net.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = CANHandler &rArr; CANMessageGet &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230a6b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANStatusGet
+<LI><a href="#[230a72c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageGet
+<LI><a href="#[230a768]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageClear
+<LI><a href="#[230a7a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntStatus
+<LI><a href="#[230a81c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntClear
+<LI><a href="#[230bde8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolumeDown
+<LI><a href="#[230be24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolumeUp
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[230a90c]"></a>CANConfigure</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, can_net.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = CANConfigure &rArr; CANConfigureNetwork &rArr; CANMessageSet &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230a600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[230a63c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
+<LI><a href="#[230a678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeCAN
+<LI><a href="#[230a7e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntEnable
+<LI><a href="#[230a858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANInit
+<LI><a href="#[230a894]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANEnable
+<LI><a href="#[230a8d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANBitTimingSet
+<LI><a href="#[230a984]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigureNetwork
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2308698]"></a>EnetGetIPAddr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, enet.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[230847c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPLocalIPAddrGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2305344]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainScreen
+</UL>
+
+<P><STRONG><a name="[230865c]"></a>EnetInit</STRONG> (Thumb, 122 bytes, Stack size 32 bytes, enet.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 328<LI>Call Chain = EnetInit &rArr; lwIPInit &rArr; netif_add &rArr; netif_set_ipaddr &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23084b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPInit
+<LI><a href="#[23084f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;httpd_init
+<LI><a href="#[2308530]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralReset
+<LI><a href="#[230856c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[23085a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[23085e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FlashUserGet
+<LI><a href="#[230a600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2308620]"></a>EnetTick</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, enet.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[2308440]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPTimer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickIntHandler
+</UL>
+
+<P><STRONG><a name="[230649c]"></a>fs_open</STRONG> (Thumb, 292 bytes, Stack size 24 bytes, fs_qs.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = fs_open &rArr; mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2306244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[2306280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[230bde8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolumeDown
+<LI><a href="#[230be24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolumeUp
+<LI><a href="#[300d4e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230469c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_recv
+</UL>
+
+<P><STRONG><a name="[2306460]"></a>fs_close</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, fs_qs.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = fs_close &rArr; mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2306280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2304750]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
+<LI><a href="#[230478c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close_conn
+<LI><a href="#[23047c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conn_err
+</UL>
+
+<P><STRONG><a name="[2306424]"></a>fs_read</STRONG> (Thumb, 174 bytes, Stack size 16 bytes, fs_qs.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = fs_read
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230bdac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolumeGet
+<LI><a href="#[300d994]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2304750]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
+</UL>
+
+<P><STRONG><a name="[2305344]"></a>MainScreen</STRONG> (Thumb, 604 bytes, Stack size 48 bytes, game.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = MainScreen &rArr; RIT128x96x4ImageDraw &rArr; RITWriteCommand
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23052cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4ImageDraw
+<LI><a href="#[2305ac4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawNumber
+<LI><a href="#[2305bb4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawMaze
+<LI><a href="#[2305bf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GenerateMaze
+<LI><a href="#[2308698]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnetGetIPAddr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2305308]"></a>PlayGame</STRONG> (Thumb, 2430 bytes, Stack size 88 bytes, game.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = PlayGame &rArr; DrawBullets &rArr; CANUpdateTargetLED &rArr; CANMessageSet &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2305218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+<LI><a href="#[2305290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RandomNumber
+<LI><a href="#[23052cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4ImageDraw
+<LI><a href="#[2305ac4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawNumber
+<LI><a href="#[2305b00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawPlayer
+<LI><a href="#[2305b3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawBullets
+<LI><a href="#[2305b78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawMonsters
+<LI><a href="#[2305bb4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawMaze
+<LI><a href="#[2305bf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GenerateMaze
+<LI><a href="#[230bc80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioPlaySound
+<LI><a href="#[230bcbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioPlaySong
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[23084f4]"></a>httpd_init</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, httpd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = httpd_init &rArr; tcp_new &rArr; tcp_alloc &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23033dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_new
+<LI><a href="#[2303418]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_with_backlog
+<LI><a href="#[23034cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_bind
+<LI><a href="#[2303544]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_accept
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230865c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnetInit
+</UL>
+
+<P><STRONG><a name="[2f27ccc]"></a>htonl</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2306244]"></a>mem_malloc</STRONG> (Thumb, 280 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = mem_malloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301ac8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_recv
+<LI><a href="#[2304660]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_accept
+<LI><a href="#[2304750]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
+<LI><a href="#[230649c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_open
+<LI><a href="#[2f26f70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_calloc
+<LI><a href="#[2f270d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<LI><a href="#[2f27114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_start
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[2f27c18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start
+</UL>
+
+<P><STRONG><a name="[2f27c90]"></a>netif_set_down</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f27c54]"></a>netif_is_up</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f27c18]"></a>autoip_start</STRONG> (Thumb, 216 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = autoip_start &rArr; mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2306244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[2f260e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_memclr2_10
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301c30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_discover
+<LI><a href="#[23084b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPInit
+<LI><a href="#[2f26124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPNetworkConfigChange
+<LI><a href="#[2f2664c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_arp_reply
+</UL>
+
+<P><STRONG><a name="[2306280]"></a>mem_free</STRONG> (Thumb, 166 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = mem_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301ac8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_recv
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[230478c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close_conn
+<LI><a href="#[23047c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conn_err
+<LI><a href="#[2306460]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_close
+<LI><a href="#[230649c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_open
+<LI><a href="#[2f270d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<LI><a href="#[2f27114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_start
+<LI><a href="#[2f27204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_stop
+</UL>
+
+<P><STRONG><a name="[2f27bdc]"></a>sys_arch_unprotect</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+</UL>
+
+<P><STRONG><a name="[2f27ba0]"></a>sys_arch_protect</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+</UL>
+
+<P><STRONG><a name="[2f27b64]"></a>memp_free</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230199c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_arp_entry
+<LI><a href="#[2301a14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[2301bf4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_entry
+<LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[2303418]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_with_backlog
+<LI><a href="#[2303490]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f2646c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_tmr
+<LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[2f26a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<LI><a href="#[2f26afc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+<LI><a href="#[2f26c28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_remove
+<LI><a href="#[2f27240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_remove
+<LI><a href="#[2f27510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+<LI><a href="#[2f27600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
+<LI><a href="#[2f2763c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
+</UL>
+
+<P><STRONG><a name="[23035bc]"></a>pbuf_free</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2306280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23018e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_delete_request
+<LI><a href="#[2301924]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;low_level_output
+<LI><a href="#[2301960]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;low_level_transmit
+<LI><a href="#[230199c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_arp_entry
+<LI><a href="#[2301a14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[2301a50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv_null
+<LI><a href="#[2301ac8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_recv
+<LI><a href="#[2301bf4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_entry
+<LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[230469c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_recv
+<LI><a href="#[2f26250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_interrupt
+<LI><a href="#[2f262c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_input
+<LI><a href="#[2f26340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_input
+<LI><a href="#[2f263b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_arp_input
+<LI><a href="#[2f2646c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_tmr
+<LI><a href="#[2f264a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+<LI><a href="#[2f265d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+<LI><a href="#[2f267b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
+<LI><a href="#[2f267f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_dest_unreach
+<LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[2f26a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<LI><a href="#[2f26ac0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_fasttmr
+<LI><a href="#[2f26afc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+<LI><a href="#[2f26b38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
+<LI><a href="#[2f26bb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_keepalive
+<LI><a href="#[2f26ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
+<LI><a href="#[2f26dcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_dechain
+<LI><a href="#[2f27204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_stop
+<LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+<LI><a href="#[2f2745c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_raw
+<LI><a href="#[2f27588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
+<LI><a href="#[2f27600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
+<LI><a href="#[2f2763c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
+<LI><a href="#[2f27678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
+<LI><a href="#[2f277a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+</UL>
+
+<P><STRONG><a name="[2f27b28]"></a>htons</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f27aec]"></a>inet_chksum</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[23018ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_standard_chksum
+</UL>
+
+<P><STRONG><a name="[2f27ab0]"></a>ntohs</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f27a74]"></a>pbuf_header</STRONG> (Thumb, 110 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2301a14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[2f262c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_input
+<LI><a href="#[2f26340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_input
+<LI><a href="#[2f2637c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_output
+<LI><a href="#[2f265d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+<LI><a href="#[2f267b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
+<LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[2f26a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<LI><a href="#[2f26ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+<LI><a href="#[2f27a38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
+</UL>
+
+<P><STRONG><a name="[2f27a38]"></a>ip_output_if</STRONG> (Thumb, 230 bytes, Stack size 56 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23018ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_standard_chksum
+<LI><a href="#[2f27a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f265d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+<LI><a href="#[2f26ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
+<LI><a href="#[2f276b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+</UL>
+
+<P><STRONG><a name="[2f279fc]"></a>inet_chksum_pseudo</STRONG> (Thumb, 208 bytes, Stack size 32 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = inet_chksum_pseudo
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[2f267b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
+<LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[2f26afc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+<LI><a href="#[2f26b38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
+<LI><a href="#[2f26bb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_keepalive
+<LI><a href="#[2f27678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+</UL>
+
+<P><STRONG><a name="[2f279c0]"></a>pbuf_ref</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+</UL>
+
+<P><STRONG><a name="[2f27984]"></a>pbuf_cat</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2f26a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<LI><a href="#[2f26ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+<LI><a href="#[2f27948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_chain
+</UL>
+
+<P><STRONG><a name="[2f27948]"></a>pbuf_chain</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+<LI><a href="#[2f27984]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_cat
+</UL>
+
+<P><STRONG><a name="[2f2790c]"></a>memp_malloc</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = memp_malloc &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301a14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[2303418]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_with_backlog
+<LI><a href="#[2f268a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_alloc
+<LI><a href="#[2f268e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_copy
+<LI><a href="#[2f26a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<LI><a href="#[2f26bec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_new
+<LI><a href="#[2f270d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<LI><a href="#[2f27114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_start
+<LI><a href="#[2f27150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_new
+<LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+</UL>
+
+<P><STRONG><a name="[2f278d0]"></a>pbuf_alloc</STRONG> (Thumb, 296 bytes, Stack size 32 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2306244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[2f2790c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23016cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;low_level_receive
+<LI><a href="#[2301c6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_create_request
+<LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[2f26250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_interrupt
+<LI><a href="#[2f265d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+<LI><a href="#[2f267f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_dest_unreach
+<LI><a href="#[2f26a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<LI><a href="#[2f26afc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+<LI><a href="#[2f26b38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
+<LI><a href="#[2f26bb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_keepalive
+<LI><a href="#[2f26ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
+<LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+<LI><a href="#[2f2745c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_raw
+<LI><a href="#[2f27678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+</UL>
+
+<P><STRONG><a name="[2f27894]"></a>udp_bind</STRONG> (Thumb, 98 bytes, Stack size 12 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = udp_bind
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f270d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<LI><a href="#[2f27114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_start
+<LI><a href="#[2f2781c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_connect
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+</UL>
+
+<P><STRONG><a name="[2f27858]"></a>udp_sendto_if</STRONG> (Thumb, 286 bytes, Stack size 48 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = udp_sendto_if &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+<LI><a href="#[2f27894]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_bind
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[2f27984]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_cat
+<LI><a href="#[2f279fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum_pseudo
+<LI><a href="#[2f27a38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
+<LI><a href="#[2f27a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301b40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_rebind
+<LI><a href="#[2301bb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_select
+<LI><a href="#[2301c30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_discover
+<LI><a href="#[2f2673c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_send
+<LI><a href="#[2f26778]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto
+<LI><a href="#[2f2709c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_arp_reply
+<LI><a href="#[2f270d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<LI><a href="#[2f272f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
+<LI><a href="#[2f2736c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_renew
+</UL>
+
+<P><STRONG><a name="[2f2781c]"></a>udp_connect</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = udp_connect &rArr; udp_bind
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f27894]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_bind
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301b40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_rebind
+<LI><a href="#[2301bb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_select
+<LI><a href="#[2301c30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_discover
+<LI><a href="#[2f2709c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_arp_reply
+<LI><a href="#[2f270d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<LI><a href="#[2f27114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_start
+<LI><a href="#[2f272f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
+<LI><a href="#[2f2736c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_renew
+</UL>
+
+<P><STRONG><a name="[2f277e0]"></a>mem_realloc</STRONG> (Thumb, 260 bytes, Stack size 28 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = mem_realloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f277a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+</UL>
+
+<P><STRONG><a name="[2f277a4]"></a>pbuf_realloc</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = pbuf_realloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f277e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_realloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301a14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[2301b40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_rebind
+<LI><a href="#[2301bb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_select
+<LI><a href="#[2301c30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_discover
+<LI><a href="#[2f264a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+<LI><a href="#[2f2709c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_arp_reply
+<LI><a href="#[2f270d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<LI><a href="#[2f272f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
+<LI><a href="#[2f2736c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_renew
+</UL>
+
+<P><STRONG><a name="[2f27768]"></a>netif_set_netmask</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f2772c]"></a>netif_set_gw</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f276f0]"></a>ip_route</STRONG> (Thumb, 84 bytes, Stack size 4 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = ip_route
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23019d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[2f2673c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_send
+<LI><a href="#[2f26778]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto
+<LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[2f26958]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
+<LI><a href="#[2f269d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_eff_send_mss
+<LI><a href="#[2f26ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
+<LI><a href="#[2f276b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
+</UL>
+
+<P><STRONG><a name="[2f276b4]"></a>ip_output</STRONG> (Thumb, 62 bytes, Stack size 40 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f276f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
+<LI><a href="#[2f27a38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[2f267f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_dest_unreach
+<LI><a href="#[2f26afc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+<LI><a href="#[2f26b38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
+<LI><a href="#[2f26bb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_keepalive
+<LI><a href="#[2f27678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
+</UL>
+
+<P><STRONG><a name="[2f27678]"></a>tcp_rst</STRONG> (Thumb, 168 bytes, Stack size 48 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = tcp_rst &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f276b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[2f279fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum_pseudo
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23019d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[2f27510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+</UL>
+
+<P><STRONG><a name="[2f2763c]"></a>tcp_seg_free</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = tcp_seg_free &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23019d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+</UL>
+
+<P><STRONG><a name="[2f27600]"></a>tcp_segs_free</STRONG> (Thumb, 50 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = tcp_segs_free &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<LI><a href="#[2f27510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+<LI><a href="#[2f27588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
+</UL>
+
+<P><STRONG><a name="[2f275c4]"></a>ntohl</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[23033a0]"></a>tcp_output</STRONG> (Thumb, 678 bytes, Stack size 40 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f276b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
+<LI><a href="#[2f276f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[2f279fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum_pseudo
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23019d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<LI><a href="#[2301a14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[23032ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recved
+<LI><a href="#[2303490]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
+<LI><a href="#[2304750]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
+<LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[2f26868]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit
+<LI><a href="#[2f26958]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
+<LI><a href="#[2f26ac0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_fasttmr
+<LI><a href="#[2f26afc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+<LI><a href="#[2f26b74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto
+<LI><a href="#[2f2754c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
+</UL>
+
+<P><STRONG><a name="[2f27588]"></a>tcp_pcb_purge</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = tcp_pcb_purge &rArr; tcp_segs_free &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f27600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23019d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<LI><a href="#[2f26afc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+<LI><a href="#[2f2754c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
+</UL>
+
+<P><STRONG><a name="[2f2754c]"></a>tcp_pcb_remove</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[2f27588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2303490]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
+<LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[2f27510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+</UL>
+
+<P><STRONG><a name="[2f27510]"></a>tcp_abandon</STRONG> (Thumb, 170 bytes, Stack size 56 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f2754c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
+<LI><a href="#[2f27600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
+<LI><a href="#[2f27678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23019d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<LI><a href="#[2303580]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abort
+<LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[2f268a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_alloc
+<LI><a href="#[2f26afc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+<LI><a href="#[2f274d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_ipaddr
+</UL>
+
+<P><STRONG><a name="[2303580]"></a>tcp_abort</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = tcp_abort &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f27510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2304714]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_poll
+</UL>
+
+<P><STRONG><a name="[2f274d4]"></a>netif_set_ipaddr</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 224<LI>Call Chain = netif_set_ipaddr &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f27510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301ac8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_recv
+<LI><a href="#[2301b04]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_bind
+<LI><a href="#[2f26124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPNetworkConfigChange
+<LI><a href="#[2f26688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_tmr
+<LI><a href="#[2f26ef8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_add
+<LI><a href="#[2f26f34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_addr
+<LI><a href="#[2f272f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
+</UL>
+
+<P><STRONG><a name="[2f27498]"></a>pbuf_copy</STRONG> (Thumb, 148 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = pbuf_copy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[300d994]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f265d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+<LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+</UL>
+
+<P><STRONG><a name="[2f2745c]"></a>etharp_raw</STRONG> (Thumb, 194 bytes, Stack size 56 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = etharp_raw &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f260ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_memcpy1_4
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f2664c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_arp_reply
+<LI><a href="#[2f26688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_tmr
+<LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+<LI><a href="#[2f27420]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_request
+</UL>
+
+<P><STRONG><a name="[2f27420]"></a>etharp_request</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f2745c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_raw
+</UL>
+
+<P><STRONG><a name="[2f273e4]"></a>ip_addr_isbroadcast</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[230199c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_arp_entry
+<LI><a href="#[2f2637c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_output
+<LI><a href="#[2f264a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+<LI><a href="#[2f265d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+<LI><a href="#[2f267b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
+<LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+</UL>
+
+<P><STRONG><a name="[2f273a8]"></a>etharp_query</STRONG> (Thumb, 392 bytes, Stack size 56 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = etharp_query &rArr; etharp_raw &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2301bf4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_entry
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+<LI><a href="#[2f273e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
+<LI><a href="#[2f2745c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_raw
+<LI><a href="#[2f27498]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[2f2790c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301ac8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_recv
+<LI><a href="#[2301b04]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_bind
+<LI><a href="#[23084b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPInit
+<LI><a href="#[2f2637c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_output
+<LI><a href="#[2f26688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_tmr
+<LI><a href="#[2f2727c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_fine_tmr
+<LI><a href="#[2f272b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_up
+</UL>
+
+<P><STRONG><a name="[2f2736c]"></a>dhcp_renew</STRONG> (Thumb, 196 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = dhcp_renew &rArr; udp_sendto_if &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2301834]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_short
+<LI><a href="#[2301870]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option
+<LI><a href="#[23018e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_delete_request
+<LI><a href="#[2301c6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_create_request
+<LI><a href="#[2301ca8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_trailer
+<LI><a href="#[2f277a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+<LI><a href="#[2f2781c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_connect
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f2727c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_fine_tmr
+<LI><a href="#[2f27330]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_coarse_tmr
+</UL>
+
+<P><STRONG><a name="[2f27330]"></a>dhcp_coarse_tmr</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = dhcp_coarse_tmr &rArr; dhcp_rebind &rArr; udp_sendto_if &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2301b40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_rebind
+<LI><a href="#[2f2736c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_renew
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPEthernetIntHandler
+</UL>
+
+<P><STRONG><a name="[2f272f4]"></a>dhcp_release</STRONG> (Thumb, 204 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = dhcp_release &rArr; netif_set_ipaddr &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2301870]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option
+<LI><a href="#[23018e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_delete_request
+<LI><a href="#[2301c6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_create_request
+<LI><a href="#[2301ca8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_trailer
+<LI><a href="#[2f274d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_ipaddr
+<LI><a href="#[2f277a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+<LI><a href="#[2f2781c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_connect
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f2727c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_fine_tmr
+</UL>
+
+<P><STRONG><a name="[2f272b8]"></a>netif_set_up</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+</UL>
+
+<P><STRONG><a name="[2f2727c]"></a>dhcp_fine_tmr</STRONG> (Thumb, 188 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 272<LI>Call Chain = dhcp_fine_tmr &rArr; dhcp_bind &rArr; netif_set_ipaddr &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2301b04]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_bind
+<LI><a href="#[2301b40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_rebind
+<LI><a href="#[2301bb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_select
+<LI><a href="#[2301c30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_discover
+<LI><a href="#[2f272f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
+<LI><a href="#[2f2736c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_renew
+<LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPEthernetIntHandler
+</UL>
+
+<P><STRONG><a name="[2f27240]"></a>udp_remove</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = udp_remove &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f270d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<LI><a href="#[2f27204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_stop
+</UL>
+
+<P><STRONG><a name="[2f27204]"></a>dhcp_stop</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = dhcp_stop &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2306280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[2f27240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_remove
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPNetworkConfigChange
+<LI><a href="#[2f27114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_start
+</UL>
+
+<P><STRONG><a name="[2f271c8]"></a>pbuf_copy_partial</STRONG> (Thumb, 128 bytes, Stack size 32 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = pbuf_copy_partial
+</UL>
+<BR>[Calls]<UL><LI><a href="#[300d994]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301ac8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_recv
+</UL>
+
+<P><STRONG><a name="[2f2718c]"></a>udp_recv</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f27150]"></a>udp_new</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f2790c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+</UL>
+
+<P><STRONG><a name="[2f27114]"></a>dhcp_start</STRONG> (Thumb, 170 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = dhcp_start &rArr; dhcp_discover &rArr; udp_sendto_if &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2301c30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_discover
+<LI><a href="#[2306244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[2306280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[2f27204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_stop
+<LI><a href="#[2f2781c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_connect
+<LI><a href="#[2f27894]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_bind
+<LI><a href="#[2f2790c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+<LI><a href="#[300d73c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23084b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPInit
+<LI><a href="#[2f26124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPNetworkConfigChange
+</UL>
+
+<P><STRONG><a name="[2f270d8]"></a>dhcp_inform</STRONG> (Thumb, 232 bytes, Stack size 24 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2301834]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_short
+<LI><a href="#[2301870]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option
+<LI><a href="#[23018e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_delete_request
+<LI><a href="#[2301c6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_create_request
+<LI><a href="#[2301ca8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_trailer
+<LI><a href="#[2306244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[2306280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[2f27240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_remove
+<LI><a href="#[2f277a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+<LI><a href="#[2f2781c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_connect
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+<LI><a href="#[2f27894]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_bind
+<LI><a href="#[2f2790c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+<LI><a href="#[300d73c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+
+<P><STRONG><a name="[2f2709c]"></a>dhcp_arp_reply</STRONG> (Thumb, 176 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = dhcp_arp_reply &rArr; udp_sendto_if &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23017f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_long
+<LI><a href="#[2301834]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_short
+<LI><a href="#[2301870]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option
+<LI><a href="#[23018e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_delete_request
+<LI><a href="#[2301c6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_create_request
+<LI><a href="#[2301ca8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_trailer
+<LI><a href="#[2f277a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+<LI><a href="#[2f2781c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_connect
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f263b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_arp_input
+</UL>
+
+<P><STRONG><a name="[2f27060]"></a>autoip_init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f27024]"></a>memp_init</STRONG> (Thumb, 110 bytes, Stack size 12 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = memp_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23084b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPInit
+<LI><a href="#[2f26fac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_init
+</UL>
+
+<P><STRONG><a name="[2f26fe8]"></a>mem_init</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[23084b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPInit
+<LI><a href="#[2f26fac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_init
+</UL>
+
+<P><STRONG><a name="[2f26fac]"></a>lwip_init</STRONG> (Thumb, 12 bytes, Stack size 4 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f26fe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_init
+<LI><a href="#[2f27024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_init
+</UL>
+
+<P><STRONG><a name="[2f26f70]"></a>mem_calloc</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2306244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[300d778]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+
+<P><STRONG><a name="[2f26f34]"></a>netif_set_addr</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f274d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_ipaddr
+</UL>
+
+<P><STRONG><a name="[2f26ef8]"></a>netif_add</STRONG> (Thumb, 148 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = netif_add &rArr; netif_set_ipaddr &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f274d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_ipaddr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23084b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPInit
+</UL>
+
+<P><STRONG><a name="[2f26ebc]"></a>netif_set_default</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f26e80]"></a>netif_remove</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f26e44]"></a>netif_find</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f26e08]"></a>pbuf_clen</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f26dcc]"></a>pbuf_dechain</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+</UL>
+
+<P><STRONG><a name="[2f26d90]"></a>raw_input</STRONG> (Thumb, 102 bytes, Stack size 32 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = raw_input
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f264a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+</UL>
+
+<P><STRONG><a name="[2f26d54]"></a>raw_bind</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f26d18]"></a>raw_connect</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f26cdc]"></a>raw_recv</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f26ca0]"></a>raw_sendto</STRONG> (Thumb, 168 bytes, Stack size 32 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+<LI><a href="#[2f276f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[2f27984]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_cat
+<LI><a href="#[2f27a38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
+<LI><a href="#[2f27a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26c64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_send
+</UL>
+
+<P><STRONG><a name="[2f26c64]"></a>raw_send</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f26ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
+</UL>
+
+<P><STRONG><a name="[2f26c28]"></a>raw_remove</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+
+<P><STRONG><a name="[2f26bec]"></a>raw_new</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f2790c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+</UL>
+
+<P><STRONG><a name="[2f26bb0]"></a>tcp_keepalive</STRONG> (Thumb, 154 bytes, Stack size 24 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f276b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[2f279fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum_pseudo
+</UL>
+
+<P><STRONG><a name="[2f26b74]"></a>tcp_rexmit_rto</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+</UL>
+
+<P><STRONG><a name="[2f26b38]"></a>tcp_zero_window_probe</STRONG> (Thumb, 174 bytes, Stack size 32 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = tcp_zero_window_probe &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f276b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[2f279fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum_pseudo
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26afc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+</UL>
+
+<P><STRONG><a name="[2f26afc]"></a>tcp_slowtmr</STRONG> (Thumb, 824 bytes, Stack size 48 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = tcp_slowtmr &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f26b38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
+<LI><a href="#[2f27510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+<LI><a href="#[2f27588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
+<LI><a href="#[2f276b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[2f279fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum_pseudo
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPEthernetIntHandler
+<LI><a href="#[2f26a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_tmr
+</UL>
+
+<P><STRONG><a name="[2f26ac0]"></a>tcp_fasttmr</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = tcp_fasttmr &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPEthernetIntHandler
+<LI><a href="#[2f26a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_tmr
+</UL>
+
+<P><STRONG><a name="[2f26a84]"></a>tcp_tmr</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f26ac0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_fasttmr
+<LI><a href="#[2f26afc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+</UL>
+
+<P><STRONG><a name="[2f26a48]"></a>tcp_enqueue</STRONG> (Thumb, 872 bytes, Stack size 64 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = tcp_enqueue &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f27600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[2f2790c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+<LI><a href="#[2f27984]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_cat
+<LI><a href="#[2f27a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+<LI><a href="#[300d994]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2303274]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
+<LI><a href="#[2303490]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
+<LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[2f26958]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
+<LI><a href="#[2f26a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_ctrl
+</UL>
+
+<P><STRONG><a name="[2f26a0c]"></a>tcp_send_ctrl</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f26a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+</UL>
+
+<P><STRONG><a name="[2303490]"></a>tcp_close</STRONG> (Thumb, 228 bytes, Stack size 32 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = tcp_close &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[2f26a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<LI><a href="#[2f2754c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301a50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv_null
+<LI><a href="#[230478c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close_conn
+</UL>
+
+<P><STRONG><a name="[23034cc]"></a>tcp_bind</STRONG> (Thumb, 208 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = tcp_bind &rArr; tcp_new_port
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2301780]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_new_port
+<LI><a href="#[2f260ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_memcpy1_4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23084f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;httpd_init
+</UL>
+
+<P><STRONG><a name="[2303418]"></a>tcp_listen_with_backlog</STRONG> (Thumb, 146 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = tcp_listen_with_backlog &rArr; memp_malloc &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f2790c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23084f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;httpd_init
+</UL>
+
+<P><STRONG><a name="[23032ec]"></a>tcp_recved</STRONG> (Thumb, 92 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = tcp_recved &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230469c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_recv
+</UL>
+
+<P><STRONG><a name="[2f269d0]"></a>tcp_eff_send_mss</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f276f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
+</UL>
+
+<P><STRONG><a name="[2f26994]"></a>tcp_next_iss</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f26958]"></a>tcp_connect</STRONG> (Thumb, 254 bytes, Stack size 40 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2301780]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_new_port
+<LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[2f260ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_memcpy1_4
+<LI><a href="#[2f26a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<LI><a href="#[2f276f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
+</UL>
+
+<P><STRONG><a name="[2f2691c]"></a>tcp_setprio</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f268e0]"></a>tcp_seg_copy</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = tcp_seg_copy &rArr; memp_malloc &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+<LI><a href="#[2f2790c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301a14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+</UL>
+
+<P><STRONG><a name="[2f268a4]"></a>tcp_alloc</STRONG> (Thumb, 246 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = tcp_alloc &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f27510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+<LI><a href="#[2f2790c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+<LI><a href="#[300d73c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23033dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_new
+<LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+</UL>
+
+<P><STRONG><a name="[23033dc]"></a>tcp_new</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = tcp_new &rArr; tcp_alloc &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f268a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_alloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23084f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;httpd_init
+</UL>
+
+<P><STRONG><a name="[2303508]"></a>tcp_arg</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2304660]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_accept
+<LI><a href="#[230478c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close_conn
+</UL>
+
+<P><STRONG><a name="[2303328]"></a>tcp_recv</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2304660]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_accept
+<LI><a href="#[230478c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close_conn
+</UL>
+
+<P><STRONG><a name="[23032b0]"></a>tcp_sent</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[230469c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_recv
+<LI><a href="#[23046d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_sent
+<LI><a href="#[230478c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close_conn
+</UL>
+
+<P><STRONG><a name="[2303454]"></a>tcp_err</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2304660]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_accept
+</UL>
+
+<P><STRONG><a name="[2303544]"></a>tcp_accept</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[23084f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;httpd_init
+</UL>
+
+<P><STRONG><a name="[2303364]"></a>tcp_poll</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2304660]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_accept
+</UL>
+
+<P><STRONG><a name="[2f26868]"></a>tcp_rexmit</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+</UL>
+
+<P><STRONG><a name="[2f2682c]"></a>tcp_input</STRONG> (Thumb, 1248 bytes, Stack size 56 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 312<LI>Call Chain = tcp_input &rArr; tcp_process &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2301744]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_parseopt
+<LI><a href="#[23019d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f268a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_alloc
+<LI><a href="#[2f26a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<LI><a href="#[2f273e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
+<LI><a href="#[2f27510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+<LI><a href="#[2f2754c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
+<LI><a href="#[2f27678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
+<LI><a href="#[2f276f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
+<LI><a href="#[2f279fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum_pseudo
+<LI><a href="#[2f27a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f264a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+</UL>
+
+<P><STRONG><a name="[2303274]"></a>tcp_write</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = tcp_write &rArr; tcp_enqueue &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f26a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2304750]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
+</UL>
+
+<P><STRONG><a name="[2f267f0]"></a>icmp_dest_unreach</STRONG> (Thumb, 150 bytes, Stack size 32 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = icmp_dest_unreach &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23018ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_standard_chksum
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f276b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[300d994]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f264a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+<LI><a href="#[2f267b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
+</UL>
+
+<P><STRONG><a name="[2f267b4]"></a>udp_input</STRONG> (Thumb, 470 bytes, Stack size 48 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = udp_input &rArr; icmp_dest_unreach &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f267f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_dest_unreach
+<LI><a href="#[2f273e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
+<LI><a href="#[2f279fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum_pseudo
+<LI><a href="#[2f27a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f264a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+</UL>
+
+<P><STRONG><a name="[2f26778]"></a>udp_sendto</STRONG> (Thumb, 52 bytes, Stack size 24 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f276f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+</UL>
+
+<P><STRONG><a name="[2f2673c]"></a>udp_send</STRONG> (Thumb, 52 bytes, Stack size 24 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f276f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+</UL>
+
+<P><STRONG><a name="[2f26700]"></a>udp_disconnect</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f266c4]"></a>autoip_stop</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f26688]"></a>autoip_tmr</STRONG> (Thumb, 362 bytes, Stack size 48 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 272<LI>Call Chain = autoip_tmr &rArr; netif_set_ipaddr &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+<LI><a href="#[2f2745c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_raw
+<LI><a href="#[2f274d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_ipaddr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPEthernetIntHandler
+</UL>
+
+<P><STRONG><a name="[2f2664c]"></a>autoip_arp_reply</STRONG> (Thumb, 232 bytes, Stack size 48 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = autoip_arp_reply &rArr; etharp_raw &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f260ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_memcpy1_4
+<LI><a href="#[2f2745c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_raw
+<LI><a href="#[2f27c18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start
+<LI><a href="#[300d5d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f263b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_arp_input
+</UL>
+
+<P><STRONG><a name="[2f26610]"></a>inet_chksum_pbuf</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = inet_chksum_pbuf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f265d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+</UL>
+
+<P><STRONG><a name="[2f265d4]"></a>icmp_input</STRONG> (Thumb, 468 bytes, Stack size 48 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = icmp_input &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23018ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_standard_chksum
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f26610]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum_pbuf
+<LI><a href="#[2f273e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
+<LI><a href="#[2f27498]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[2f27a38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
+<LI><a href="#[2f27a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f264a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+</UL>
+
+<P><STRONG><a name="[2f26598]"></a>inet_aton</STRONG> (Thumb, 266 bytes, Stack size 32 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[2f2655c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_addr
+</UL>
+
+<P><STRONG><a name="[2f2655c]"></a>inet_addr</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f26598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_aton
+</UL>
+
+<P><STRONG><a name="[2f26520]"></a>inet_ntoa</STRONG> (Thumb, 142 bytes, Stack size 28 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f264e4]"></a>inet_chksum_pseudo_partial</STRONG> (Thumb, 248 bytes, Stack size 52 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f264a8]"></a>ip_input</STRONG> (Thumb, 542 bytes, Stack size 40 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 352<LI>Call Chain = ip_input &rArr; tcp_input &rArr; tcp_process &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23018ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_standard_chksum
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f265d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+<LI><a href="#[2f267b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
+<LI><a href="#[2f267f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_dest_unreach
+<LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[2f26d90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_input
+<LI><a href="#[2f273e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
+<LI><a href="#[2f277a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f262c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_input
+<LI><a href="#[2f26340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_input
+</UL>
+
+<P><STRONG><a name="[2f2646c]"></a>etharp_tmr</STRONG> (Thumb, 102 bytes, Stack size 32 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = etharp_tmr &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPEthernetIntHandler
+</UL>
+
+<P><STRONG><a name="[2f26430]"></a>etharp_find_addr</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2301bf4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_entry
+</UL>
+
+<P><STRONG><a name="[2f263f4]"></a>etharp_ip_input</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[230199c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_arp_entry
+</UL>
+
+<P><STRONG><a name="[2f263b8]"></a>etharp_arp_input</STRONG> (Thumb, 360 bytes, Stack size 48 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 224<LI>Call Chain = etharp_arp_input &rArr; autoip_arp_reply &rArr; etharp_raw &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230199c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_arp_entry
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f260ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_memcpy1_4
+<LI><a href="#[2f2664c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_arp_reply
+<LI><a href="#[2f2709c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_arp_reply
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f262c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_input
+<LI><a href="#[2f26340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_input
+</UL>
+
+<P><STRONG><a name="[2f2637c]"></a>etharp_output</STRONG> (Thumb, 220 bytes, Stack size 24 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+<LI><a href="#[2f273e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
+<LI><a href="#[2f27a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
+</UL>
+
+<P><STRONG><a name="[2f26340]"></a>ethernet_input</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[230199c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_arp_entry
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f263b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_arp_input
+<LI><a href="#[2f264a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+<LI><a href="#[2f27a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
+</UL>
+
+<P><STRONG><a name="[2f26304]"></a>perf_init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f262c8]"></a>stellarisif_input</STRONG> (Thumb, 236 bytes, Stack size 32 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 384<LI>Call Chain = stellarisif_input &rArr; ip_input &rArr; tcp_input &rArr; tcp_process &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230199c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_arp_entry
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+<LI><a href="#[2f263b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_arp_input
+<LI><a href="#[2f264a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+<LI><a href="#[2f27a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPEthernetIntHandler
+</UL>
+
+<P><STRONG><a name="[2f2628c]"></a>stellarisif_init</STRONG> (Thumb, 156 bytes, Stack size 16 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[230a63c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
+<LI><a href="#[2f25ddc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
+<LI><a href="#[2f25ecc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EthernetMACAddrGet
+<LI><a href="#[2f25f08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EthernetIntStatus
+<LI><a href="#[2f25f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EthernetIntEnable
+<LI><a href="#[2f25f80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EthernetIntDisable
+<LI><a href="#[2f25fbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EthernetIntClear
+<LI><a href="#[2f25ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EthernetInitExpClk
+<LI><a href="#[2f26034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EthernetEnable
+<LI><a href="#[2f26070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EthernetConfigSet
+</UL>
+
+<P><STRONG><a name="[2f26250]"></a>stellarisif_interrupt</STRONG> (Thumb, 394 bytes, Stack size 40 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = stellarisif_interrupt &rArr; low_level_receive &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23016cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;low_level_receive
+<LI><a href="#[2301708]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dequeue_packet
+<LI><a href="#[2301960]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;low_level_transmit
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+<LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPEthernetIntHandler
+</UL>
+
+<P><STRONG><a name="[23084b8]"></a>lwIPInit</STRONG> (Thumb, 174 bytes, Stack size 48 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 296<LI>Call Chain = lwIPInit &rArr; netif_add &rArr; netif_set_ipaddr &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230a600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[2f25e90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EthernetMACAddrSet
+<LI><a href="#[2f26ef8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_add
+<LI><a href="#[2f26fe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_init
+<LI><a href="#[2f27024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_init
+<LI><a href="#[2f27114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_start
+<LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+<LI><a href="#[2f27c18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230865c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnetInit
+</UL>
+
+<P><STRONG><a name="[2308440]"></a>lwIPTimer</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2308620]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnetTick
+</UL>
+
+<P><STRONG><a name="[2f26214]"></a>lwIPEthernetIntHandler</STRONG> (Thumb, 152 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 400<LI>Call Chain = lwIPEthernetIntHandler &rArr; stellarisif_input &rArr; ip_input &rArr; tcp_input &rArr; tcp_process &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f25f08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EthernetIntStatus
+<LI><a href="#[2f25fbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EthernetIntClear
+<LI><a href="#[2f26250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_interrupt
+<LI><a href="#[2f262c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_input
+<LI><a href="#[2f2646c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_tmr
+<LI><a href="#[2f26688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_tmr
+<LI><a href="#[2f26ac0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_fasttmr
+<LI><a href="#[2f26afc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+<LI><a href="#[2f2727c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_fine_tmr
+<LI><a href="#[2f27330]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_coarse_tmr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[230847c]"></a>lwIPLocalIPAddrGet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2308698]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnetGetIPAddr
+</UL>
+
+<P><STRONG><a name="[2f261d8]"></a>lwIPLocalNetMaskGet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f2619c]"></a>lwIPLocalGWAddrGet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+
+<P><STRONG><a name="[2f26160]"></a>lwIPLocalMACGet</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f25ecc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EthernetMACAddrGet
+</UL>
+
+<P><STRONG><a name="[2f26124]"></a>lwIPNetworkConfigChange</STRONG> (Thumb, 284 bytes, Stack size 32 bytes, lwiplib.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f27114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_start
+<LI><a href="#[2f27204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_stop
+<LI><a href="#[2f274d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_ipaddr
+<LI><a href="#[2f27c18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start
+</UL>
+
+<P><STRONG><a name="[2f25260]"></a>SysTickIntHandler</STRONG> (Thumb, 216 bytes, Stack size 24 bytes, qs_ek-lm3s8962.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = SysTickIntHandler &rArr; AudioHandler &rArr; AudioMute
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2308620]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnetTick
+<LI><a href="#[230bd70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioHandler
+<LI><a href="#[2f25044]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RandomAddEntropy
+<LI><a href="#[2f251e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinRead
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[2f25224]"></a>main</STRONG> (Thumb, 392 bytes, Stack size 16 bytes, qs_ek-lm3s8962.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 344<LI>Call Chain = main &rArr; EnetInit &rArr; lwIPInit &rArr; netif_add &rArr; netif_set_ipaddr &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2305218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+<LI><a href="#[2305308]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayGame
+<LI><a href="#[2305344]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainScreen
+<LI><a href="#[230856c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[230865c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnetInit
+<LI><a href="#[230a600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[230a90c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+<LI><a href="#[230bcf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOn
+<LI><a href="#[2f24e28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTEnable
+<LI><a href="#[2f24e64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTConfigSetExpClk
+<LI><a href="#[2f24ea0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickPeriodSet
+<LI><a href="#[2f24edc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickIntEnable
+<LI><a href="#[2f24f18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickEnable
+<LI><a href="#[2f24f54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPWMClockSet
+<LI><a href="#[2f24f90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlLDOSet
+<LI><a href="#[2f24fcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
+<LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+<LI><a href="#[2f25080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Init
+<LI><a href="#[2f250bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+<LI><a href="#[2f250f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
+<LI><a href="#[2f25134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypePWM
+<LI><a href="#[2f25170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[2f251ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[2f25878]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayLogo
+<LI><a href="#[2f25ddc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry6.o(.ARM.Collect$$$$00000006)
+</UL>
+<P><STRONG><a name="[2f25044]"></a>RandomAddEntropy</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, random.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2f25260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickIntHandler
+</UL>
+
+<P><STRONG><a name="[2305254]"></a>RandomSeed</STRONG> (Thumb, 376 bytes, Stack size 24 bytes, random.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = RandomSeed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2305bf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GenerateMaze
+</UL>
+
+<P><STRONG><a name="[2305290]"></a>RandomNumber</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, random.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2305308]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayGame
+<LI><a href="#[2305bf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GenerateMaze
+<LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+</UL>
+
+<P><STRONG><a name="[2f240cc]"></a>RIT128x96x4Clear</STRONG> (Thumb, 108 bytes, Stack size 32 bytes, rit128x96x4.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = RIT128x96x4Clear &rArr; RITWriteCommand
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f23e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataPut
+<LI><a href="#[2f23eec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataGet
+<LI><a href="#[2f24414]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RITWriteCommand
+<LI><a href="#[2f250bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+<LI><a href="#[2f25080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Init
+</UL>
+
+<P><STRONG><a name="[2f24090]"></a>RIT128x96x4StringDraw</STRONG> (Thumb, 246 bytes, Stack size 40 bytes, rit128x96x4.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2f23e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataPut
+<LI><a href="#[2f23eec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataGet
+<LI><a href="#[2f24414]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RITWriteCommand
+<LI><a href="#[2f250bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+</UL>
+
+<P><STRONG><a name="[23052cc]"></a>RIT128x96x4ImageDraw</STRONG> (Thumb, 146 bytes, Stack size 40 bytes, rit128x96x4.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = RIT128x96x4ImageDraw &rArr; RITWriteCommand
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f23e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataPut
+<LI><a href="#[2f23eec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataGet
+<LI><a href="#[2f24414]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RITWriteCommand
+<LI><a href="#[2f250bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2305308]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayGame
+<LI><a href="#[2305344]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainScreen
+<LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+<LI><a href="#[2f25878]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayLogo
+</UL>
+
+<P><STRONG><a name="[2f24054]"></a>RIT128x96x4Enable</STRONG> (Thumb, 88 bytes, Stack size 24 bytes, rit128x96x4.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[230856c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[2f23dfc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIEnable
+<LI><a href="#[2f23e38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDisable
+<LI><a href="#[2f23eb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataGetNonBlocking
+<LI><a href="#[2f23f28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIConfigSetExpClk
+<LI><a href="#[2f23f64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeSSI
+<LI><a href="#[2f25ddc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
+</UL>
+
+<P><STRONG><a name="[2f24018]"></a>RIT128x96x4Disable</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, rit128x96x4.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[230856c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[2f23e38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDisable
+<LI><a href="#[2f23eb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataGetNonBlocking
+<LI><a href="#[2f250bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+<LI><a href="#[2f25170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+</UL>
+
+<P><STRONG><a name="[2f25080]"></a>RIT128x96x4Init</STRONG> (Thumb, 252 bytes, Stack size 40 bytes, rit128x96x4.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = RIT128x96x4Init &rArr; RIT128x96x4Clear &rArr; RITWriteCommand
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230856c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[230a600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[2f23dfc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIEnable
+<LI><a href="#[2f23e38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDisable
+<LI><a href="#[2f23e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataPut
+<LI><a href="#[2f23eb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataGetNonBlocking
+<LI><a href="#[2f23eec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataGet
+<LI><a href="#[2f23f28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIConfigSetExpClk
+<LI><a href="#[2f23f64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeSSI
+<LI><a href="#[2f240cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Clear
+<LI><a href="#[2f250bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+<LI><a href="#[2f25170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[2f25ddc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f23fdc]"></a>RIT128x96x4DisplayOn</STRONG> (Thumb, 86 bytes, Stack size 32 bytes, rit128x96x4.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = RIT128x96x4DisplayOn
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f23e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataPut
+<LI><a href="#[2f23eec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataGet
+<LI><a href="#[2f250bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+</UL>
+
+<P><STRONG><a name="[2f23fa0]"></a>RIT128x96x4DisplayOff</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, rit128x96x4.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = RIT128x96x4DisplayOff &rArr; RITWriteCommand
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f24414]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RITWriteCommand
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+</UL>
+
+<P><STRONG><a name="[2f25008]"></a>ScreenSaver</STRONG> (Thumb, 1150 bytes, Stack size 56 bytes, screen_saver.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = ScreenSaver &rArr; RIT128x96x4ImageDraw &rArr; RITWriteCommand
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2305290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RandomNumber
+<LI><a href="#[23052cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4ImageDraw
+<LI><a href="#[230a9c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANUpdateTargetLED
+<LI><a href="#[230bb18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputState
+<LI><a href="#[230bb90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenPeriodSet
+<LI><a href="#[230bbcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenEnable
+<LI><a href="#[230bc08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenDisable
+<LI><a href="#[230bc44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenConfigure
+<LI><a href="#[230bcf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOn
+<LI><a href="#[230bd34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOff
+<LI><a href="#[2f237e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMPulseWidthSet
+<LI><a href="#[2f23fa0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4DisplayOff
+<LI><a href="#[2f23fdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4DisplayOn
+<LI><a href="#[2f240cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Clear
+<LI><a href="#[2f250bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+<LI><a href="#[2f25134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypePWM
+<LI><a href="#[2f25170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[300d994]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2306424]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_read
+<LI><a href="#[2f267f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_dest_unreach
+<LI><a href="#[2f26a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<LI><a href="#[2f271c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy_partial
+<LI><a href="#[2f27498]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy
+</UL>
+
+<P><STRONG><a name="[300d958]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[300d91c]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[300d82c]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[300d6c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<LI><a href="#[300d778]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+
+<P><STRONG><a name="[300d7f0]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[300d7b4]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[300d778]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[300d82c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26f70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_calloc
+</UL>
+
+<P><STRONG><a name="[300d73c]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2f268a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_alloc
+<LI><a href="#[2f270d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<LI><a href="#[2f27114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_start
+</UL>
+
+<P><STRONG><a name="[300d700]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[300d6c4]"></a>_memset$wrapper</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[300d82c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[300d5d4]"></a>memcmp</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, memcmp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = memcmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f2664c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_arp_reply
+</UL>
+
+<P><STRONG><a name="[300d4e4]"></a>strncmp</STRONG> (Thumb, 30 bytes, Stack size 12 bytes, strncmp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = strncmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230469c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_recv
+<LI><a href="#[230649c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_open
+</UL>
+
+<P><STRONG><a name="[300cfbc]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[300dc64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[300dca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[300cf80]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[300ca94]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[300ca58]"></a>__decompress1</STRONG> (Thumb, 88 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[230a8d0]"></a>CANBitTimingSet</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, can.o(i.CANBitTimingSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CANBitTimingSet &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f21174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230a90c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+</UL>
+
+<P><STRONG><a name="[230a894]"></a>CANEnable</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, can.o(i.CANEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = CANEnable &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f21174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230a90c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+</UL>
+
+<P><STRONG><a name="[230a858]"></a>CANInit</STRONG> (Thumb, 150 bytes, Stack size 16 bytes, can.o(i.CANInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CANInit &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f21174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230a90c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+</UL>
+
+<P><STRONG><a name="[230a81c]"></a>CANIntClear</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, can.o(i.CANIntClear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CANIntClear &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f21174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230a948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
+</UL>
+
+<P><STRONG><a name="[230a7e0]"></a>CANIntEnable</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, can.o(i.CANIntEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CANIntEnable &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f21174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230a90c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+</UL>
+
+<P><STRONG><a name="[230a7a4]"></a>CANIntStatus</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, can.o(i.CANIntStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CANIntStatus &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f21174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230a948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
+</UL>
+
+<P><STRONG><a name="[230a768]"></a>CANMessageClear</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, can.o(i.CANMessageClear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CANMessageClear &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f21174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230a948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
+</UL>
+
+<P><STRONG><a name="[230a72c]"></a>CANMessageGet</STRONG> (Thumb, 440 bytes, Stack size 32 bytes, can.o(i.CANMessageGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = CANMessageGet &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f21174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230a948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
+<LI><a href="#[230a9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANGetTargetVersion
+<LI><a href="#[230aa38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMain
+</UL>
+
+<P><STRONG><a name="[230a6f0]"></a>CANMessageSet</STRONG> (Thumb, 496 bytes, Stack size 40 bytes, can.o(i.CANMessageSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = CANMessageSet &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f21174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230a984]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigureNetwork
+<LI><a href="#[230a9c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANUpdateTargetLED
+<LI><a href="#[230a9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANGetTargetVersion
+<LI><a href="#[230aa38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMain
+</UL>
+
+<P><STRONG><a name="[230a6b4]"></a>CANStatusGet</STRONG> (Thumb, 116 bytes, Stack size 16 bytes, can.o(i.CANStatusGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CANStatusGet &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f21174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230a948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
+</UL>
+
+<P><STRONG><a name="[2f26070]"></a>EthernetConfigSet</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, ethernet.o(i.EthernetConfigSet), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[2f2628c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_init
+</UL>
+
+<P><STRONG><a name="[2f26034]"></a>EthernetEnable</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, ethernet.o(i.EthernetEnable), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[2f2628c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_init
+</UL>
+
+<P><STRONG><a name="[2f25ff8]"></a>EthernetInitExpClk</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, ethernet.o(i.EthernetInitExpClk), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[2f2628c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_init
+</UL>
+
+<P><STRONG><a name="[2f25fbc]"></a>EthernetIntClear</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, ethernet.o(i.EthernetIntClear))
+<BR><BR>[Called By]<UL><LI><a href="#[2f26214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPEthernetIntHandler
+<LI><a href="#[2f2628c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_init
+</UL>
+
+<P><STRONG><a name="[2f25f80]"></a>EthernetIntDisable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, ethernet.o(i.EthernetIntDisable), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[2f2628c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_init
+</UL>
+
+<P><STRONG><a name="[2f25f44]"></a>EthernetIntEnable</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, ethernet.o(i.EthernetIntEnable), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[2f2628c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_init
+</UL>
+
+<P><STRONG><a name="[2f25f08]"></a>EthernetIntStatus</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, ethernet.o(i.EthernetIntStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[2f26214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPEthernetIntHandler
+<LI><a href="#[2f2628c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_init
+</UL>
+
+<P><STRONG><a name="[2f25ecc]"></a>EthernetMACAddrGet</STRONG> (Thumb, 50 bytes, Stack size 4 bytes, ethernet.o(i.EthernetMACAddrGet), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[2f26160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPLocalMACGet
+<LI><a href="#[2f2628c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_init
+</UL>
+
+<P><STRONG><a name="[2f25e90]"></a>EthernetMACAddrSet</STRONG> (Thumb, 54 bytes, Stack size 4 bytes, ethernet.o(i.EthernetMACAddrSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = EthernetMACAddrSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23084b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPInit
+</UL>
+
+<P><STRONG><a name="[23085e4]"></a>FlashUserGet</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, flash.o(i.FlashUserGet))
+<BR><BR>[Called By]<UL><LI><a href="#[230865c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnetInit
+</UL>
+
+<P><STRONG><a name="[23085a8]"></a>GPIODirModeSet</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, gpio.o(i.GPIODirModeSet))
+<BR><BR>[Called By]<UL><LI><a href="#[230865c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnetInit
+<LI><a href="#[230a678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeCAN
+<LI><a href="#[2f23f64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeSSI
+<LI><a href="#[2f250f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
+<LI><a href="#[2f25134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypePWM
+<LI><a href="#[2f25170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[2f251ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+</UL>
+
+<P><STRONG><a name="[230856c]"></a>GPIOPadConfigSet</STRONG> (Thumb, 176 bytes, Stack size 0 bytes, gpio.o(i.GPIOPadConfigSet))
+<BR><BR>[Called By]<UL><LI><a href="#[230865c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnetInit
+<LI><a href="#[230a678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeCAN
+<LI><a href="#[2f23f64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeSSI
+<LI><a href="#[2f24018]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Disable
+<LI><a href="#[2f24054]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Enable
+<LI><a href="#[2f25080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Init
+<LI><a href="#[2f250f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
+<LI><a href="#[2f25134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypePWM
+<LI><a href="#[2f25170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[2f251ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f251e8]"></a>GPIOPinRead</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio.o(i.GPIOPinRead))
+<BR><BR>[Called By]<UL><LI><a href="#[2f25260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickIntHandler
+</UL>
+
+<P><STRONG><a name="[230a678]"></a>GPIOPinTypeCAN</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeCAN))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypeCAN
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230856c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[23085a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230a90c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+</UL>
+
+<P><STRONG><a name="[2f251ac]"></a>GPIOPinTypeGPIOInput</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeGPIOInput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypeGPIOInput
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230856c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[23085a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f25170]"></a>GPIOPinTypeGPIOOutput</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeGPIOOutput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypeGPIOOutput
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230856c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[23085a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f24018]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Disable
+<LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+<LI><a href="#[2f25080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Init
+<LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f25134]"></a>GPIOPinTypePWM</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypePWM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypePWM
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230856c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[23085a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+<LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f23f64]"></a>GPIOPinTypeSSI</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeSSI))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypeSSI
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230856c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[23085a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f24054]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Enable
+<LI><a href="#[2f25080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Init
+</UL>
+
+<P><STRONG><a name="[2f250f8]"></a>GPIOPinTypeUART</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeUART))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypeUART
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230856c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[23085a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f250bc]"></a>GPIOPinWrite</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio.o(i.GPIOPinWrite))
+<BR><BR>[Called By]<UL><LI><a href="#[23052cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4ImageDraw
+<LI><a href="#[2f23fdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4DisplayOn
+<LI><a href="#[2f24018]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Disable
+<LI><a href="#[2f24090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4StringDraw
+<LI><a href="#[2f240cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Clear
+<LI><a href="#[2f24414]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RITWriteCommand
+<LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+<LI><a href="#[2f25080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Init
+<LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f205f8]"></a>IntDisable</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, interrupt.o(i.IntDisable))
+<BR><BR>[Called By]<UL><LI><a href="#[2f21174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+</UL>
+
+<P><STRONG><a name="[230a63c]"></a>IntEnable</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, interrupt.o(i.IntEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[230a90c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+<LI><a href="#[2f21174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+<LI><a href="#[2f2628c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_init
+</UL>
+
+<P><STRONG><a name="[2f25e54]"></a>IntMasterDisable</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, interrupt.o(i.IntMasterDisable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = IntMasterDisable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f9455c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUcpsid
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301708]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dequeue_packet
+<LI><a href="#[2301924]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;low_level_output
+<LI><a href="#[2301a14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f26250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_interrupt
+<LI><a href="#[2f262c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_input
+<LI><a href="#[2f268e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_copy
+<LI><a href="#[2f26ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
+<LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+<LI><a href="#[2f2790c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+<LI><a href="#[2f27948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_chain
+<LI><a href="#[2f279c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_ref
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+<LI><a href="#[2f27ba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_protect
+</UL>
+
+<P><STRONG><a name="[2f25e18]"></a>IntMasterEnable</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, interrupt.o(i.IntMasterEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f94520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUcpsie
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301708]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dequeue_packet
+<LI><a href="#[2301924]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;low_level_output
+<LI><a href="#[2301a14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f26250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_interrupt
+<LI><a href="#[2f262c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_input
+<LI><a href="#[2f268e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_copy
+<LI><a href="#[2f26ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
+<LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+<LI><a href="#[2f2790c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+<LI><a href="#[2f27948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_chain
+<LI><a href="#[2f279c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_ref
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+<LI><a href="#[2f27bdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_unprotect
+</UL>
+
+<P><STRONG><a name="[230bc44]"></a>PWMGenConfigure</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, pwm.o(i.PWMGenConfigure))
+<BR><BR>[Called By]<UL><LI><a href="#[230bcf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOn
+<LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+</UL>
+
+<P><STRONG><a name="[230bc08]"></a>PWMGenDisable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, pwm.o(i.PWMGenDisable))
+<BR><BR>[Called By]<UL><LI><a href="#[230bcf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOn
+<LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+</UL>
+
+<P><STRONG><a name="[230bbcc]"></a>PWMGenEnable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, pwm.o(i.PWMGenEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[230bcf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOn
+<LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+</UL>
+
+<P><STRONG><a name="[230bb90]"></a>PWMGenPeriodSet</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, pwm.o(i.PWMGenPeriodSet))
+<BR><BR>[Called By]<UL><LI><a href="#[230bd70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioHandler
+<LI><a href="#[230c5e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
+<LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+</UL>
+
+<P><STRONG><a name="[230bb54]"></a>PWMOutputInvert</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, pwm.o(i.PWMOutputInvert))
+<BR><BR>[Called By]<UL><LI><a href="#[230be60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolume
+<LI><a href="#[230c5e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
+</UL>
+
+<P><STRONG><a name="[230bb18]"></a>PWMOutputState</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, pwm.o(i.PWMOutputState))
+<BR><BR>[Called By]<UL><LI><a href="#[230bcf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOn
+<LI><a href="#[230be60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolume
+<LI><a href="#[230c5e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
+<LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+</UL>
+
+<P><STRONG><a name="[2f237e4]"></a>PWMPulseWidthSet</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, pwm.o(i.PWMPulseWidthSet))
+<BR><BR>[Called By]<UL><LI><a href="#[2f25008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScreenSaver
+</UL>
+
+<P><STRONG><a name="[230badc]"></a>PWMSyncUpdate</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pwm.o(i.PWMSyncUpdate))
+<BR><BR>[Called By]<UL><LI><a href="#[230bd70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioHandler
+<LI><a href="#[230be60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolume
+<LI><a href="#[230c5e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
+</UL>
+
+<P><STRONG><a name="[2f23f28]"></a>SSIConfigSetExpClk</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, ssi.o(i.SSIConfigSetExpClk))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SSIConfigSetExpClk
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f24054]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Enable
+<LI><a href="#[2f25080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Init
+</UL>
+
+<P><STRONG><a name="[2f23eec]"></a>SSIDataGet</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, ssi.o(i.SSIDataGet))
+<BR><BR>[Calls]<UL><LI><a href="#[2f23eec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23052cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4ImageDraw
+<LI><a href="#[2f23eec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataGet
+<LI><a href="#[2f23fdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4DisplayOn
+<LI><a href="#[2f24090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4StringDraw
+<LI><a href="#[2f240cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Clear
+<LI><a href="#[2f24414]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RITWriteCommand
+<LI><a href="#[2f25080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Init
+</UL>
+
+<P><STRONG><a name="[2f23eb0]"></a>SSIDataGetNonBlocking</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, ssi.o(i.SSIDataGetNonBlocking))
+<BR><BR>[Called By]<UL><LI><a href="#[2f24018]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Disable
+<LI><a href="#[2f24054]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Enable
+<LI><a href="#[2f25080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Init
+</UL>
+
+<P><STRONG><a name="[2f23e74]"></a>SSIDataPut</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, ssi.o(i.SSIDataPut))
+<BR><BR>[Calls]<UL><LI><a href="#[2f23e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataPut
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23052cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4ImageDraw
+<LI><a href="#[2f23e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataPut
+<LI><a href="#[2f23fdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4DisplayOn
+<LI><a href="#[2f24090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4StringDraw
+<LI><a href="#[2f240cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Clear
+<LI><a href="#[2f24414]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RITWriteCommand
+<LI><a href="#[2f25080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Init
+</UL>
+
+<P><STRONG><a name="[2f23e38]"></a>SSIDisable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, ssi.o(i.SSIDisable))
+<BR><BR>[Called By]<UL><LI><a href="#[2f24018]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Disable
+<LI><a href="#[2f24054]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Enable
+<LI><a href="#[2f25080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Init
+</UL>
+
+<P><STRONG><a name="[2f23dfc]"></a>SSIEnable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, ssi.o(i.SSIEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[2f24054]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Enable
+<LI><a href="#[2f25080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Init
+</UL>
+
+<P><STRONG><a name="[2f25ddc]"></a>SysCtlClockGet</STRONG> (Thumb, 294 bytes, Stack size 8 bytes, sysctl.o(i.SysCtlClockGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SysCtlClockGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f24054]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Enable
+<LI><a href="#[2f25080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Init
+<LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[2f2628c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_init
+</UL>
+
+<P><STRONG><a name="[2f24fcc]"></a>SysCtlClockSet</STRONG> (Thumb, 290 bytes, Stack size 24 bytes, sysctl.o(i.SysCtlClockSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SysCtlClockSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f8b358]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f24f90]"></a>SysCtlLDOSet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sysctl.o(i.SysCtlLDOSet))
+<BR><BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f24f54]"></a>SysCtlPWMClockSet</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, sysctl.o(i.SysCtlPWMClockSet))
+<BR><BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[230a600]"></a>SysCtlPeripheralEnable</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, sysctl.o(i.SysCtlPeripheralEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[23084b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwIPInit
+<LI><a href="#[230865c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnetInit
+<LI><a href="#[230a90c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+<LI><a href="#[2f25080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Init
+<LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2308530]"></a>SysCtlPeripheralReset</STRONG> (Thumb, 50 bytes, Stack size 4 bytes, sysctl.o(i.SysCtlPeripheralReset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = SysCtlPeripheralReset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230865c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnetInit
+</UL>
+
+<P><STRONG><a name="[2f24f18]"></a>SysTickEnable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, systick.o(i.SysTickEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f24edc]"></a>SysTickIntEnable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, systick.o(i.SysTickIntEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f24ea0]"></a>SysTickPeriodSet</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, systick.o(i.SysTickPeriodSet))
+<BR><BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2305218]"></a>UARTCharPut</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, uart.o(i.UARTCharPut))
+<BR><BR>[Calls]<UL><LI><a href="#[2305218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2305218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+<LI><a href="#[2305308]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayGame
+<LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f24e64]"></a>UARTConfigSetExpClk</STRONG> (Thumb, 84 bytes, Stack size 0 bytes, uart.o(i.UARTConfigSetExpClk))
+<BR><BR>[Calls]<UL><LI><a href="#[2f24e64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTConfigSetExpClk
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f24e64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTConfigSetExpClk
+<LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f24e28]"></a>UARTEnable</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, uart.o(i.UARTEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f260e8]"></a>__ARM_common_memclr2_10</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, lwiplib.o(i.__ARM_common_memclr2_10))
+<BR><BR>[Called By]<UL><LI><a href="#[2f27c18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start
+</UL>
+
+<P><STRONG><a name="[2f260ac]"></a>__ARM_common_memcpy1_4</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, lwiplib.o(i.__ARM_common_memcpy1_4))
+<BR><BR>[Called By]<UL><LI><a href="#[23034cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_bind
+<LI><a href="#[2f263b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_arp_input
+<LI><a href="#[2f2664c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_arp_reply
+<LI><a href="#[2f26958]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
+<LI><a href="#[2f2745c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_raw
+</UL>
+
+<P><STRONG><a name="[300cbfc]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[300cbc0]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[300cb84]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[230c5e0]"></a>AudioMute</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, audio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = AudioMute
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230badc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMSyncUpdate
+<LI><a href="#[230bb18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputState
+<LI><a href="#[230bb54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputInvert
+<LI><a href="#[230bb90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenPeriodSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230bcf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOn
+<LI><a href="#[230bd34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOff
+<LI><a href="#[230bd70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioHandler
+</UL>
+
+<P><STRONG><a name="[2305bf0]"></a>GenerateMaze</STRONG> (Thumb, 680 bytes, Stack size 40 bytes, game.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = GenerateMaze &rArr; RandomSeed
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2305254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RandomSeed
+<LI><a href="#[2305290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RandomNumber
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2305308]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayGame
+<LI><a href="#[2305344]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainScreen
+</UL>
+
+<P><STRONG><a name="[2305bb4]"></a>DrawMaze</STRONG> (Thumb, 246 bytes, Stack size 52 bytes, game.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = DrawMaze
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2305308]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayGame
+<LI><a href="#[2305344]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainScreen
+</UL>
+
+<P><STRONG><a name="[2305b78]"></a>DrawMonsters</STRONG> (Thumb, 322 bytes, Stack size 44 bytes, game.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = DrawMonsters
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2305308]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayGame
+</UL>
+
+<P><STRONG><a name="[2305b3c]"></a>DrawBullets</STRONG> (Thumb, 1288 bytes, Stack size 40 bytes, game.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = DrawBullets &rArr; CANUpdateTargetLED &rArr; CANMessageSet &rArr; CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230a9c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANUpdateTargetLED
+<LI><a href="#[230bc80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioPlaySound
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2305308]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayGame
+</UL>
+
+<P><STRONG><a name="[2305b00]"></a>DrawPlayer</STRONG> (Thumb, 298 bytes, Stack size 20 bytes, game.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = DrawPlayer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2305308]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayGame
+</UL>
+
+<P><STRONG><a name="[2305ac4]"></a>DrawNumber</STRONG> (Thumb, 150 bytes, Stack size 32 bytes, game.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DrawNumber
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2305308]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayGame
+<LI><a href="#[2305344]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainScreen
+</UL>
+
+<P><STRONG><a name="[23047c8]"></a>conn_err</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, httpd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = conn_err &rArr; mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2306280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[2306460]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_close
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> httpd.o(.text)
+</UL>
+<P><STRONG><a name="[230478c]"></a>close_conn</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, httpd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = close_conn &rArr; tcp_close &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23032b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_sent
+<LI><a href="#[2303328]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv
+<LI><a href="#[2303490]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
+<LI><a href="#[2303508]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_arg
+<LI><a href="#[2306280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[2306460]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_close
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230469c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_recv
+<LI><a href="#[2304750]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
+</UL>
+
+<P><STRONG><a name="[2304750]"></a>send_data</STRONG> (Thumb, 190 bytes, Stack size 24 bytes, httpd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 224<LI>Call Chain = send_data &rArr; close_conn &rArr; tcp_close &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2303274]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
+<LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[230478c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close_conn
+<LI><a href="#[2306244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[2306424]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_read
+<LI><a href="#[2306460]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_close
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230469c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_recv
+<LI><a href="#[23046d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_sent
+<LI><a href="#[2304714]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_poll
+</UL>
+
+<P><STRONG><a name="[2304714]"></a>http_poll</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, httpd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = http_poll &rArr; send_data &rArr; close_conn &rArr; tcp_close &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2303580]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abort
+<LI><a href="#[2304750]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> httpd.o(.text)
+</UL>
+<P><STRONG><a name="[23046d8]"></a>http_sent</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, httpd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = http_sent &rArr; send_data &rArr; close_conn &rArr; tcp_close &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23032b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_sent
+<LI><a href="#[2304750]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> httpd.o(.text)
+</UL>
+<P><STRONG><a name="[230469c]"></a>http_recv</STRONG> (Thumb, 310 bytes, Stack size 32 bytes, httpd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = http_recv &rArr; send_data &rArr; close_conn &rArr; tcp_close &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23032b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_sent
+<LI><a href="#[23032ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recved
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2304750]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
+<LI><a href="#[230478c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close_conn
+<LI><a href="#[230649c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_open
+<LI><a href="#[300d4e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> httpd.o(.text)
+</UL>
+<P><STRONG><a name="[2304660]"></a>http_accept</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, httpd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = http_accept &rArr; mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2303328]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv
+<LI><a href="#[2303364]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_poll
+<LI><a href="#[2303454]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_err
+<LI><a href="#[2303508]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_arg
+<LI><a href="#[2306244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> httpd.o(.text)
+</UL>
+<P><STRONG><a name="[2301ca8]"></a>dhcp_option_trailer</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2301b40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_rebind
+<LI><a href="#[2301bb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_select
+<LI><a href="#[2301c30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_discover
+<LI><a href="#[2f2709c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_arp_reply
+<LI><a href="#[2f270d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<LI><a href="#[2f272f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
+<LI><a href="#[2f2736c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_renew
+</UL>
+
+<P><STRONG><a name="[2301c6c]"></a>dhcp_create_request</STRONG> (Thumb, 224 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = dhcp_create_request &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301b40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_rebind
+<LI><a href="#[2301bb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_select
+<LI><a href="#[2301c30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_discover
+<LI><a href="#[2f2709c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_arp_reply
+<LI><a href="#[2f270d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<LI><a href="#[2f272f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
+<LI><a href="#[2f2736c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_renew
+</UL>
+
+<P><STRONG><a name="[2301c30]"></a>dhcp_discover</STRONG> (Thumb, 294 bytes, Stack size 32 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = dhcp_discover &rArr; udp_sendto_if &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2301834]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_short
+<LI><a href="#[2301870]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option
+<LI><a href="#[23018e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_delete_request
+<LI><a href="#[2301c6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_create_request
+<LI><a href="#[2301ca8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_trailer
+<LI><a href="#[2f277a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+<LI><a href="#[2f2781c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_connect
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+<LI><a href="#[2f27c18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301ac8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_recv
+<LI><a href="#[2f27114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_start
+<LI><a href="#[2f2727c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_fine_tmr
+</UL>
+
+<P><STRONG><a name="[2301bf4]"></a>find_entry</STRONG> (Thumb, 402 bytes, Stack size 48 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = find_entry &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230199c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_arp_entry
+<LI><a href="#[2f26430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_find_addr
+<LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+</UL>
+
+<P><STRONG><a name="[2301bb8]"></a>dhcp_select</STRONG> (Thumb, 280 bytes, Stack size 32 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = dhcp_select &rArr; udp_sendto_if &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23017f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_long
+<LI><a href="#[2301834]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_short
+<LI><a href="#[2301870]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option
+<LI><a href="#[23018e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_delete_request
+<LI><a href="#[2301c6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_create_request
+<LI><a href="#[2301ca8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_trailer
+<LI><a href="#[2f277a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+<LI><a href="#[2f2781c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_connect
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301ac8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_recv
+<LI><a href="#[2f2727c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_fine_tmr
+</UL>
+
+<P><STRONG><a name="[2301b7c]"></a>dhcp_get_option_ptr</STRONG> (Thumb, 164 bytes, Stack size 8 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = dhcp_get_option_ptr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301ac8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_recv
+</UL>
+
+<P><STRONG><a name="[2301b40]"></a>dhcp_rebind</STRONG> (Thumb, 166 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = dhcp_rebind &rArr; udp_sendto_if &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2301834]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_short
+<LI><a href="#[2301870]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option
+<LI><a href="#[23018e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_delete_request
+<LI><a href="#[2301c6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_create_request
+<LI><a href="#[2301ca8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_option_trailer
+<LI><a href="#[2f277a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+<LI><a href="#[2f2781c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_connect
+<LI><a href="#[2f27858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f2727c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_fine_tmr
+<LI><a href="#[2f27330]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_coarse_tmr
+</UL>
+
+<P><STRONG><a name="[2301b04]"></a>dhcp_bind</STRONG> (Thumb, 242 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = dhcp_bind &rArr; netif_set_ipaddr &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+<LI><a href="#[2f274d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_ipaddr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301ac8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_recv
+<LI><a href="#[2f2727c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_fine_tmr
+</UL>
+
+<P><STRONG><a name="[2301ac8]"></a>dhcp_recv</STRONG> (Thumb, 652 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 272<LI>Call Chain = dhcp_recv &rArr; dhcp_bind &rArr; netif_set_ipaddr &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23017bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_get_option_long
+<LI><a href="#[2301b04]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_bind
+<LI><a href="#[2301b7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_get_option_ptr
+<LI><a href="#[2301bb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_select
+<LI><a href="#[2301c30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_discover
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2306244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[2306280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[2f271c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy_partial
+<LI><a href="#[2f273a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+<LI><a href="#[2f274d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_ipaddr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lwiplib.o(.text)
+</UL>
+<P><STRONG><a name="[2301a8c]"></a>tcp_accept_null</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> lwiplib.o(.text)
+</UL>
+<P><STRONG><a name="[2301a50]"></a>tcp_recv_null</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = tcp_recv_null &rArr; tcp_close &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2303490]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lwiplib.o(.text)
+</UL>
+<P><STRONG><a name="[2301a14]"></a>tcp_receive</STRONG> (Thumb, 2002 bytes, Stack size 40 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = tcp_receive &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+<LI><a href="#[2f268e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_copy
+<LI><a href="#[2f277a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+<LI><a href="#[2f2790c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+<LI><a href="#[2f27a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23019d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+</UL>
+
+<P><STRONG><a name="[23019d8]"></a>tcp_process</STRONG> (Thumb, 818 bytes, Stack size 48 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = tcp_process &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; ip_output &rArr; ip_output_if
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2301744]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_parseopt
+<LI><a href="#[2301a14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[23033a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[2f27510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+<LI><a href="#[2f27588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
+<LI><a href="#[2f2763c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
+<LI><a href="#[2f27678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
+<LI><a href="#[2f276f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+</UL>
+
+<P><STRONG><a name="[230199c]"></a>update_arp_entry</STRONG> (Thumb, 232 bytes, Stack size 32 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = update_arp_entry &rArr; find_entry &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2301bf4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_entry
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f273e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
+<LI><a href="#[2f27b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f262c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_input
+<LI><a href="#[2f26340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_input
+<LI><a href="#[2f263b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_arp_input
+<LI><a href="#[2f263f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_ip_input
+</UL>
+
+<P><STRONG><a name="[2301960]"></a>low_level_transmit</STRONG> (Thumb, 192 bytes, Stack size 32 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = low_level_transmit &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301924]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;low_level_output
+<LI><a href="#[2f26250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_interrupt
+</UL>
+
+<P><STRONG><a name="[2301924]"></a>low_level_output</STRONG> (Thumb, 212 bytes, Stack size 24 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = low_level_output &rArr; low_level_transmit &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2301960]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;low_level_transmit
+<LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lwiplib.o(.text)
+</UL>
+<P><STRONG><a name="[23018e8]"></a>dhcp_delete_request</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = dhcp_delete_request &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23035bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2301b40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_rebind
+<LI><a href="#[2301bb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_select
+<LI><a href="#[2301c30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_discover
+<LI><a href="#[2f2709c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_arp_reply
+<LI><a href="#[2f270d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<LI><a href="#[2f272f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
+<LI><a href="#[2f2736c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_renew
+</UL>
+
+<P><STRONG><a name="[23018ac]"></a>lwip_standard_chksum</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2f264a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+<LI><a href="#[2f265d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+<LI><a href="#[2f267f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_dest_unreach
+<LI><a href="#[2f27a38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
+<LI><a href="#[2f27aec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum
+</UL>
+
+<P><STRONG><a name="[2301870]"></a>dhcp_option</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2301b40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_rebind
+<LI><a href="#[2301bb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_select
+<LI><a href="#[2301c30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_discover
+<LI><a href="#[2f2709c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_arp_reply
+<LI><a href="#[2f270d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<LI><a href="#[2f272f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
+<LI><a href="#[2f2736c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_renew
+</UL>
+
+<P><STRONG><a name="[2301834]"></a>dhcp_option_short</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2301b40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_rebind
+<LI><a href="#[2301bb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_select
+<LI><a href="#[2301c30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_discover
+<LI><a href="#[2f2709c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_arp_reply
+<LI><a href="#[2f270d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<LI><a href="#[2f2736c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_renew
+</UL>
+
+<P><STRONG><a name="[23017f8]"></a>dhcp_option_long</STRONG> (Thumb, 70 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2301bb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_select
+<LI><a href="#[2f2709c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_arp_reply
+</UL>
+
+<P><STRONG><a name="[23017bc]"></a>dhcp_get_option_long</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, lwiplib.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2301ac8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_recv
+</UL>
+
+<P><STRONG><a name="[2301780]"></a>tcp_new_port</STRONG> (Thumb, 98 bytes, Stack size 12 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = tcp_new_port
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23034cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_bind
+<LI><a href="#[2f26958]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
+</UL>
+
+<P><STRONG><a name="[2301744]"></a>tcp_parseopt</STRONG> (Thumb, 138 bytes, Stack size 4 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = tcp_parseopt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23019d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<LI><a href="#[2f2682c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+</UL>
+
+<P><STRONG><a name="[2301708]"></a>dequeue_packet</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = dequeue_packet &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f25e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2f25e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_interrupt
+</UL>
+
+<P><STRONG><a name="[23016cc]"></a>low_level_receive</STRONG> (Thumb, 144 bytes, Stack size 16 bytes, lwiplib.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = low_level_receive &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f278d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f26250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stellarisif_interrupt
+</UL>
+
+<P><STRONG><a name="[2f25878]"></a>DisplayLogo</STRONG> (Thumb, 328 bytes, Stack size 56 bytes, qs_ek-lm3s8962.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = DisplayLogo &rArr; RIT128x96x4ImageDraw &rArr; RITWriteCommand
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23052cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4ImageDraw
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f25224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f24414]"></a>RITWriteCommand</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, rit128x96x4.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = RITWriteCommand
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f23e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataPut
+<LI><a href="#[2f23eec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataGet
+<LI><a href="#[2f250bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23052cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4ImageDraw
+<LI><a href="#[2f23fa0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4DisplayOff
+<LI><a href="#[2f24090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4StringDraw
+<LI><a href="#[2f240cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT128x96x4Clear
+</UL>
+
+<P><STRONG><a name="[2f22fec]"></a>NmiSR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[2f22fec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f22fec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[2f22fb0]"></a>FaultISR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[2f22fb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f22fb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[2f22f74]"></a>IntDefaultHandler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[2f22f74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f22f74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[2f21174]"></a>CANRegRead</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, can.o(i.CANRegRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = CANRegRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[230a63c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
+<LI><a href="#[2f205f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[230a6b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANStatusGet
+<LI><a href="#[230a6f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSet
+<LI><a href="#[230a72c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageGet
+<LI><a href="#[230a768]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageClear
+<LI><a href="#[230a7a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntStatus
+<LI><a href="#[230a7e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntEnable
+<LI><a href="#[230a81c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntClear
+<LI><a href="#[230a858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANInit
+<LI><a href="#[230a894]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANEnable
+<LI><a href="#[230a8d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANBitTimingSet
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

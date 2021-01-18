@@ -1,0 +1,20 @@
+*** Creating Trace Output File '.\rvmdk\can_device_led.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\rvmdk\can_device_led.o"'
+### List of Objects: adding '".\rvmdk\startup_rvmdk.o"'
+### List of Objects: adding '"..\..\..\driverlib\rvmdk\driverlib.lib"'
+### ADS-LD Command completed:
+--device DLM ".\rvmdk\can_device_led.o" ".\rvmdk\startup_rvmdk.o" "..\..\..\driverlib\rvmdk\driverlib.lib" --library_type=microlib --ro-base 0x00000000 --entry Reset_Handler --rw-base 0x20000000 --first __Vectors --strict --entry Reset_Handler --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\rvmdk\can_device_led.map" -o ".\rvmdk\can_device_led.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\rvmdk\can_device_led.axf'
+### ADS-LD Command File: '.\rvmdk\can_device_led.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\rvmdk\can_device_led.lnp', Handle=0x00000F58
+### Writing '.lnp' file
+### ADS-LD Command file '.\rvmdk\can_device_led.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

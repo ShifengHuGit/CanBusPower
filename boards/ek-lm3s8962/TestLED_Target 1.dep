@@ -1,0 +1,4 @@
+Dependencies for Project 'TestLED', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x48D843B0)(--device DLM --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Luminary" --list "Startup.lst" --xref -o "Startup.o")
+F (.\blinky\blinky.c)(0x5FF1B5F0)(-c --device DLM -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Luminary" -o "blinky.o" --omf_browse "blinky.crf" --depend "blinky.d")
+F (..\..\inc\lm3s8962.h)(0x5FF15D5C)()

@@ -1,0 +1,9 @@
+.\rvmdk\can_device_led.o: can_device_led.c
+.\rvmdk\can_device_led.o: ..\..\..\inc/hw_ints.h
+.\rvmdk\can_device_led.o: ..\..\..\inc/hw_memmap.h
+.\rvmdk\can_device_led.o: ..\..\..\inc/hw_types.h
+.\rvmdk\can_device_led.o: ..\..\..\driverlib/debug.h
+.\rvmdk\can_device_led.o: ..\..\..\driverlib/gpio.h
+.\rvmdk\can_device_led.o: ..\..\..\driverlib/interrupt.h
+.\rvmdk\can_device_led.o: ..\..\..\driverlib/sysctl.h
+.\rvmdk\can_device_led.o: ..\..\..\driverlib/systick.h

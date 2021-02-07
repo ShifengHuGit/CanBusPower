@@ -26,7 +26,7 @@
 // This is part of revision 4423 of the EK-LM3S8962 Firmware Package.
 //
 //*****************************************************************************
-
+// Git Test
 #include <string.h>
 #include "inc/hw_ints.h"
 #include "inc/hw_memmap.h"
@@ -813,7 +813,7 @@ ProcessCmd(void)
 
      to_hex((char *)g_MsgObjectRx.pucMsgData,8, (char *)DisplayBuf);
      ShowQQCharL(0x80, DisplayBuf, 8);     
-    //ShowQQCharL(0x80, "这到底是因为什么", 8);  
+    //ShowQQCharL(0x80, "锟解到锟斤拷锟斤拷锟斤拷为什么", 8);  
      UARTSend((unsigned char *)"ID |", 4);
      UARTSend((unsigned char *)&(g_MsgObjectRx.ulMsgID), 4);
      UARTSend((unsigned char *)"--DATA |", 8);
@@ -999,7 +999,7 @@ main(void)
         //
         //WRCommandL(0x01);
         //WRCommandH(0x01);
-        //ShowQQCharL(0x80, "这是什么原因啊啊", 8);  
+        //ShowQQCharL(0x80, "锟斤拷锟斤拷什么原锟津啊帮拷", 8);  
         ProcessCmd();
     }
 }

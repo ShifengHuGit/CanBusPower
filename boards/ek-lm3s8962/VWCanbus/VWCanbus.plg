@@ -1,9 +1,298 @@
-<html>
-<body>
-<pre>
-<h1>µVision3 Build Log</h1>
-<h2>Project:</h2>
-G:\Shared-Workspace4Develop\boards\ek-lm3s8962\VWCanbus\VWCanbus.uv2
-Project File Date:  01/22/2021
-
-<h2>Output:</h2>
+compiling VWMain.c...
+VWMain.c(12): error:  #5: cannot open source input file "can_common.h": No such file or directory
+VWMain.c - 1 Error(s), 0 Warning(s).
+compiling VWMain.c...
+VWMain.c(15): error:  #5: cannot open source input file "19264LCDdriver.h": No such file or directory
+VWMain.c - 1 Error(s), 0 Warning(s).
+compiling VWMain.c...
+VWMain.c(15): error:  #5: cannot open source input file "19264LCDdriver.h": No such file or directory
+VWMain.c - 1 Error(s), 0 Warning(s).
+compiling VWMain.c...
+VWMain.c(261): error:  #20: identifier "MSG_OBJ_B0_RELEASED" is undefined
+VWMain.c(268): error:  #20: identifier "MSG_OBJ_B0_PRESSED" is undefined
+VWMain.c(282): error:  #20: identifier "MSG_OBJ_B1_RELEASED" is undefined
+VWMain.c(289): error:  #20: identifier "MSG_OBJ_B1_PRESSED" is undefined
+VWMain.c(564): error:  #20: identifier "CanMsg_SessionCtl_TX" is undefined
+VWMain.c(570): error:  #20: identifier "CanMsg_SessionCtl_RX" is undefined
+VWMain.c(583): error:  #20: identifier "rpmRawDataRX" is undefined
+VWMain.c(589): error:  #20: identifier "rpmRawDataTX" is undefined
+VWMain.c(655): error:  #20: identifier "LED_FLASH_VALUE_MASK" is undefined
+VWMain.c(655): error:  #20: identifier "MAX_LED_BRIGHTNESS" is undefined
+VWMain.c(658): error:  #20: identifier "LED_FLASH_ONCE" is undefined
+VWMain.c(603): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(609): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(610): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(611): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(612): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(613): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(614): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1009): error:  #144: a value of type "char [46]" cannot be used to initialize an entity of type "unsigned char [8]"
+VWMain.c(1016): error:  #20: identifier "CanMsg_SessionCtl_TX" is undefined
+VWMain.c(1018): error:  #20: identifier "CanMsg_SessionCtl_RX" is undefined
+VWMain.c(1042): warning:  #223-D: function "exit" declared implicitly
+VWMain.c(1054): warning:  #940-D: missing return statement at end of non-void function "Init_VW"
+VWMain.c(1011): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1012): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1013): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1014): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+VWMain.c(1103): error:  #20: identifier "CANBitClkSettings" is undefined
+VWMain.c(1103): error:  #20: identifier "CANBAUD_500K" is undefined
+VWMain.c - 16 Error(s), 13 Warning(s).
+compiling VWMain.c...
+VWMain.c(570): error:  #20: identifier "CanMsg_SessionCtl_TX" is undefined
+VWMain.c(576): error:  #20: identifier "CanMsg_SessionCtl_RX" is undefined
+VWMain.c(589): error:  #20: identifier "rpmRawDataRX" is undefined
+VWMain.c(595): error:  #20: identifier "rpmRawDataTX" is undefined
+VWMain.c(661): error:  #20: identifier "LED_FLASH_VALUE_MASK" is undefined
+VWMain.c(661): error:  #20: identifier "MAX_LED_BRIGHTNESS" is undefined
+VWMain.c(664): error:  #20: identifier "LED_FLASH_ONCE" is undefined
+VWMain.c(609): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(615): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(616): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(617): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(618): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(619): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(620): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1015): error:  #144: a value of type "char [46]" cannot be used to initialize an entity of type "unsigned char [8]"
+VWMain.c(1022): error:  #20: identifier "CanMsg_SessionCtl_TX" is undefined
+VWMain.c(1024): error:  #20: identifier "CanMsg_SessionCtl_RX" is undefined
+VWMain.c(1048): warning:  #223-D: function "exit" declared implicitly
+VWMain.c(1060): warning:  #940-D: missing return statement at end of non-void function "Init_VW"
+VWMain.c(1017): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1018): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1019): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1020): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+VWMain.c(1109): error:  #20: identifier "CANBitClkSettings" is undefined
+VWMain.c(1109): error:  #20: identifier "CANBAUD_500K" is undefined
+VWMain.c - 12 Error(s), 13 Warning(s).
+compiling VWMain.c...
+VWMain.c(570): error:  #20: identifier "CanMsg_SessionCtl_TX" is undefined
+VWMain.c(576): error:  #20: identifier "CanMsg_SessionCtl_RX" is undefined
+VWMain.c(589): error:  #20: identifier "rpmRawDataRX" is undefined
+VWMain.c(595): error:  #20: identifier "rpmRawDataTX" is undefined
+VWMain.c(661): error:  #20: identifier "LED_FLASH_VALUE_MASK" is undefined
+VWMain.c(661): error:  #20: identifier "MAX_LED_BRIGHTNESS" is undefined
+VWMain.c(664): error:  #20: identifier "LED_FLASH_ONCE" is undefined
+VWMain.c(609): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(615): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(616): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(617): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(618): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(619): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(620): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1015): error:  #144: a value of type "char [46]" cannot be used to initialize an entity of type "unsigned char [8]"
+VWMain.c(1022): error:  #20: identifier "CanMsg_SessionCtl_TX" is undefined
+VWMain.c(1024): error:  #20: identifier "CanMsg_SessionCtl_RX" is undefined
+VWMain.c(1048): warning:  #223-D: function "exit" declared implicitly
+VWMain.c(1060): warning:  #940-D: missing return statement at end of non-void function "Init_VW"
+VWMain.c(1017): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1018): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1019): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1020): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+VWMain.c(1109): error:  #20: identifier "CANBitClkSettings" is undefined
+VWMain.c(1109): error:  #20: identifier "CANBAUD_500K" is undefined
+VWMain.c - 12 Error(s), 13 Warning(s).
+compiling VWMain.c...
+VWMain.c(570): error:  #20: identifier "CanMsg_SessionCtl_TX" is undefined
+VWMain.c(576): error:  #20: identifier "CanMsg_SessionCtl_RX" is undefined
+VWMain.c(589): error:  #20: identifier "rpmRawDataRX" is undefined
+VWMain.c(595): error:  #20: identifier "rpmRawDataTX" is undefined
+VWMain.c(609): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(615): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(616): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(617): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(618): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(619): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(620): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1015): error:  #144: a value of type "char [46]" cannot be used to initialize an entity of type "unsigned char [8]"
+VWMain.c(1022): error:  #20: identifier "CanMsg_SessionCtl_TX" is undefined
+VWMain.c(1024): error:  #20: identifier "CanMsg_SessionCtl_RX" is undefined
+VWMain.c(1048): warning:  #223-D: function "exit" declared implicitly
+VWMain.c(1060): warning:  #940-D: missing return statement at end of non-void function "Init_VW"
+VWMain.c(1017): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1018): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1019): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1020): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+VWMain.c(1109): error:  #20: identifier "CANBitClkSettings" is undefined
+VWMain.c(1109): error:  #20: identifier "CANBAUD_500K" is undefined
+VWMain.c - 9 Error(s), 13 Warning(s).
+compiling VWMain.c...
+VWMain.c(573): error:  #20: identifier "CanMsg_SessionCtl_TX" is undefined
+VWMain.c(579): error:  #20: identifier "CanMsg_SessionCtl_RX" is undefined
+VWMain.c(592): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+VWMain.c(598): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+VWMain.c(612): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(618): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(619): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(620): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(621): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(622): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(623): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1018): error:  #144: a value of type "char [46]" cannot be used to initialize an entity of type "unsigned char [8]"
+VWMain.c(1025): error:  #20: identifier "CanMsg_SessionCtl_TX" is undefined
+VWMain.c(1027): error:  #20: identifier "CanMsg_SessionCtl_RX" is undefined
+VWMain.c(1051): warning:  #223-D: function "exit" declared implicitly
+VWMain.c(1063): warning:  #940-D: missing return statement at end of non-void function "Init_VW"
+VWMain.c(1020): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1021): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1022): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1023): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+VWMain.c(1112): error:  #20: identifier "CANBitClkSettings" is undefined
+VWMain.c(1112): error:  #20: identifier "CANBAUD_500K" is undefined
+VWMain.c - 7 Error(s), 15 Warning(s).
+compiling VWMain.c...
+VWMain.c(573): error:  #20: identifier "CanMsg_SessionCtl_TX" is undefined
+VWMain.c(579): error:  #20: identifier "CanMsg_SessionCtl_RX" is undefined
+VWMain.c(612): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(618): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(619): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(620): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(621): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(622): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(623): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1018): error:  #144: a value of type "char [46]" cannot be used to initialize an entity of type "unsigned char [8]"
+VWMain.c(1025): error:  #20: identifier "CanMsg_SessionCtl_TX" is undefined
+VWMain.c(1027): error:  #20: identifier "CanMsg_SessionCtl_RX" is undefined
+VWMain.c(1051): warning:  #223-D: function "exit" declared implicitly
+VWMain.c(1063): warning:  #940-D: missing return statement at end of non-void function "Init_VW"
+VWMain.c(1020): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1021): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1022): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1023): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+VWMain.c(1112): error:  #20: identifier "CANBitClkSettings" is undefined
+VWMain.c(1112): error:  #20: identifier "CANBAUD_500K" is undefined
+VWMain.c - 7 Error(s), 13 Warning(s).
+compiling VWMain.c...
+VWMain.c(614): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(620): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(621): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(622): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(623): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(624): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(625): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1020): error:  #144: a value of type "char [46]" cannot be used to initialize an entity of type "unsigned char [8]"
+VWMain.c(1053): warning:  #223-D: function "exit" declared implicitly
+VWMain.c(1065): warning:  #940-D: missing return statement at end of non-void function "Init_VW"
+VWMain.c(1022): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1023): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1024): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1025): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+VWMain.c(1114): error:  #20: identifier "CANBitClkSettings" is undefined
+VWMain.c(1114): error:  #20: identifier "CANBAUD_500K" is undefined
+VWMain.c - 3 Error(s), 13 Warning(s).
+compiling VWMain.c...
+VWMain.c(614): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(620): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(621): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(622): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(623): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(624): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(625): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1053): warning:  #223-D: function "exit" declared implicitly
+VWMain.c(1065): warning:  #940-D: missing return statement at end of non-void function "Init_VW"
+VWMain.c(1022): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1023): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1024): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1025): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+VWMain.c(1114): error:  #20: identifier "CANBitClkSettings" is undefined
+VWMain.c(1114): error:  #20: identifier "CANBAUD_500K" is undefined
+VWMain.c - 2 Error(s), 13 Warning(s).
+compiling VWMain.c...
+VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1073): warning:  #940-D: missing return statement at end of non-void function "Init_VW"
+VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+VWMain.c - 0 Error(s), 12 Warning(s).
+compiling VWMain.c...
+VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+VWMain.c - 0 Error(s), 11 Warning(s).
+Build Project 'VWCanbus' - Target 'VWcanbus'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+linking...
+VWCanbus.axf: Error: L6218E: Undefined symbol usprintf (referred from vwmain.o).
+Target not created
+Build Project 'VWCanbus' - Target 'VWcanbus'
+compiling VWMain.c...
+VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+compiling 19264LCDdriver.c...
+compiling ustdlib.c...
+linking...
+Program Size: Code=8868 RO-data=236 RW-data=536 ZI-data=696  
+"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
+Build Project 'VWCanbus' - Target 'VWcanbus'
+linking...
+Program Size: Code=8868 RO-data=236 RW-data=536 ZI-data=696  
+"VWCanbus.axf" - 0 Error(s), 0 Warning(s).
+Build Project 'VWCanbus' - Target 'VWcanbus'
+linking...
+Program Size: Code=8868 RO-data=236 RW-data=536 ZI-data=696  
+"VWCanbus.axf" - 0 Error(s), 0 Warning(s).
+Build Project 'VWCanbus' - Target 'VWcanbus'
+assembling Startup.s...
+compiling VWMain.c...
+VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+compiling 19264LCDdriver.c...
+compiling ustdlib.c...
+linking...
+Program Size: Code=8868 RO-data=236 RW-data=536 ZI-data=696  
+"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
+Build Project 'VWCanbus' - Target 'VWcanbus'
+assembling Startup.s...
+compiling VWMain.c...
+VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+compiling 19264LCDdriver.c...
+compiling ustdlib.c...
+linking...
+Program Size: Code=8868 RO-data=236 RW-data=536 ZI-data=696  
+"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
+Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
+USB Communication Failure

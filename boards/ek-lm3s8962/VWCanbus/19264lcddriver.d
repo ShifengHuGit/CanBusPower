@@ -1,0 +1,13 @@
+19264lcddriver.o: 19264LCDdriver.c
+19264lcddriver.o: C:\Keil\ARM\RV31\INC\string.h
+19264lcddriver.o: ..\..\..\inc/hw_ints.h
+19264lcddriver.o: ..\..\..\inc/hw_memmap.h
+19264lcddriver.o: ..\..\..\inc/hw_sysctl.h
+19264lcddriver.o: ..\..\..\inc/hw_types.h
+19264lcddriver.o: ..\..\..\driverlib/can.h
+19264lcddriver.o: ..\..\..\driverlib/debug.h
+19264lcddriver.o: ..\..\..\driverlib/gpio.h
+19264lcddriver.o: ..\..\..\driverlib/interrupt.h
+19264lcddriver.o: ..\..\..\driverlib/sysctl.h
+19264lcddriver.o: ..\..\..\driverlib/systick.h
+19264lcddriver.o: 19264LCDdriver.h

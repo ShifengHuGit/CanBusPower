@@ -10,3 +10,8 @@ vwmain.o: ..\..\..\driverlib/gpio.h
 vwmain.o: ..\..\..\driverlib/interrupt.h
 vwmain.o: ..\..\..\driverlib/sysctl.h
 vwmain.o: ..\..\..\driverlib/systick.h
+vwmain.o: C:\Keil\ARM\INC\Luminary\can.h
+vwmain.o: ..\..\..\driverlib/uart.h
+vwmain.o: 19264LCDdriver.h
+vwmain.o: ..\..\..\utils/ustdlib.h
+vwmain.o: C:\Keil\ARM\RV31\INC\stdarg.h

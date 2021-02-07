@@ -9,12 +9,20 @@
 #include "driverlib/interrupt.h"
 #include "driverlib/sysctl.h"
 #include "driverlib/systick.h"
-#include "can_common.h"
+//#include "can_common.h"
 #include "can.h"
 #include "driverlib/uart.h"
 #include "19264LCDdriver.h"
 #include "utils/ustdlib.h"
 
+tCANBitClkParms CANBitClkSettings[] =
+{
+    {9,6,4,4},  // CANBAUD_125K
+    {5,2,2,4},  // CANBAUD_250K
+    {5,2,2,2},  // CANBAUD_500K
+    {5,2,2,1}   // CANBAUD_1M
+};
+#define CANBAUD_500K            2
 
 #define MSGOBJ_NUM_BUTTON           1
 #define MSGOBJ_NUM_LED              2
@@ -42,6 +50,12 @@
 #define FLAG_UPDATE_LED         0x00000002
 #define FLAG_DATA_TX_PEND       0x00000004
 #define FLAG_DATA_RECV          0x00000008
+
+
+#define MSG_OBJ_B0_PRESSED      0x01
+#define MSG_OBJ_B0_RELEASED     0x02
+#define MSG_OBJ_B1_PRESSED      0x04
+#define MSG_OBJ_B1_RELEASED     0x08
 
 #define FLAG_RX_ENG_STATUS                 0x00000010
 #define FLAG_RX_ENG_RPM                    0x00000020
@@ -98,7 +112,12 @@ tCANMsgObject CanMsg_ENG_THROLLTEPOSITION;
 tCANMsgObject CanMsg_ENG_COOLTEMP  ;      
 tCANMsgObject CanMsg_GBX_SHIFTPOSITION ;  
 tCANMsgObject CanMsg_SessionCtl;
+tCANMsgObject CanMsg_SessionCtl_TX;
+tCANMsgObject CanMsg_SessionCtl_RX;
 
+
+unsigned char rpmRawDataRX[8];
+unsigned char rpmRawDataTX[8];
 
 //*****************************************************************************
 //
@@ -345,8 +364,9 @@ CANHandler(void)
     // Find the cause of the interrupt, if it is a status interrupt then just
     // acknowledge the interrupt by reading the status register.
     //
-    ulStatus = CANIntStatus(CAN0_BASE, CAN_INT_STS_CAUSE);
-
+    ulStatus = CANIntStatus(CAN0_BASE, CAN_INT_STS_CAUSE); 
+    g_ulFlags = ulStatus;
+/*----- Comment out Switch 
     switch(ulStatus)
     {
         //
@@ -541,7 +561,7 @@ CANHandler(void)
             return;
         }
     }
-
+---------*/
     //
     // Acknowledge the CAN controller interrupt has been handled.
     //
@@ -640,7 +660,7 @@ ProcessCmd(void)
 
             break;
         }
-
+/*----LED
         case MSGOBJ_NUM_LED:
         {
             //
@@ -664,7 +684,7 @@ ProcessCmd(void)
 
             break;
         }
-
+----*/
         //
         // The data transmit message object has been sent successfully.
         //
@@ -867,7 +887,7 @@ ProcessCmd(void)
        {
             WRCommandH(0x01);
             //WRCommandH(0x20);
-            ShowQQCharH(0x80, "不支持的SID ", 6);
+            ShowQQCharH(0x80, "??????SID ", 6);
            //This is rejected by ECU, ignore this frame for this time
            g_ulFlags &= (~FLAG_DATA_RECV);
            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0);
@@ -922,7 +942,7 @@ ProcessCmd(void)
           /*---------------------------------------------------------------------------
               1    2    3    4    5   6    7    8     9   10   11   12
           H 0x80 0x81 0x82 0x83 0x84 0x85 0x86 0x87 0x88 0x89 0x8A 0x8B
-             数   据    : 
+             ??   ??    : 
           H 0x90 0x91 0x92 0x93 0x94 0x95 0x96 0x97 0x98 0x99 0x9A 0x9B
              FL   ag    :    X   Le   n:    X    D:  X     X
           L 0x80 0x81 0x82 0x83 0x84 0x85 0x86 0x87 0x88 0x89 0x8A 0x8B
@@ -959,7 +979,7 @@ ProcessCmd(void)
        //to_hex((char *)&RespData,               (int)RespLength-3,  HEX_RespData);
        //to_hex((char *)&FunctionCode,           2, HEX_FunctionCode);
 //
-       // ShowQQCharH(0x80, "数据: ", 3); 
+       // ShowQQCharH(0x80, "????: ", 3); 
         //WRCommandH(0x20);
         //ShowQQCharH(0x84, (unsigned char *)HEX_RawData,8);
 
@@ -1003,9 +1023,9 @@ ProcessCmd(void)
     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0);
 }
 
-int Init_VW(){
-    //CanID-【10 07】 Can Data->【 02-|10 03 55 55 55 55 55 |]  
-    unsigned char SessionFrameTX[8] = "{0x02, 0x10, 0x03, 0x55, 0x55,0x55,0x55,0x55}";
+void Init_VW(){
+    //CanID-??10 07?? Can Data->?? 02-|10 03 55 55 55 55 55 |]  
+    unsigned char SessionFrameTX[8] = {0x02, 0x10, 0x03, 0x55, 0x55,0x55,0x55,0x55};
     unsigned char SessionFrameRX[8];
     unsigned char RespFlag; 
     unsigned char RespSIDCode, RespLength;
@@ -1036,15 +1056,15 @@ int Init_VW(){
     {
          WRCommandH(0x01);
          //WRCommandH(0x20);
-         ShowQQCharH(0x80, "初始化会话失败", 7);
+         ShowQQCharH(0x80, "Failed to Open Session", 11);
         //This is rejected by ECU, ignore this frame for this time
-        exit(1);
+     //   exit(1);
     }
     else
     {
         WRCommandH(0x01);
         //WRCommandH(0x20);
-        ShowQQCharH(0x80, "初始化成功", 7);
+        ShowQQCharH(0x80, "Session set ", 6);
     }
     
 

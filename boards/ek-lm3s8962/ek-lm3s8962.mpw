@@ -27,6 +27,7 @@
   Project=".\timers\timers.Uv2"
   Project=".\uart_echo\uart_echo.Uv2"
   Project=".\watchdog\watchdog.Uv2"
-  Project=".\CanTestPrj\CanTestFunc.Uv2"
-  Project=".\LCD19264\LCDDriver.Uv2",A,X
+  Project=".\CanTestPrj\CanTestFunc.Uv2",X
+  Project=".\LCD19264\LCDDriver.Uv2"
+  Project=".\VWCanbus\VWCanbus.Uv2",A,X
 

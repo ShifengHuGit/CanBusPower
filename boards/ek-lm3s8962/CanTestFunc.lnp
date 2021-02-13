@@ -1,3 +1,3 @@
---device DLM "..\startup.o" "..\canmain.o" "..\can_net.o" "..\audio.o" "..\..\..\driverlib\rvmdk\driverlib.lib" --library_type=microlib --ro-base 0x00000000 --entry Reset_Handler --rw-base 0x20000000 --first __Vectors --strict --entry Reset_Handler --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--device DLM "..\startup.o" "..\canmain.o" "..\..\..\driverlib\rvmdk\driverlib.lib" --library_type=microlib --ro-base 0x00000000 --entry Reset_Handler --rw-base 0x20000000 --first __Vectors --strict --entry Reset_Handler --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\CanTestFunc.map" -o "..\CanTestFunc.axf"

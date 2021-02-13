@@ -39,10 +39,18 @@
 #include "driverlib/systick.h"
 #include "driverlib/timer.h"
 #include "driverlib/uart.h"
-#include "can_net.h"
+//#include "can_net.h"
 
+#define CANBAUD_500K            2
+tCANBitClkParms CANBitClkSettings[] =
+{
+    {9,6,4,4},  // CANBAUD_125K
+    {5,2,2,4},  // CANBAUD_250K
+    {5,2,2,2},  // CANBAUD_500K
+    {5,2,2,1}   // CANBAUD_1M
+};
 
-
+tBoolean F_led = true;
 //****************************************************************************
 //
 // This is the message identifier to use for sending data in the form of
@@ -110,6 +118,21 @@ unsigned char g_pucFrame[6144];
 //
 //*****************************************************************************
 unsigned char g_ucSwitches = 0x1f;
+void
+UARTSend(const unsigned char *pucBuffer, unsigned long ulCount)
+{
+    //
+    // Loop while there are more characters to send.
+    //
+    while(ulCount--)
+    {
+        //
+        // Write the next character to the UART.
+        //
+        //UARTCharPutNonBlocking(UART0_BASE, *pucBuffer++);
+        UARTCharPut(UART1_BASE, *pucBuffer++);
+    }
+}
 
 //*****************************************************************************
 //
@@ -117,9 +140,74 @@ unsigned char g_ucSwitches = 0x1f;
 // are the same as g_ucSwitches.
 //
 //*****************************************************************************
+void
+CANHandler(void)
+{
+    unsigned long ulLoop;
+    unsigned long ulStatus;
 
+  // GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, GPIO_PIN_0);
+  // for(ulLoop = 0; ulLoop < 30000; ulLoop++)
+  // {
+  // }
+  // GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 0);
+  //        for(ulLoop = 0; ulLoop < 1000; ulLoop++)
+  // {
+  // }
+    F_led =!F_led;
+    UARTSend((unsigned char *)"---CAN---!", 10);
+    ulStatus = CANIntStatus(CAN0_BASE, CAN_INT_STS_CAUSE); 
+    g_ulFlags = ulStatus;       
+    CANIntClear(CAN0_BASE, ulStatus);
+}
 
+void
+CANConfigure(void)
+{
+    //
+    // Configure CAN Pins
+    //
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOD);
+    GPIOPinTypeCAN(GPIO_PORTD_BASE, GPIO_PIN_0 | GPIO_PIN_1);
 
+    //
+    // Enable the CAN controllers.
+    //
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_CAN0);
+
+    //
+    // Reset the state of all the message object and the state of the CAN
+    // module to a known state.
+    //
+    CANInit(CAN0_BASE);
+
+    //
+    // Configure the bit clock parameters for the CAN device.
+    //
+    CANBitTimingSet(CAN0_BASE,
+                    &CANBitClkSettings[CANBAUD_500K]);
+
+    //
+    // Take the CAN1 device out of INIT state.
+    //
+    CANEnable(CAN0_BASE);
+
+    //
+    // Enable interrups from CAN controller.
+    //
+    CANIntEnable(CAN0_BASE, CAN_INT_MASTER | CAN_INT_ERROR);
+
+    //
+    // Set up the message object that will receive all messages on the CAN
+    // bus.
+    //
+    //CANConfigureNetwork();
+
+    //
+    // Enable interrupts for the CAN in the NVIC.
+    //
+    IntEnable(INT_CAN0);
+}
 //*****************************************************************************
 //
 // The main code for the application.  It sets up the peripherals, displays the
@@ -154,12 +242,22 @@ main(void)
     GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_0);
     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 0);
 
+//UART 
+SysCtlPeripheralEnable(SYSCTL_PERIPH_UART1);
+SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOD);
+GPIOPinTypeUART(GPIO_PORTD_BASE, GPIO_PIN_2 | GPIO_PIN_3);
+UARTConfigSetExpClk(UART1_BASE, SysCtlClockGet(), 115200,
+                    (UART_CONFIG_WLEN_8 | UART_CONFIG_STOP_ONE |
+                     UART_CONFIG_PAR_NONE));
+UARTFIFODisable(UART1_BASE); 
+ UARTSend((unsigned char *)"-------Welcome!---C-----", 24);
+
     //
     // Initialize the CAN controller.
     //
     CANConfigure();
 
-    
+    IntMasterEnable();
 
     CanTestData.ulMsgID = 0x708;
     CanTestData.pucMsgData = (unsigned char *)TempData;
@@ -174,20 +272,20 @@ main(void)
     //
     while(1)
     {
-        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, GPIO_PIN_0);
-        for(ulLoop = 0; ulLoop < 3000000; ulLoop++)
-        {
-        }
-     //  if( cansentCount < 33)
-     //    {
-     //      CanTestData.ulMsgID = 0x12;
-     //      CANMessageSet(CAN0_BASE, MSGOBJ_NUM_DATA_TX, &CanTestData,
-     //                    MSG_OBJ_TYPE_TX);
-     //  }
-        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 0);
-               for(ulLoop = 0; ulLoop < 1000000; ulLoop++)
-        {
-        }
+     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, F_led);
+ //    for(ulLoop = 0; ulLoop < 3000000; ulLoop++)
+ //    {
+ //    }
+ // //  if( cansentCount < 33)
+ // //    {
+ // //      CanTestData.ulMsgID = 0x12;
+ // //      CANMessageSet(CAN0_BASE, MSGOBJ_NUM_DATA_TX, &CanTestData,
+ // //                    MSG_OBJ_TYPE_TX);
+ // //  }
+ //    GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 0);
+ //           for(ulLoop = 0; ulLoop < 1000000; ulLoop++)
+ //    {
+ //    }
         //cansentCount=+1;
     }
 }

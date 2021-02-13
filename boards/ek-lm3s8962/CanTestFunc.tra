@@ -3,17 +3,15 @@
 ### Creating ADS-LD Command Line
 ### List of Objects: adding '"..\startup.o"'
 ### List of Objects: adding '"..\canmain.o"'
-### List of Objects: adding '"..\can_net.o"'
-### List of Objects: adding '"..\audio.o"'
 ### List of Objects: adding '"..\..\..\driverlib\rvmdk\driverlib.lib"'
 ### ADS-LD Command completed:
---device DLM "..\startup.o" "..\canmain.o" "..\can_net.o" "..\audio.o" "..\..\..\driverlib\rvmdk\driverlib.lib" --library_type=microlib --ro-base 0x00000000 --entry Reset_Handler --rw-base 0x20000000 --first __Vectors --strict --entry Reset_Handler --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--device DLM "..\startup.o" "..\canmain.o" "..\..\..\driverlib\rvmdk\driverlib.lib" --library_type=microlib --ro-base 0x00000000 --entry Reset_Handler --rw-base 0x20000000 --first __Vectors --strict --entry Reset_Handler --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\CanTestFunc.map" -o "..\CanTestFunc.axf"### Preparing Environment (PrepEnvAds)
 ### ADS-LD Output File: '..\CanTestFunc.axf'
 ### ADS-LD Command File: '..\CanTestFunc.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '..\CanTestFunc.lnp', Handle=0x000015A4
+### Creating CmdFile '..\CanTestFunc.lnp', Handle=0x00001B10
 ### Writing '.lnp' file
 ### ADS-LD Command file '..\CanTestFunc.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

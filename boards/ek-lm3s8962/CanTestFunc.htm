@@ -3,493 +3,403 @@
 <title>Static Call Graph - [..\CanTestFunc.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\CanTestFunc.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 484]: Last Updated: Sun Jan 17 22:15:17 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 484]: Last Updated: Sun Feb 07 22:54:35 2021
 <BR><P>
-<H3>Maximum Stack Usage =        112 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =         96 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-main &rArr; CANConfigure &rArr; CANConfigureNetwork &rArr; CANMessageSet &rArr; CANRegRead
+main &rArr; CANMessageSet &rArr; CANRegRead
 <P>
 <H3>
 Functions with no stack information
 </H3><UL>
- <LI><a href="#[21e461c]">Reset_Handler</a>
- <LI><a href="#[21e47fc]">NmiSR</a>
- <LI><a href="#[21e47c0]">FaultISR</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
+ <LI><a href="#[21c961c]">Reset_Handler</a>
+ <LI><a href="#[21c97fc]">NmiSR</a>
+ <LI><a href="#[21c97c0]">FaultISR</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
 </UL>
 </UL>
 <P>
 <H3>
 Mutually Recursive functions
-</H3> <LI><a href="#[2e5d82c]">SysCtlDelay</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2e5d82c]">SysCtlDelay</a><BR>
- <LI><a href="#[21e47fc]">NmiSR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[21e47fc]">NmiSR</a><BR>
- <LI><a href="#[21e47c0]">FaultISR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[21e47c0]">FaultISR</a><BR>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[21e4784]">IntDefaultHandler</a><BR>
+</H3> <LI><a href="#[21c7ccc]">UARTCharPut</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[21c7ccc]">UARTCharPut</a><BR>
+ <LI><a href="#[21c7c90]">UARTConfigSetExpClk</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[21c7c90]">UARTConfigSetExpClk</a><BR>
+ <LI><a href="#[21bce30]">SysCtlDelay</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[21bce30]">SysCtlDelay</a><BR>
+ <LI><a href="#[21c97fc]">NmiSR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[21c97fc]">NmiSR</a><BR>
+ <LI><a href="#[21c97c0]">FaultISR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[21c97c0]">FaultISR</a><BR>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[21c9784]">IntDefaultHandler</a><BR>
 </UL>
 <P>
 <H3>
 Function Pointers
 </H3><UL>
- <LI><a href="#[21e461c]">Reset_Handler</a>
- <LI><a href="#[21e47fc]">NmiSR</a>
- <LI><a href="#[21e47c0]">FaultISR</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e45a4]">CANHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e4784]">IntDefaultHandler</a>
- <LI><a href="#[21e317c]">main</a>
+ <LI><a href="#[21c961c]">Reset_Handler</a>
+ <LI><a href="#[21c97fc]">NmiSR</a>
+ <LI><a href="#[21c97c0]">FaultISR</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c95a4]">CANHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c9784]">IntDefaultHandler</a>
+ <LI><a href="#[21c8140]">main</a>
 </UL>
 <P>
 <H3>
 Global Symbols
 </H3>
-<P><STRONG><a name="[21e461c]"></a>Reset_Handler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
-<BR><BR>[Calls]<UL><LI><a href="#[2e5cb48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<P><STRONG><a name="[21c961c]"></a>Reset_Handler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[2e837e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
 </UL>
 
-<P><STRONG><a name="[2e5cb48]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
-<BR><BR>[Calls]<UL><LI><a href="#[2e5c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<P><STRONG><a name="[2e837e0]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR><BR>[Calls]<UL><LI><a href="#[2e83204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e461c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
-</UL>
-
-<P><STRONG><a name="[2e5cb0c]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[2e5c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<BR>[Called By]<UL><LI><a href="#[21c961c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
 </UL>
 
-<P><STRONG><a name="[2e5c7c4]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
-
-<P><STRONG><a name="[2e5c698]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry6.o(.ARM.Collect$$$$00000006))
-
-<P><STRONG><a name="[2e5d82c]"></a>SysCtlDelay</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sysctl.o(.emb_text))
-<BR><BR>[Calls]<UL><LI><a href="#[2e5d82c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
-</UL>
-<BR>[Called By]<UL><LI><a href="#[21e3014]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
-<LI><a href="#[2e5d82c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+<P><STRONG><a name="[2e837a4]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[2e83204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[21e317c]"></a>main</STRONG> (Thumb, 148 bytes, Stack size 24 bytes, canmain.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = main &rArr; CANConfigure &rArr; CANConfigureNetwork &rArr; CANMessageSet &rArr; CANRegRead
+<P><STRONG><a name="[2e8345c]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[2e83330]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry6.o(.ARM.Collect$$$$00000006))
+
+<P><STRONG><a name="[21bce30]"></a>SysCtlDelay</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sysctl.o(.emb_text))
+<BR><BR>[Calls]<UL><LI><a href="#[21bce30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21e2f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
-<LI><a href="#[21e2fd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlLDOSet
-<LI><a href="#[21e3014]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
-<LI><a href="#[21e3050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
-<LI><a href="#[21e308c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
-<LI><a href="#[21e30c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
-<LI><a href="#[21e3104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSet
-<LI><a href="#[21e3140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> entry6.o(.ARM.Collect$$$$00000006)
-</UL>
-<P><STRONG><a name="[21e23e4]"></a>CANMain</STRONG> (Thumb, 102 bytes, Stack size 24 bytes, can_net.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[21e20d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageGet
-<LI><a href="#[21e3104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSet
+<BR>[Called By]<UL><LI><a href="#[21bce30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+<LI><a href="#[21c7d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
 </UL>
 
-<P><STRONG><a name="[21e23a8]"></a>CANGetTargetVersion</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, can_net.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[21e20d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageGet
-<LI><a href="#[21e3104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSet
+<P><STRONG><a name="[21c0e2c]"></a>CPUcpsid</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
+
+<P><STRONG><a name="[21c0df0]"></a>CPUcpsie</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, cpu.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[21c7df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
 </UL>
 
-<P><STRONG><a name="[21e236c]"></a>CANUpdateTargetLED</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, can_net.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[21e3104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSet
+<P><STRONG><a name="[21bc548]"></a>CPUwfi</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
+
+<P><STRONG><a name="[21c81b8]"></a>UARTSend</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, canmain.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21c7ccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
 </UL>
 
-<P><STRONG><a name="[21e2330]"></a>CANConfigureNetwork</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, can_net.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = CANConfigureNetwork &rArr; CANMessageSet &rArr; CANRegRead
+<P><STRONG><a name="[21c95a4]"></a>CANHandler</STRONG> (Thumb, 62 bytes, Stack size 24 bytes, canmain.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = CANHandler &rArr; CANIntStatus &rArr; CANRegRead
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21e3104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSet
-</UL>
-<BR>[Called By]<UL><LI><a href="#[21e3140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
-</UL>
-
-<P><STRONG><a name="[21e45a4]"></a>CANHandler</STRONG> (Thumb, 180 bytes, Stack size 16 bytes, can_net.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = CANHandler &rArr; CANMessageGet &rArr; CANRegRead
-</UL>
-<BR>[Calls]<UL><LI><a href="#[21e209c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANStatusGet
-<LI><a href="#[21e20d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageGet
-<LI><a href="#[21e2114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageClear
-<LI><a href="#[21e2150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntStatus
-<LI><a href="#[21e21c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntClear
-<LI><a href="#[21e22b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolumeUp
-<LI><a href="#[21e22f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolumeDown
+<BR>[Calls]<UL><LI><a href="#[21c7ccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+<LI><a href="#[21c7fd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntStatus
+<LI><a href="#[21c8050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntClear
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
 </UL>
-<P><STRONG><a name="[21e3140]"></a>CANConfigure</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, can_net.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = CANConfigure &rArr; CANConfigureNetwork &rArr; CANMessageSet &rArr; CANRegRead
-</UL>
-<BR>[Calls]<UL><LI><a href="#[21e2024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
-<LI><a href="#[21e2060]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeCAN
-<LI><a href="#[21e218c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntEnable
-<LI><a href="#[21e2204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANInit
-<LI><a href="#[21e2240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANEnable
-<LI><a href="#[21e227c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANBitTimingSet
-<LI><a href="#[21e2330]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigureNetwork
-<LI><a href="#[21e2f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
-</UL>
-<BR>[Called By]<UL><LI><a href="#[21e317c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<P><STRONG><a name="[21c817c]"></a>CANConfigure</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, canmain.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21c7d08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[21c7e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
+<LI><a href="#[21c7f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeCAN
+<LI><a href="#[21c8014]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntEnable
+<LI><a href="#[21c808c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANInit
+<LI><a href="#[21c80c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANEnable
+<LI><a href="#[21c8104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANBitTimingSet
 </UL>
 
-<P><STRONG><a name="[21e1700]"></a>AudioVolume</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, audio.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = AudioVolume
+<P><STRONG><a name="[21c8140]"></a>main</STRONG> (Thumb, 250 bytes, Stack size 40 bytes, canmain.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = main &rArr; CANMessageSet &rArr; CANRegRead
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21e13f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMSyncUpdate
-<LI><a href="#[21e1430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputState
-<LI><a href="#[21e146c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputInvert
+<BR>[Calls]<UL><LI><a href="#[21c7c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTFIFODisable
+<LI><a href="#[21c7c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTConfigSetExpClk
+<LI><a href="#[21c7ccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+<LI><a href="#[21c7d08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[21c7d44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlLDOSet
+<LI><a href="#[21c7d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
+<LI><a href="#[21c7dbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
+<LI><a href="#[21c7df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[21c7e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
+<LI><a href="#[21c7e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+<LI><a href="#[21c7eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
+<LI><a href="#[21c7ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[21c7f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[21c7f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeCAN
+<LI><a href="#[21c7f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSet
+<LI><a href="#[21c8014]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntEnable
+<LI><a href="#[21c808c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANInit
+<LI><a href="#[21c80c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANEnable
+<LI><a href="#[21c8104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANBitTimingSet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e1598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioPlaySound
-<LI><a href="#[21e15d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioPlaySong
-<LI><a href="#[21e22b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolumeUp
-<LI><a href="#[21e22f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolumeDown
+<BR>[Address Reference Count : 1]<UL><LI> entry6.o(.ARM.Collect$$$$00000006)
 </UL>
-
-<P><STRONG><a name="[21e22b8]"></a>AudioVolumeUp</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, audio.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = AudioVolumeUp &rArr; AudioVolume
+<P><STRONG><a name="[2e83204]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[2e837a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21e1700]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolume
-</UL>
-<BR>[Called By]<UL><LI><a href="#[21e45a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
-</UL>
-
-<P><STRONG><a name="[21e22f4]"></a>AudioVolumeDown</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, audio.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = AudioVolumeDown &rArr; AudioVolume
-</UL>
-<BR>[Calls]<UL><LI><a href="#[21e1700]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolume
-</UL>
-<BR>[Called By]<UL><LI><a href="#[21e45a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
-</UL>
-
-<P><STRONG><a name="[21e16c4]"></a>AudioVolumeGet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, audio.o(.text), UNUSED)
-
-<P><STRONG><a name="[21e1688]"></a>AudioHandler</STRONG> (Thumb, 160 bytes, Stack size 24 bytes, audio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[21e13f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMSyncUpdate
-<LI><a href="#[21e14a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenPeriodSet
-<LI><a href="#[21e1b74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
+<BR>[Called By]<UL><LI><a href="#[2e837e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
 </UL>
 
-<P><STRONG><a name="[21e164c]"></a>AudioOff</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, audio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[21e1b74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
-</UL>
+<P><STRONG><a name="[2e831c8]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
-<P><STRONG><a name="[21e1610]"></a>AudioOn</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, audio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[21e1430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputState
-<LI><a href="#[21e14e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenEnable
-<LI><a href="#[21e1520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenDisable
-<LI><a href="#[21e155c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenConfigure
-<LI><a href="#[21e1b74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
-</UL>
-
-<P><STRONG><a name="[21e15d4]"></a>AudioPlaySong</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, audio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[21e1700]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolume
-</UL>
-
-<P><STRONG><a name="[21e1598]"></a>AudioPlaySound</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, audio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[21e1700]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolume
-</UL>
-
-<P><STRONG><a name="[2e5c56c]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[2e5cb0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
-</UL>
-<BR>[Called By]<UL><LI><a href="#[2e5cb48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
-</UL>
-
-<P><STRONG><a name="[2e5c530]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
-
-<P><STRONG><a name="[21e227c]"></a>CANBitTimingSet</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, can.o(i.CANBitTimingSet))
+<P><STRONG><a name="[21c8104]"></a>CANBitTimingSet</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, can.o(i.CANBitTimingSet))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CANBitTimingSet &rArr; CANRegRead
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21df7d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+<BR>[Calls]<UL><LI><a href="#[21c6034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e3140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+<BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[21c817c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
 </UL>
 
-<P><STRONG><a name="[21e2240]"></a>CANEnable</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, can.o(i.CANEnable))
+<P><STRONG><a name="[21c80c8]"></a>CANEnable</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, can.o(i.CANEnable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = CANEnable &rArr; CANRegRead
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21df7d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+<BR>[Calls]<UL><LI><a href="#[21c6034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e3140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+<BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[21c817c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
 </UL>
 
-<P><STRONG><a name="[21e2204]"></a>CANInit</STRONG> (Thumb, 150 bytes, Stack size 16 bytes, can.o(i.CANInit))
+<P><STRONG><a name="[21c808c]"></a>CANInit</STRONG> (Thumb, 150 bytes, Stack size 16 bytes, can.o(i.CANInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CANInit &rArr; CANRegRead
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21df7d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+<BR>[Calls]<UL><LI><a href="#[21c6034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e3140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+<BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[21c817c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
 </UL>
 
-<P><STRONG><a name="[21e21c8]"></a>CANIntClear</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, can.o(i.CANIntClear))
+<P><STRONG><a name="[21c8050]"></a>CANIntClear</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, can.o(i.CANIntClear))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CANIntClear &rArr; CANRegRead
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21df7d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+<BR>[Calls]<UL><LI><a href="#[21c6034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e45a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
+<BR>[Called By]<UL><LI><a href="#[21c95a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
 </UL>
 
-<P><STRONG><a name="[21e218c]"></a>CANIntEnable</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, can.o(i.CANIntEnable))
+<P><STRONG><a name="[21c8014]"></a>CANIntEnable</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, can.o(i.CANIntEnable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CANIntEnable &rArr; CANRegRead
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21df7d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+<BR>[Calls]<UL><LI><a href="#[21c6034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e3140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+<BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[21c817c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
 </UL>
 
-<P><STRONG><a name="[21e2150]"></a>CANIntStatus</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, can.o(i.CANIntStatus))
+<P><STRONG><a name="[21c7fd8]"></a>CANIntStatus</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, can.o(i.CANIntStatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CANIntStatus &rArr; CANRegRead
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21df7d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+<BR>[Calls]<UL><LI><a href="#[21c6034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e45a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
-</UL>
-
-<P><STRONG><a name="[21e2114]"></a>CANMessageClear</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, can.o(i.CANMessageClear))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CANMessageClear &rArr; CANRegRead
-</UL>
-<BR>[Calls]<UL><LI><a href="#[21df7d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
-</UL>
-<BR>[Called By]<UL><LI><a href="#[21e45a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
+<BR>[Called By]<UL><LI><a href="#[21c95a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
 </UL>
 
-<P><STRONG><a name="[21e20d8]"></a>CANMessageGet</STRONG> (Thumb, 440 bytes, Stack size 32 bytes, can.o(i.CANMessageGet))
-<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = CANMessageGet &rArr; CANRegRead
-</UL>
-<BR>[Calls]<UL><LI><a href="#[21df7d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
-</UL>
-<BR>[Called By]<UL><LI><a href="#[21e23a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANGetTargetVersion
-<LI><a href="#[21e23e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMain
-<LI><a href="#[21e45a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
-</UL>
-
-<P><STRONG><a name="[21e3104]"></a>CANMessageSet</STRONG> (Thumb, 496 bytes, Stack size 40 bytes, can.o(i.CANMessageSet))
+<P><STRONG><a name="[21c7f9c]"></a>CANMessageSet</STRONG> (Thumb, 496 bytes, Stack size 40 bytes, can.o(i.CANMessageSet))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = CANMessageSet &rArr; CANRegRead
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21df7d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+<BR>[Calls]<UL><LI><a href="#[21c6034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e2330]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigureNetwork
-<LI><a href="#[21e236c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANUpdateTargetLED
-<LI><a href="#[21e23a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANGetTargetVersion
-<LI><a href="#[21e23e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMain
-<LI><a href="#[21e317c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[21e209c]"></a>CANStatusGet</STRONG> (Thumb, 116 bytes, Stack size 16 bytes, can.o(i.CANStatusGet))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CANStatusGet &rArr; CANRegRead
-</UL>
-<BR>[Calls]<UL><LI><a href="#[21df7d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
-</UL>
-<BR>[Called By]<UL><LI><a href="#[21e45a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
-</UL>
-
-<P><STRONG><a name="[21dc048]"></a>GPIODirModeSet</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, gpio.o(i.GPIODirModeSet))
-<BR><BR>[Called By]<UL><LI><a href="#[21e2060]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeCAN
-<LI><a href="#[21e308c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
-<LI><a href="#[21e30c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<P><STRONG><a name="[21c27f4]"></a>GPIODirModeSet</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, gpio.o(i.GPIODirModeSet))
+<BR><BR>[Called By]<UL><LI><a href="#[21c7eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
+<LI><a href="#[21c7ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[21c7f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[21c7f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeCAN
 </UL>
 
-<P><STRONG><a name="[21dbf58]"></a>GPIOPadConfigSet</STRONG> (Thumb, 176 bytes, Stack size 0 bytes, gpio.o(i.GPIOPadConfigSet))
-<BR><BR>[Called By]<UL><LI><a href="#[21e2060]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeCAN
-<LI><a href="#[21e308c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
-<LI><a href="#[21e30c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<P><STRONG><a name="[21c2704]"></a>GPIOPadConfigSet</STRONG> (Thumb, 176 bytes, Stack size 0 bytes, gpio.o(i.GPIOPadConfigSet))
+<BR><BR>[Called By]<UL><LI><a href="#[21c7eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
+<LI><a href="#[21c7ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[21c7f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[21c7f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeCAN
 </UL>
 
-<P><STRONG><a name="[21e2060]"></a>GPIOPinTypeCAN</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeCAN))
+<P><STRONG><a name="[21c7f60]"></a>GPIOPinTypeCAN</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeCAN))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypeCAN
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21dbf58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-<LI><a href="#[21dc048]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<BR>[Calls]<UL><LI><a href="#[21c2704]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[21c27f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e3140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+<BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[21c817c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
 </UL>
 
-<P><STRONG><a name="[21e30c8]"></a>GPIOPinTypeGPIOInput</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeGPIOInput))
+<P><STRONG><a name="[21c7f24]"></a>GPIOPinTypeGPIOInput</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeGPIOInput))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypeGPIOInput
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21dbf58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-<LI><a href="#[21dc048]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<BR>[Calls]<UL><LI><a href="#[21c2704]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[21c27f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e317c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[21e308c]"></a>GPIOPinTypeGPIOOutput</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeGPIOOutput))
+<P><STRONG><a name="[21c7ee8]"></a>GPIOPinTypeGPIOOutput</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeGPIOOutput))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypeGPIOOutput
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21dbf58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-<LI><a href="#[21dc048]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<BR>[Calls]<UL><LI><a href="#[21c2704]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[21c27f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e317c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[21e3050]"></a>GPIOPinWrite</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio.o(i.GPIOPinWrite))
-<BR><BR>[Called By]<UL><LI><a href="#[21e317c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[21dec58]"></a>IntDisable</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, interrupt.o(i.IntDisable))
-<BR><BR>[Called By]<UL><LI><a href="#[21df7d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+<P><STRONG><a name="[21c7eac]"></a>GPIOPinTypeUART</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeUART))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypeUART
+</UL>
+<BR>[Calls]<UL><LI><a href="#[21c2704]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[21c27f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[21e2024]"></a>IntEnable</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, interrupt.o(i.IntEnable))
-<BR><BR>[Called By]<UL><LI><a href="#[21df7d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
-<LI><a href="#[21e3140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+<P><STRONG><a name="[21c7e70]"></a>GPIOPinWrite</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio.o(i.GPIOPinWrite))
+<BR><BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[21e155c]"></a>PWMGenConfigure</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, pwm.o(i.PWMGenConfigure), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[21e1610]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOn
+<P><STRONG><a name="[21c5404]"></a>IntDisable</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, interrupt.o(i.IntDisable))
+<BR><BR>[Called By]<UL><LI><a href="#[21c6034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
 </UL>
 
-<P><STRONG><a name="[21e1520]"></a>PWMGenDisable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, pwm.o(i.PWMGenDisable), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[21e1610]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOn
+<P><STRONG><a name="[21c7e34]"></a>IntEnable</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, interrupt.o(i.IntEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[21c6034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANRegRead
+<LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[21c817c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
 </UL>
 
-<P><STRONG><a name="[21e14e4]"></a>PWMGenEnable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, pwm.o(i.PWMGenEnable), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[21e1610]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOn
+<P><STRONG><a name="[21c7df8]"></a>IntMasterEnable</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, interrupt.o(i.IntMasterEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[21c0df0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUcpsie
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[21e14a8]"></a>PWMGenPeriodSet</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, pwm.o(i.PWMGenPeriodSet), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[21e1688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioHandler
-<LI><a href="#[21e1b74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
+<P><STRONG><a name="[21c7dbc]"></a>SysCtlClockGet</STRONG> (Thumb, 294 bytes, Stack size 8 bytes, sysctl.o(i.SysCtlClockGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SysCtlClockGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[21e146c]"></a>PWMOutputInvert</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, pwm.o(i.PWMOutputInvert))
-<BR><BR>[Called By]<UL><LI><a href="#[21e1700]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolume
-<LI><a href="#[21e1b74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
-</UL>
-
-<P><STRONG><a name="[21e1430]"></a>PWMOutputState</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, pwm.o(i.PWMOutputState))
-<BR><BR>[Called By]<UL><LI><a href="#[21e1610]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOn
-<LI><a href="#[21e1700]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolume
-<LI><a href="#[21e1b74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
-</UL>
-
-<P><STRONG><a name="[21e13f4]"></a>PWMSyncUpdate</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pwm.o(i.PWMSyncUpdate))
-<BR><BR>[Called By]<UL><LI><a href="#[21e1688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioHandler
-<LI><a href="#[21e1700]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioVolume
-<LI><a href="#[21e1b74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
-</UL>
-
-<P><STRONG><a name="[21e3014]"></a>SysCtlClockSet</STRONG> (Thumb, 290 bytes, Stack size 24 bytes, sysctl.o(i.SysCtlClockSet))
+<P><STRONG><a name="[21c7d80]"></a>SysCtlClockSet</STRONG> (Thumb, 290 bytes, Stack size 24 bytes, sysctl.o(i.SysCtlClockSet))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SysCtlClockSet
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2e5d82c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+<BR>[Calls]<UL><LI><a href="#[21bce30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e317c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[21e2fd8]"></a>SysCtlLDOSet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sysctl.o(i.SysCtlLDOSet))
-<BR><BR>[Called By]<UL><LI><a href="#[21e317c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[21e2f9c]"></a>SysCtlPeripheralEnable</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, sysctl.o(i.SysCtlPeripheralEnable))
-<BR><BR>[Called By]<UL><LI><a href="#[21e3140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
-<LI><a href="#[21e317c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<P><STRONG><a name="[21c7d44]"></a>SysCtlLDOSet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sysctl.o(i.SysCtlLDOSet))
+<BR><BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[2e5c1ac]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[21c7d08]"></a>SysCtlPeripheralEnable</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, sysctl.o(i.SysCtlPeripheralEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[21c817c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANConfigure
+</UL>
 
-<P><STRONG><a name="[2e5c170]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[21c7ccc]"></a>UARTCharPut</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, uart.o(i.UARTCharPut))
+<BR><BR>[Calls]<UL><LI><a href="#[21c7ccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21c7ccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+<LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[21c81b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTSend
+<LI><a href="#[21c95a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANHandler
+</UL>
 
-<P><STRONG><a name="[2e5c134]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[21c7c90]"></a>UARTConfigSetExpClk</STRONG> (Thumb, 84 bytes, Stack size 0 bytes, uart.o(i.UARTConfigSetExpClk))
+<BR><BR>[Calls]<UL><LI><a href="#[21c7c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTConfigSetExpClk
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21c7c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTConfigSetExpClk
+<LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[21c7c54]"></a>UARTFIFODisable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, uart.o(i.UARTFIFODisable))
+<BR><BR>[Called By]<UL><LI><a href="#[21c8140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2e82e44]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[2e82e08]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[2e82dcc]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 <P>
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[21e47fc]"></a>NmiSR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
-<BR><BR>[Calls]<UL><LI><a href="#[21e47fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
+<P><STRONG><a name="[21c97fc]"></a>NmiSR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[21c97fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e47fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
-</UL>
-<P><STRONG><a name="[21e47c0]"></a>FaultISR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
-<BR><BR>[Calls]<UL><LI><a href="#[21e47c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
-</UL>
-<BR>[Called By]<UL><LI><a href="#[21e47c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
+<BR>[Called By]<UL><LI><a href="#[21c97fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
 </UL>
-<P><STRONG><a name="[21e4784]"></a>IntDefaultHandler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
-<BR><BR>[Calls]<UL><LI><a href="#[21e4784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
+<P><STRONG><a name="[21c97c0]"></a>FaultISR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[21c97c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e4784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
+<BR>[Called By]<UL><LI><a href="#[21c97c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
 </UL>
-<P><STRONG><a name="[21e1b74]"></a>AudioMute</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, audio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[21e13f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMSyncUpdate
-<LI><a href="#[21e1430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputState
-<LI><a href="#[21e146c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputInvert
-<LI><a href="#[21e14a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenPeriodSet
+<P><STRONG><a name="[21c9784]"></a>IntDefaultHandler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[21c9784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e1610]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOn
-<LI><a href="#[21e164c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioOff
-<LI><a href="#[21e1688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioHandler
+<BR>[Called By]<UL><LI><a href="#[21c9784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
 </UL>
-
-<P><STRONG><a name="[21df7d4]"></a>CANRegRead</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, can.o(i.CANRegRead))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[21c6034]"></a>CANRegRead</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, can.o(i.CANRegRead))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = CANRegRead
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21dec58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisable
-<LI><a href="#[21e2024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
+<BR>[Calls]<UL><LI><a href="#[21c5404]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisable
+<LI><a href="#[21c7e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21e209c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANStatusGet
-<LI><a href="#[21e20d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageGet
-<LI><a href="#[21e2114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageClear
-<LI><a href="#[21e2150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntStatus
-<LI><a href="#[21e218c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntEnable
-<LI><a href="#[21e21c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntClear
-<LI><a href="#[21e2204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANInit
-<LI><a href="#[21e2240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANEnable
-<LI><a href="#[21e227c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANBitTimingSet
-<LI><a href="#[21e3104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSet
+<BR>[Called By]<UL><LI><a href="#[21c7f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSet
+<LI><a href="#[21c7fd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntStatus
+<LI><a href="#[21c8014]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntEnable
+<LI><a href="#[21c8050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANIntClear
+<LI><a href="#[21c808c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANInit
+<LI><a href="#[21c80c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANEnable
+<LI><a href="#[21c8104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANBitTimingSet
 </UL>
 <P>
 <H3>

@@ -12,4 +12,3 @@
 ..\canmain.o: ..\..\..\driverlib/systick.h
 ..\canmain.o: ..\..\..\driverlib/timer.h
 ..\canmain.o: ..\..\..\driverlib/uart.h
-..\canmain.o: can_net.h

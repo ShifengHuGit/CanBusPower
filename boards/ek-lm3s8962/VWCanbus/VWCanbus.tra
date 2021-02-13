@@ -13,7 +13,7 @@
 ### ADS-LD Output File: 'VWCanbus.axf'
 ### ADS-LD Command File: 'VWCanbus.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'VWCanbus.lnp', Handle=0x00001B70
+### Creating CmdFile 'VWCanbus.lnp', Handle=0x00001974
 ### Writing '.lnp' file
 ### ADS-LD Command file 'VWCanbus.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

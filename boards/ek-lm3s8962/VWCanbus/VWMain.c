@@ -1038,11 +1038,12 @@ void Init_VW(){
     CanMsg_SessionCtl_RX.ulMsgLen = 8;
     CANMessageSet(CAN0_BASE, MSGOBJ_SES_CTRL, &CanMsg_SessionCtl_TX,
                           MSG_OBJ_TYPE_TX);
+    UARTSend((unsigned char *)"-------Wait 4 Interrupt!---------", 33);
     while(! (g_ulFlags&FLAG_RX_SES_CTRL))
     {
-        UARTSend((unsigned char *)"Wait for the SESSION RESPONSE", 29);
+        //UARTSend((unsigned char *)"Wait for the SESSION RESPONSE", 29);
     }
-
+    UARTSend((unsigned char *)"-------Got the Interrupt!--------", 33);
 
     CANMessageGet(CAN0_BASE, MSGOBJ_SES_CTRL, &CanMsg_SessionCtl_RX, 1);
     UARTSend((unsigned char *)"ID |", 4);
@@ -1109,8 +1110,11 @@ int main(void)
                          UART_CONFIG_PAR_NONE));
 
     UARTFIFODisable(UART0_BASE); 
+     UARTSend((unsigned char *)"-------Welcome!---A-----", 24);
+     
 
     //LED
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
     GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_2);
 
 
@@ -1139,9 +1143,11 @@ int main(void)
     SysTickEnable();
     SysTickIntEnable();
 
-    GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0);
+    GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
 
 
     Init_VW();
+    while(1)
+    {}
 
 }

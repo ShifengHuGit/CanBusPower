@@ -12,7 +12,7 @@
 ### ADS-LD Output File: '.\rvmdk\can_device_qs.axf'
 ### ADS-LD Command File: '.\rvmdk\can_device_qs.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\rvmdk\can_device_qs.lnp', Handle=0x00001018
+### Creating CmdFile '.\rvmdk\can_device_qs.lnp', Handle=0x00000D1C
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\rvmdk\can_device_qs.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

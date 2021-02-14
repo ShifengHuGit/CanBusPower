@@ -1,0 +1,14 @@
+.\rvmdk\can_net.o: can_net.c
+.\rvmdk\can_net.o: ..\..\..\inc/hw_ints.h
+.\rvmdk\can_net.o: ..\..\..\inc/hw_memmap.h
+.\rvmdk\can_net.o: ..\..\..\inc/hw_types.h
+.\rvmdk\can_net.o: ..\..\..\driverlib/can.h
+.\rvmdk\can_net.o: ..\..\..\driverlib/debug.h
+.\rvmdk\can_net.o: ..\..\..\driverlib/gpio.h
+.\rvmdk\can_net.o: ..\..\..\driverlib/interrupt.h
+.\rvmdk\can_net.o: ..\..\..\driverlib/sysctl.h
+.\rvmdk\can_net.o: ..\..\..\driverlib/systick.h
+.\rvmdk\can_net.o: ..\can_device_qs/can_common.h
+.\rvmdk\can_net.o: ..\..\..\driverlib/uart.h
+.\rvmdk\can_net.o: audio.h
+.\rvmdk\can_net.o: can_net.h

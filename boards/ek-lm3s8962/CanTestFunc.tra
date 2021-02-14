@@ -11,7 +11,7 @@
 ### ADS-LD Output File: '..\CanTestFunc.axf'
 ### ADS-LD Command File: '..\CanTestFunc.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '..\CanTestFunc.lnp', Handle=0x00001B10
+### Creating CmdFile '..\CanTestFunc.lnp', Handle=0x00000570
 ### Writing '.lnp' file
 ### ADS-LD Command file '..\CanTestFunc.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

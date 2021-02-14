@@ -1,6 +1,6 @@
 Dependencies for Project 'CanTestFunc', Target 'CanTestMotherBoard': (DO NOT MODIFY !)
 F (.\Startup.s)(0x601FC4BB)(--device DLM --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1" -I "C:\Keil\ARM\INC\Luminary" -o "..\Startup.o")
-F (.\CanMain.c)(0x601FFF26)(-c --device DLM -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork -I. -I.. -I..\..\.. -I..\..\..\third_party\lwip-1.3.0\apps -I..\..\..\third_party\lwip-1.3.0\ports\stellaris\include -I..\..\..\third_party\lwip-1.3.0\src\include -I..\..\..\third_party\lwip-1.3.0\src\include\ipv4 -I "C:\Keil\ARM\INC\Luminary" -Drvmdk -DPART_LM3S8962 -o "..\canmain.o" --omf_browse "..\canmain.crf" --depend "..\canmain.d")
+F (.\CanMain.c)(0x6027F1FA)(-c --device DLM -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork -I. -I.. -I..\..\.. -I..\..\..\third_party\lwip-1.3.0\apps -I..\..\..\third_party\lwip-1.3.0\ports\stellaris\include -I..\..\..\third_party\lwip-1.3.0\src\include -I..\..\..\third_party\lwip-1.3.0\src\include\ipv4 -I "C:\Keil\ARM\INC\Luminary" -Drvmdk -DPART_LM3S8962 -o "..\canmain.o" --omf_browse "..\canmain.crf" --depend "..\canmain.d")
 I (..\..\..\inc/hw_ints.h)(0x601F9827)
 I (..\..\..\inc/hw_memmap.h)(0x601F9827)
 I (..\..\..\inc/hw_sysctl.h)(0x601F9827)

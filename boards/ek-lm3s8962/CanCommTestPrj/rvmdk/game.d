@@ -1,0 +1,14 @@
+.\rvmdk\game.o: game.c
+.\rvmdk\game.o: ..\..\..\inc/hw_memmap.h
+.\rvmdk\game.o: ..\..\..\inc/hw_types.h
+.\rvmdk\game.o: ..\..\..\driverlib/uart.h
+.\rvmdk\game.o: ..\..\..\driverlib/sysctl.h
+.\rvmdk\game.o: ..\drivers/rit128x96x4.h
+.\rvmdk\game.o: audio.h
+.\rvmdk\game.o: can_net.h
+.\rvmdk\game.o: enet.h
+.\rvmdk\game.o: game.h
+.\rvmdk\game.o: globals.h
+.\rvmdk\game.o: images.h
+.\rvmdk\game.o: random.h
+.\rvmdk\game.o: sounds.h

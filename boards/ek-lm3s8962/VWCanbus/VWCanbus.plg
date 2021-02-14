@@ -1,290 +1,26 @@
-Build Project 'VWCanbus' - Target 'VWcanbus'
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+G:\Git\CanBusPower\boards\ek-lm3s8962\VWCanbus\VWCanbus.uv2
+Project File Date:  02/07/2021
+
+<h2>Output:</h2>
+Build target 'VWcanbus'
 assembling Startup.s...
 compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
-compiling 19264LCDdriver.c...
-compiling ustdlib.c...
-linking...
-Program Size: Code=8872 RO-data=236 RW-data=536 ZI-data=696  
-"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
-Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'VWCanbus' - Target 'VWcanbus'
-assembling Startup.s...
-compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
-compiling 19264LCDdriver.c...
-compiling ustdlib.c...
-linking...
-Program Size: Code=8832 RO-data=236 RW-data=536 ZI-data=696  
-"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
-Build Project 'VWCanbus' - Target 'VWcanbus'
-assembling Startup.s...
-compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
-compiling 19264LCDdriver.c...
-compiling ustdlib.c...
-linking...
-Program Size: Code=8832 RO-data=236 RW-data=536 ZI-data=696  
-"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
-Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'VWCanbus' - Target 'VWcanbus'
-assembling Startup.s...
-compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
-compiling 19264LCDdriver.c...
-compiling ustdlib.c...
-linking...
-Program Size: Code=8848 RO-data=236 RW-data=536 ZI-data=696  
-"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
-Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'VWCanbus' - Target 'VWcanbus'
-assembling Startup.s...
-compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
-compiling 19264LCDdriver.c...
-compiling ustdlib.c...
-linking...
-Program Size: Code=8936 RO-data=236 RW-data=536 ZI-data=696  
-"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
-Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'VWCanbus' - Target 'VWcanbus'
-assembling Startup.s...
-compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
-compiling 19264LCDdriver.c...
-compiling ustdlib.c...
-linking...
-Program Size: Code=8936 RO-data=236 RW-data=536 ZI-data=696  
-"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
-Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'VWCanbus' - Target 'VWcanbus'
-assembling Startup.s...
-compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
-compiling 19264LCDdriver.c...
-compiling ustdlib.c...
-linking...
-Program Size: Code=8936 RO-data=236 RW-data=536 ZI-data=696  
-"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
-Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'VWCanbus' - Target 'VWcanbus'
-assembling Startup.s...
-compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
-compiling 19264LCDdriver.c...
-compiling ustdlib.c...
-linking...
-Program Size: Code=8936 RO-data=236 RW-data=536 ZI-data=696  
-"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
-Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'VWCanbus' - Target 'VWcanbus'
-assembling Startup.s...
-compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
-compiling 19264LCDdriver.c...
-compiling ustdlib.c...
-linking...
-Program Size: Code=8956 RO-data=236 RW-data=536 ZI-data=696  
-"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
-Build Project 'VWCanbus' - Target 'VWcanbus'
-assembling Startup.s...
-compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
-compiling 19264LCDdriver.c...
-compiling ustdlib.c...
-linking...
-Program Size: Code=8956 RO-data=236 RW-data=536 ZI-data=696  
-"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
-Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'VWCanbus' - Target 'VWcanbus'
-assembling Startup.s...
-compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
-compiling 19264LCDdriver.c...
-compiling ustdlib.c...
-linking...
-Program Size: Code=8972 RO-data=236 RW-data=536 ZI-data=696  
-"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
-Build Project 'VWCanbus' - Target 'VWcanbus'
-assembling Startup.s...
-compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
-compiling 19264LCDdriver.c...
-compiling ustdlib.c...
-linking...
-Program Size: Code=8972 RO-data=236 RW-data=536 ZI-data=696  
-"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
-Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'VWCanbus' - Target 'VWcanbus'
-assembling Startup.s...
-compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+VWMain.c(624): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(630): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(631): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(632): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(633): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(634): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(635): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1032): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1033): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1034): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1035): warning:  #177-D: variable "FunctionCode" was declared but never referenced
 compiling 19264LCDdriver.c...
 compiling ustdlib.c...
 linking...
@@ -295,72 +31,125 @@ Connecting: Mode=JTAG, Speed=1000000Hz
 Erase Done.
 Programming Done.
 Verify OK.
-Build Project 'VWCanbus' - Target 'VWcanbus'
+Build target 'VWcanbus'
 assembling Startup.s...
 compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+VWMain.c(624): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(630): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(631): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(632): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(633): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(634): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(635): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1032): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1033): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1034): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1035): warning:  #177-D: variable "FunctionCode" was declared but never referenced
 compiling 19264LCDdriver.c...
 compiling ustdlib.c...
 linking...
-Program Size: Code=8972 RO-data=236 RW-data=536 ZI-data=696  
+Program Size: Code=8984 RO-data=236 RW-data=536 ZI-data=696  
 "VWCanbus.axf" - 0 Error(s), 11 Warning(s).
 Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
 Connecting: Mode=JTAG, Speed=1000000Hz
 Erase Done.
 Programming Done.
 Verify OK.
-Build Project 'VWCanbus' - Target 'VWcanbus'
+Build target 'VWcanbus'
 assembling Startup.s...
 compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+VWMain.c(626): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(632): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(633): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(634): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(635): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(636): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(637): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1034): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1035): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1036): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1037): warning:  #177-D: variable "FunctionCode" was declared but never referenced
 compiling 19264LCDdriver.c...
 compiling ustdlib.c...
 linking...
-Program Size: Code=8972 RO-data=236 RW-data=536 ZI-data=696  
+Program Size: Code=8996 RO-data=236 RW-data=536 ZI-data=696  
 "VWCanbus.axf" - 0 Error(s), 11 Warning(s).
 Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
 Connecting: Mode=JTAG, Speed=1000000Hz
 Erase Done.
 Programming Done.
 Verify OK.
-Build Project 'VWCanbus' - Target 'VWcanbus'
+Build target 'VWcanbus'
 assembling Startup.s...
 compiling VWMain.c...
-VWMain.c(622): warning:  #550-D: variable "NoSingleFrame" was set but never used
-VWMain.c(628): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
-VWMain.c(629): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
-VWMain.c(630): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
-VWMain.c(631): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
-VWMain.c(632): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
-VWMain.c(633): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
-VWMain.c(1030): warning:  #177-D: variable "RespFlag" was declared but never referenced
-VWMain.c(1031): warning:  #177-D: variable "RespLength" was declared but never referenced
-VWMain.c(1032): warning:  #177-D: variable "RespData" was declared but never referenced
-VWMain.c(1033): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+VWMain.c(626): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(632): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(633): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(634): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(635): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(636): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(637): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1034): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1035): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1036): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1037): warning:  #177-D: variable "FunctionCode" was declared but never referenced
 compiling 19264LCDdriver.c...
 compiling ustdlib.c...
 linking...
-Program Size: Code=8980 RO-data=236 RW-data=536 ZI-data=696  
+Program Size: Code=8996 RO-data=236 RW-data=536 ZI-data=696  
+"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
+Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'VWcanbus'
+assembling Startup.s...
+compiling VWMain.c...
+VWMain.c(626): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(632): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(633): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(634): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(635): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(636): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(637): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1034): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1035): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1036): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1037): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+compiling 19264LCDdriver.c...
+compiling ustdlib.c...
+linking...
+Program Size: Code=8996 RO-data=236 RW-data=536 ZI-data=696  
+"VWCanbus.axf" - 0 Error(s), 11 Warning(s).
+Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'VWcanbus'
+assembling Startup.s...
+compiling VWMain.c...
+VWMain.c(626): warning:  #550-D: variable "NoSingleFrame" was set but never used
+VWMain.c(632): warning:  #177-D: variable "HEX_RespFlag" was declared but never referenced
+VWMain.c(633): warning:  #177-D: variable "HEX_RespSIDCode" was declared but never referenced
+VWMain.c(634): warning:  #177-D: variable "HEX_RespData" was declared but never referenced
+VWMain.c(635): warning:  #177-D: variable "HEX_FunctionCode" was declared but never referenced
+VWMain.c(636): warning:  #177-D: variable "HEX_RespLength" was declared but never referenced
+VWMain.c(637): warning:  #177-D: variable "HEX_RawData" was declared but never referenced
+VWMain.c(1034): warning:  #177-D: variable "RespFlag" was declared but never referenced
+VWMain.c(1035): warning:  #177-D: variable "RespLength" was declared but never referenced
+VWMain.c(1036): warning:  #177-D: variable "RespData" was declared but never referenced
+VWMain.c(1037): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+compiling 19264LCDdriver.c...
+compiling ustdlib.c...
+linking...
+Program Size: Code=8984 RO-data=236 RW-data=536 ZI-data=696  
 "VWCanbus.axf" - 0 Error(s), 11 Warning(s).
 Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\VWCanbus\\VWCanbus.AXF" 
 Connecting: Mode=JTAG, Speed=1000000Hz

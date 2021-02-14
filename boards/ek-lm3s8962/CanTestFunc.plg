@@ -1,113 +1,18 @@
-Build Project 'CanTestFunc' - Target 'CanTestMotherBoard'
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+G:\Git\CanBusPower\boards\ek-lm3s8962\CanTestPrj\CanTestFunc.uv2
+Project File Date:  02/13/2021
+
+<h2>Output:</h2>
+Build target 'CanTestMotherBoard'
 assembling Startup.s...
 compiling CanMain.c...
+CanMain.c(148): warning:  #177-D: variable "ulLoop" was declared but never referenced
 linking...
-Program Size: Code=2624 RO-data=188 RW-data=68 ZI-data=276  
-"..\CanTestFunc.axf" - 0 Error(s), 0 Warning(s).
-Load "..\\CanTestFunc.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'CanTestFunc' - Target 'CanTestMotherBoard'
-assembling Startup.s...
-compiling CanMain.c...
-linking...
-Program Size: Code=2656 RO-data=188 RW-data=68 ZI-data=276  
-"..\CanTestFunc.axf" - 0 Error(s), 0 Warning(s).
-Load "..\\CanTestFunc.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'CanTestFunc' - Target 'CanTestMotherBoard'
-assembling Startup.s...
-compiling CanMain.c...
-linking...
-Program Size: Code=2652 RO-data=188 RW-data=68 ZI-data=276  
-"..\CanTestFunc.axf" - 0 Error(s), 0 Warning(s).
-Load "..\\CanTestFunc.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'CanTestFunc' - Target 'CanTestMotherBoard'
-assembling Startup.s...
-compiling CanMain.c...
-linking...
-Program Size: Code=2652 RO-data=188 RW-data=68 ZI-data=276  
-"..\CanTestFunc.axf" - 0 Error(s), 0 Warning(s).
-Load "..\\CanTestFunc.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'CanTestFunc' - Target 'CanTestMotherBoard'
-assembling Startup.s...
-compiling CanMain.c...
-CanMain.c(132): warning:  #177-D: variable "ulLoop" was declared but never referenced
-linking...
-Program Size: Code=2632 RO-data=188 RW-data=72 ZI-data=280  
-"..\CanTestFunc.axf" - 0 Error(s), 1 Warning(s).
-Load "..\\CanTestFunc.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'CanTestFunc' - Target 'CanTestMotherBoard'
-assembling Startup.s...
-compiling CanMain.c...
-CanMain.c(132): warning:  #177-D: variable "ulLoop" was declared but never referenced
-linking...
-Program Size: Code=2632 RO-data=188 RW-data=72 ZI-data=280  
-"..\CanTestFunc.axf" - 0 Error(s), 1 Warning(s).
-Load "..\\CanTestFunc.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'CanTestFunc' - Target 'CanTestMotherBoard'
-assembling Startup.s...
-compiling CanMain.c...
-CanMain.c(146): warning:  #177-D: variable "ulLoop" was declared but never referenced
-linking...
-Program Size: Code=3208 RO-data=188 RW-data=72 ZI-data=280  
-"..\CanTestFunc.axf" - 0 Error(s), 1 Warning(s).
-Load "..\\CanTestFunc.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'CanTestFunc' - Target 'CanTestMotherBoard'
-assembling Startup.s...
-compiling CanMain.c...
-CanMain.c(146): warning:  #177-D: variable "ulLoop" was declared but never referenced
-linking...
-Program Size: Code=3216 RO-data=188 RW-data=72 ZI-data=280  
-"..\CanTestFunc.axf" - 0 Error(s), 1 Warning(s).
-Load "..\\CanTestFunc.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'CanTestFunc' - Target 'CanTestMotherBoard'
-assembling Startup.s...
-compiling CanMain.c...
-CanMain.c(146): warning:  #177-D: variable "ulLoop" was declared but never referenced
-linking...
-Program Size: Code=3228 RO-data=188 RW-data=72 ZI-data=280  
-"..\CanTestFunc.axf" - 0 Error(s), 1 Warning(s).
-Load "..\\CanTestFunc.AXF" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-Build Project 'CanTestFunc' - Target 'CanTestMotherBoard'
-assembling Startup.s...
-compiling CanMain.c...
-CanMain.c(146): warning:  #177-D: variable "ulLoop" was declared but never referenced
-linking...
-Program Size: Code=3260 RO-data=188 RW-data=72 ZI-data=280  
+Program Size: Code=3756 RO-data=188 RW-data=80 ZI-data=280  
 "..\CanTestFunc.axf" - 0 Error(s), 1 Warning(s).
 Load "..\\CanTestFunc.AXF" 
 Connecting: Mode=JTAG, Speed=1000000Hz

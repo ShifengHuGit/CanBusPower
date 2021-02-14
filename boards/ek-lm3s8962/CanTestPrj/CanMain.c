@@ -40,8 +40,9 @@
 #include "driverlib/timer.h"
 #include "driverlib/uart.h"
 //#include "can_net.h"
-
+#define CANBAUD_250K            1
 #define CANBAUD_500K            2
+#define MSGOBJ_NUM_BUTTON       1
 tCANBitClkParms CANBitClkSettings[] =
 {
     {9,6,4,4},  // CANBAUD_125K
@@ -51,6 +52,7 @@ tCANBitClkParms CANBitClkSettings[] =
 };
 
 tBoolean F_led = true;
+unsigned char RXTempData[] = {0x01,0x3E,0x80,0x55,0x55,0x55,0x55,0x55};
 //****************************************************************************
 //
 // This is the message identifier to use for sending data in the form of
@@ -157,7 +159,10 @@ CANHandler(void)
     F_led =!F_led;
     UARTSend((unsigned char *)"---CAN---!", 10);
     ulStatus = CANIntStatus(CAN0_BASE, CAN_INT_STS_CAUSE); 
+    UARTSend((unsigned char *)&ulStatus, 1);
     g_ulFlags = ulStatus;       
+    CANMessageGet(CAN0_BASE, MSGOBJ_NUM_BUTTON, &CanTestData, 1);
+    CANMessageClear(CAN0_BASE, MSGOBJ_NUM_BUTTON);
     CANIntClear(CAN0_BASE, ulStatus);
 }
 
@@ -185,7 +190,7 @@ CANConfigure(void)
     // Configure the bit clock parameters for the CAN device.
     //
     CANBitTimingSet(CAN0_BASE,
-                    &CANBitClkSettings[CANBAUD_500K]);
+                    &CANBitClkSettings[CANBAUD_250K]);
 
     //
     // Take the CAN1 device out of INIT state.
@@ -202,7 +207,12 @@ CANConfigure(void)
     // bus.
     //
     //CANConfigureNetwork();
-
+CanTestData.ulMsgID = 0x708;
+CanTestData.pucMsgData = (unsigned char *)RXTempData;
+CanTestData.ulMsgLen = 8;
+CanTestData.ulFlags = MSG_OBJ_RX_INT_ENABLE;
+CANMessageSet(CAN0_BASE, MSGOBJ_NUM_DATA_RX, &CanTestData,
+                      MSG_OBJ_TYPE_RX);
     //
     // Enable interrupts for the CAN in the NVIC.
     //
@@ -250,7 +260,7 @@ UARTConfigSetExpClk(UART1_BASE, SysCtlClockGet(), 115200,
                     (UART_CONFIG_WLEN_8 | UART_CONFIG_STOP_ONE |
                      UART_CONFIG_PAR_NONE));
 UARTFIFODisable(UART1_BASE); 
- UARTSend((unsigned char *)"-------Welcome!---C-----", 24);
+ UARTSend((unsigned char *)"-------Welcome!---M-----", 24);
 
     //
     // Initialize the CAN controller.
@@ -259,12 +269,12 @@ UARTFIFODisable(UART1_BASE);
 
     IntMasterEnable();
 
-    CanTestData.ulMsgID = 0x708;
-    CanTestData.pucMsgData = (unsigned char *)TempData;
-    CanTestData.ulMsgLen = 8;
-    CanTestData.ulFlags = MSG_OBJ_TX_INT_ENABLE;
-    CANMessageSet(CAN0_BASE, MSGOBJ_NUM_DATA_TX, &CanTestData,
-                          MSG_OBJ_TYPE_TX);
+   // CanTestData.ulMsgID = 0x708;
+   // CanTestData.pucMsgData = (unsigned char *)TempData;
+   // CanTestData.ulMsgLen = 8;
+   // CanTestData.ulFlags = MSG_OBJ_TX_INT_ENABLE;
+  //  CANMessageSet(CAN0_BASE, MSGOBJ_NUM_DATA_TX, &CanTestData,
+   //                       MSG_OBJ_TYPE_TX);
 
 
     //

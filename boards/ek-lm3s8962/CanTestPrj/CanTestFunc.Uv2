@@ -8,8 +8,6 @@ Group (Libraries)
 
 File 1,2,<.\Startup.s><Startup.s>
 File 1,1,<.\CanMain.c><CanMain.c>
-File 1,1,<..\qs_ek-lm3s8962\can_net.c><can_net.c>
-File 1,1,<..\qs_ek-lm3s8962\audio.c><audio.c>
 File 2,4,<..\..\..\driverlib\rvmdk\driverlib.lib><driverlib.lib>
 
 

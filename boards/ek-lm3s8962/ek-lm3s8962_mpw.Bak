@@ -11,7 +11,7 @@
   Project=".\boot_eth\boot_eth.Uv2"
   Project=".\boot_serial\boot_serial.Uv2"
   Project=".\can_device_led\can_device_led.Uv2"
-  Project=".\can_device_qs\can_device_qs.Uv2"
+  Project=".\can_device_qs\can_device_qs.Uv2",X
   Project=".\enet_io\enet_io.Uv2"
   Project=".\enet_lwip\enet_lwip.Uv2"
   Project=".\enet_ptpd\enet_ptpd.Uv2"
@@ -27,7 +27,7 @@
   Project=".\timers\timers.Uv2"
   Project=".\uart_echo\uart_echo.Uv2"
   Project=".\watchdog\watchdog.Uv2"
-  Project=".\CanTestPrj\CanTestFunc.Uv2"
+  Project=".\CanTestPrj\CanTestFunc.Uv2",X
   Project=".\LCD19264\LCDDriver.Uv2"
-  Project=".\VWCanbus\VWCanbus.Uv2",A
+  Project=".\VWCanbus\VWCanbus.Uv2",A,X
 

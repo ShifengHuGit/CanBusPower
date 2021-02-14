@@ -366,6 +366,8 @@ CANHandler(void)
     //
     ulStatus = CANIntStatus(CAN0_BASE, CAN_INT_STS_CAUSE); 
     g_ulFlags = ulStatus;
+    UARTSend("Can StatusID:", 13);
+    UARTCharPut(UART0_BASE, (unsigned char )ulStatus);
 /*----- Comment out Switch 
     switch(ulStatus)
     {
@@ -573,7 +575,7 @@ void FrameSend(int CanID, int SID, int FunctionCode, char * CanMsg)
 {
 
 }
-
+void
 CANConfigureNetwork(void)
 {
     //
@@ -582,14 +584,16 @@ CANConfigureNetwork(void)
     //
     CanMsg_SessionCtl_TX.ulMsgID = CANMSGID_TESTER_SESSION;
     CanMsg_SessionCtl_TX.ulMsgIDMask = 0;
-    CanMsg_SessionCtl_TX.ulFlags = MSG_OBJ_RX_INT_ENABLE;
+    CanMsg_SessionCtl_TX.ulFlags = MSG_OBJ_TX_INT_ENABLE;
     CanMsg_SessionCtl_TX.ulMsgLen = 8;
     //CanMsg_SessionCtl_TX.pucMsgData = SessionFrameTX;
 
     CanMsg_SessionCtl_RX.ulMsgID = CANMSGID_ECU_SESSION;
     CanMsg_SessionCtl_RX.ulMsgIDMask = 0;
-    CanMsg_SessionCtl_RX.ulFlags = MSG_OBJ_TX_INT_ENABLE;
+    CanMsg_SessionCtl_RX.ulFlags = MSG_OBJ_RX_INT_ENABLE;
     CanMsg_SessionCtl_RX.ulMsgLen = 8;
+    CANMessageSet(CAN0_BASE, MSGOBJ_NUM_DATA_RX, &CanMsg_SessionCtl_RX,
+                  MSG_OBJ_TYPE_RX);
     //CanMsg_SessionCtl_RX.pucMsgData = SessionFrameRX;
 
 
@@ -1039,13 +1043,13 @@ void Init_VW(){
     CANMessageSet(CAN0_BASE, MSGOBJ_SES_CTRL, &CanMsg_SessionCtl_TX,
                           MSG_OBJ_TYPE_TX);
     UARTSend((unsigned char *)"-------Wait 4 Interrupt!---------", 33);
-    while(! (g_ulFlags&FLAG_RX_SES_CTRL))
+   // while(! (g_ulFlags&FLAG_RX_SES_CTRL))
     {
         //UARTSend((unsigned char *)"Wait for the SESSION RESPONSE", 29);
     }
     UARTSend((unsigned char *)"-------Got the Interrupt!--------", 33);
 
-    CANMessageGet(CAN0_BASE, MSGOBJ_SES_CTRL, &CanMsg_SessionCtl_RX, 1);
+    CANMessageGet(CAN0_BASE, MSGOBJ_NUM_DATA_RX, &CanMsg_SessionCtl_RX, 1);
     UARTSend((unsigned char *)"ID |", 4);
     UARTSend((unsigned char *)&(CanMsg_SessionCtl_RX.ulMsgID), 4);
     UARTSend((unsigned char *)"--DATA |", 8);
@@ -1079,6 +1083,7 @@ int main(void)
 {
     SysCtlClockSet(SYSCTL_SYSDIV_8 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN |
            SYSCTL_XTAL_8MHZ);
+
     SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOC);
     GPIOPadConfigSet(GPIO_PORTC_BASE,
                      GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3,
@@ -1110,7 +1115,7 @@ int main(void)
                          UART_CONFIG_PAR_NONE));
 
     UARTFIFODisable(UART0_BASE); 
-     UARTSend((unsigned char *)"-------Welcome!---A-----", 24);
+     UARTSend((unsigned char *)"-------This is the CanBoard!-----", 33);
      
 
     //LED

@@ -11,7 +11,7 @@
 ### ADS-LD Output File: 'LCDDriver.axf'
 ### ADS-LD Command File: 'LCDDriver.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'LCDDriver.lnp', Handle=0x00000E50
+### Creating CmdFile 'LCDDriver.lnp', Handle=0x00000D08
 ### Writing '.lnp' file
 ### ADS-LD Command file 'LCDDriver.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

@@ -1,0 +1,17 @@
+vwmain.o: VWMain.c
+vwmain.o: C:\Keil\ARM\RV31\INC\string.h
+vwmain.o: ..\..\..\inc/hw_ints.h
+vwmain.o: ..\..\..\inc/hw_memmap.h
+vwmain.o: ..\..\..\inc/hw_sysctl.h
+vwmain.o: ..\..\..\inc/hw_types.h
+vwmain.o: ..\..\..\driverlib/can.h
+vwmain.o: ..\..\..\driverlib/debug.h
+vwmain.o: ..\..\..\driverlib/gpio.h
+vwmain.o: ..\..\..\driverlib/interrupt.h
+vwmain.o: ..\..\..\driverlib/sysctl.h
+vwmain.o: ..\..\..\driverlib/systick.h
+vwmain.o: C:\Keil\ARM\INC\Luminary\can.h
+vwmain.o: ..\..\..\driverlib/uart.h
+vwmain.o: 19264LCDdriver.h
+vwmain.o: ..\..\..\utils/ustdlib.h
+vwmain.o: C:\Keil\ARM\RV31\INC\stdarg.h

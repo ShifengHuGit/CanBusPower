@@ -4,19 +4,19 @@
 ### List of Objects: adding '".\rvmdk\audio.o"'
 ### List of Objects: adding '".\rvmdk\can_net.o"'
 ### List of Objects: adding '".\rvmdk\images.o"'
-### List of Objects: adding '".\rvmdk\qs_ek-lm3s8962.o"'
 ### List of Objects: adding '".\rvmdk\random.o"'
 ### List of Objects: adding '".\rvmdk\sounds.o"'
 ### List of Objects: adding '".\rvmdk\startup_rvmdk.o"'
+### List of Objects: adding '".\rvmdk\testecumain.o"'
 ### List of Objects: adding '"..\..\..\driverlib\rvmdk\driverlib.lib"'
 ### ADS-LD Command completed:
---device DLM ".\rvmdk\audio.o" ".\rvmdk\can_net.o" ".\rvmdk\images.o" ".\rvmdk\qs_ek-lm3s8962.o" ".\rvmdk\random.o" ".\rvmdk\sounds.o" ".\rvmdk\startup_rvmdk.o" "..\..\..\driverlib\rvmdk\driverlib.lib" --library_type=microlib --ro-base 0x00000000 --entry Reset_Handler --rw-base 0x20000000 --first __Vectors --strict --entry Reset_Handler --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--device DLM ".\rvmdk\audio.o" ".\rvmdk\can_net.o" ".\rvmdk\images.o" ".\rvmdk\random.o" ".\rvmdk\sounds.o" ".\rvmdk\startup_rvmdk.o" ".\rvmdk\testecumain.o" "..\..\..\driverlib\rvmdk\driverlib.lib" --library_type=microlib --ro-base 0x00000000 --entry Reset_Handler --rw-base 0x20000000 --first __Vectors --strict --entry Reset_Handler --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\rvmdk\qs_ek-lm3s8962.map" -o ".\rvmdk\qs_ek-lm3s8962.axf"### Preparing Environment (PrepEnvAds)
 ### ADS-LD Output File: '.\rvmdk\qs_ek-lm3s8962.axf'
 ### ADS-LD Command File: '.\rvmdk\qs_ek-lm3s8962.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\rvmdk\qs_ek-lm3s8962.lnp', Handle=0x00000604
+### Creating CmdFile '.\rvmdk\qs_ek-lm3s8962.lnp', Handle=0x00000CE4
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\rvmdk\qs_ek-lm3s8962.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

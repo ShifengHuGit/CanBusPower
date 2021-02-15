@@ -10,7 +10,7 @@
  CppX (*.cpp)
  DaveTm { 0,0,0,0,0,0,0,0 }
 
-Target (qs_ek-lm3s8962), 0x0004 // Tools: 'ARM-ADS'
+Target (Test-ECU), 0x0004 // Tools: 'ARM-ADS'
 GRPOPT 1,(Source),1,0,0
 GRPOPT 2,(Libraries),0,0,0
 GRPOPT 3,(Documentation),0,0,0
@@ -18,15 +18,15 @@ GRPOPT 3,(Documentation),0,0,0
 OPTFFF 1,1,1,0,0,0,0,0,<.\audio.c><audio.c> 
 OPTFFF 1,2,1,0,0,0,0,0,<.\can_net.c><can_net.c> 
 OPTFFF 1,3,1,0,0,0,0,0,<.\images.c><images.c> 
-OPTFFF 1,4,1,0,0,0,0,0,<.\qs_ek-lm3s8962.c><qs_ek-lm3s8962.c> 
-OPTFFF 1,5,1,0,0,0,0,0,<.\random.c><random.c> 
-OPTFFF 1,6,1,0,0,0,0,0,<.\sounds.c><sounds.c> 
-OPTFFF 1,7,2,0,0,0,0,0,<.\startup_rvmdk.S><startup_rvmdk.S> 
+OPTFFF 1,4,1,0,0,0,0,0,<.\random.c><random.c> 
+OPTFFF 1,5,1,0,0,0,0,0,<.\sounds.c><sounds.c> 
+OPTFFF 1,6,2,0,0,0,0,0,<.\startup_rvmdk.S><startup_rvmdk.S> 
+OPTFFF 1,7,1,0,0,0,0,0,<.\TestECUmain.c><TestECUmain.c> 
 OPTFFF 2,8,4,0,0,0,0,0,<..\..\..\driverlib\rvmdk\driverlib.lib><driverlib.lib> 
 OPTFFF 3,9,5,0,0,0,0,0,<.\readme.txt><readme.txt> 
 
 
-TARGOPT 1, (qs_ek-lm3s8962)
+TARGOPT 1, (Test-ECU)
  ADSCLK=50000000
   OPTTT 0,1,1,0
   OPTHX 1,65535,0,0,0

@@ -605,7 +605,7 @@ void displayCHINSE2(void)
 }
 void displayEngine(void)
 {
-   ShowQQCharH(0x80, "状态: 怠速", 5);
+   ShowQQCharH(0x80, "状态: 怠速  这他妈的闹的", 12);
    ShowQQCharH(0x90, "转速: 713rpm/m", 7);
    ShowQQCharL(0x80, "档位: D4",4);
    ShowQQCharL(0x90, "涡轮压力: 1.45Bar ",9);

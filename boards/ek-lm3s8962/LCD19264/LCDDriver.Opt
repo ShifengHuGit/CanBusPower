@@ -15,7 +15,7 @@ GRPOPT 1,(LCD19264),1,0,0
 GRPOPT 2,(Libraries),1,0,0
 
 OPTFFF 1,1,2,0,0,0,0,0,<.\Startup.s><Startup.s> 
-OPTFFF 1,2,1,1,0,0,0,0,<.\LCD19264.c><LCD19264.c> 
+OPTFFF 1,2,1,989855745,0,0,0,0,<.\LCD19264.c><LCD19264.c> 
 OPTFFF 2,3,4,0,0,0,0,0,<..\..\..\driverlib\rvmdk\driverlib.lib><driverlib.lib> 
 
 

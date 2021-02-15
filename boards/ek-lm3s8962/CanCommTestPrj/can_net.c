@@ -225,6 +225,31 @@ static unsigned char g_pucButtonMsg[2];
 //*****************************************************************************
 unsigned char g_ucLEDLevel=0;
 
+
+void Syswait_ms(int Count)
+{
+   SysCtlDelay( (SysCtlClockGet() / 1000)*Count);
+}
+
+
+
+//UART Send to COnsole
+void
+UARTSend(const unsigned char *pucBuffer, unsigned long ulCount)
+{
+    //
+    // Loop while there are more characters to send.
+    //
+    while(ulCount--)
+    {
+        //
+        // Write the next character to the UART.
+        //
+        //UARTCharPutNonBlocking(UART0_BASE, *pucBuffer++);
+        UARTCharPut(UART1_BASE, *pucBuffer++);
+    }
+}
+
 //*****************************************************************************
 //
 // This function handles connection with the other CAN device and also
@@ -280,6 +305,27 @@ CANMain(void)
     g_ulFlags &= ~(FLAG_DATA_RECV);
 }
 
+void
+Delay(unsigned long ulCount)
+{
+    //
+    // Loop while there are more clock ticks to wait for.
+    //
+    while(ulCount--)
+    {
+        //
+        // Wait until a SysTick interrupt has occurred.
+        //
+        while(!HWREGBITW(&g_ulFlags, 0))
+        {
+        }
+
+        //
+        // Clear the SysTick interrupt flag.
+        //
+        HWREGBITW(&g_ulFlags, 0) = 0;
+    }
+}
 
 //*****************************************************************************
 //
@@ -299,11 +345,14 @@ ProcessInterrupts(void)
         //
         // Turn the LED on or off based on the request.
         //
+    UARTSend("Sent:",5);
+    //Delay(4);
+    //Syswait_ms(1);
     CanMsg_SessionCtl_TX.pucMsgData = SessionFrameTX;
     //CanMsg_SessionCtl_TX.ulMsgLen = 8;
     CANMessageSet(CAN0_BASE, MSGOBJ_NUM_DATA_TX, &CanMsg_SessionCtl_TX,
                           MSG_OBJ_TYPE_TX);
-
+   // UARTSend(SessionFrameTX,8);
         //
         // Clear the flag.
         //
@@ -553,21 +602,6 @@ CANConfigureNetwork(void)
 
 
 
-void
-UARTSend(const unsigned char *pucBuffer, unsigned long ulCount)
-{
-    //
-    // Loop while there are more characters to send.
-    //
-    while(ulCount--)
-    {
-        //
-        // Write the next character to the UART.
-        //
-        //UARTCharPutNonBlocking(UART0_BASE, *pucBuffer++);
-        UARTCharPut(UART1_BASE, *pucBuffer++);
-    }
-}
 //*****************************************************************************
 //
 // The CAN controller Interrupt handler.
@@ -593,10 +627,7 @@ CANHandler(void)
     UARTCharPut(UART1_BASE, '-');
     UARTCharPut(UART1_BASE, (unsigned char )ulStatus);
 
-    g_MsgObjectRx.pucMsgData = pucData;
-    g_MsgObjectRx.ulMsgLen = 8;
-    CANMessageGet(CAN0_BASE, MSGOBJ_NUM_DATA_TX, &g_MsgObjectRx, 8);
-    UARTSend(pucData, 8);
+    
     //CANMessageClear(CAN0_BASE, MSGOBJ_SES_CTRL);
 
 
@@ -661,6 +692,12 @@ CANHandler(void)
         case MSGOBJ_NUM_DATA_TX:
         {
             g_ulFlags &= (~FLAG_DATA_TX_PEND);
+           // g_MsgObjectRx.pucMsgData = pucData;
+           // g_MsgObjectRx.ulMsgLen = 8;
+           // CANMessageGet(CAN0_BASE, MSGOBJ_NUM_DATA_TX, &g_MsgObjectRx, 8);
+           // UARTSend("Itself's Package",16);
+           // UARTSend(pucData, 8);
+            
             break;
         }
 
@@ -676,6 +713,10 @@ CANHandler(void)
          case MSGOBJ_SES_CTRL:
         {
              g_ulFlags = FLAG_RX_SES_CTRL;
+             g_MsgObjectRx.pucMsgData = pucData;
+             g_MsgObjectRx.ulMsgLen = 8;
+             CANMessageGet(CAN0_BASE, MSGOBJ_SES_CTRL, &g_MsgObjectRx, 8);
+             UARTSend(pucData, 8);
             break;
         }   
         //

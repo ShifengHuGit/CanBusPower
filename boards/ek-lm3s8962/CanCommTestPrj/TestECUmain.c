@@ -434,22 +434,24 @@ main(void)
     //
     // Send a welcome message to the UART.
     //
-    UARTCharPut(UART1_BASE, 'W');
+    UARTCharPut(UART1_BASE, '-');
+    UARTCharPut(UART1_BASE, 'T');
     UARTCharPut(UART1_BASE, 'e');
-    UARTCharPut(UART1_BASE, 'l');
-    UARTCharPut(UART1_BASE, 'c');
-    UARTCharPut(UART1_BASE, 'o');
-    UARTCharPut(UART1_BASE, '1');
-    UARTCharPut(UART1_BASE, '1');
-    UARTCharPut(UART1_BASE, '\r');
-    UARTCharPut(UART1_BASE, '\n');
+    UARTCharPut(UART1_BASE, 's');
+    UARTCharPut(UART1_BASE, 't');
+    UARTCharPut(UART1_BASE, '-');
+    UARTCharPut(UART1_BASE, 'E');
+    UARTCharPut(UART1_BASE, 'C');
+    UARTCharPut(UART1_BASE, 'U');
+    UARTCharPut(UART1_BASE, '-');
+    UARTCharPut(UART1_BASE, '-');
 
     //
     // Initialize the OSRAM OLED display.
     //
 
     //
-    AudioOn();
+    //AudioOn();
 
     //
     // Configure SysTick to periodically interrupt.
@@ -484,7 +486,7 @@ main(void)
     while(1)
     {
 
-
+        
         ProcessInterrupts();
         //
     //   // Display the main screen.

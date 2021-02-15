@@ -1,635 +1,629 @@
 <!doctype html public "-//w3c//dtd html 4.0 transitional//en">
 <html><head>
-<title>Static Call Graph - [G:\Shared-Workspace4Develop\boards\ek-lm3s8962\LCD19264\LCDDriver.axf]</title></head>
+<title>Static Call Graph - [G:\Git\CanBusPower\boards\ek-lm3s8962\LCD19264\LCDDriver.axf]</title></head>
 <body><HR>
-<H1>Static Call Graph for image G:\Shared-Workspace4Develop\boards\ek-lm3s8962\LCD19264\LCDDriver.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 484]: Last Updated: Mon Jan 18 12:33:53 2021
+<H1>Static Call Graph for image G:\Git\CanBusPower\boards\ek-lm3s8962\LCD19264\LCDDriver.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 484]: Last Updated: Mon Feb 15 22:41:40 2021
 <BR><P>
-<H3>Maximum Stack Usage =         88 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =         64 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-__rt_entry_main &rArr; main &rArr; displayEngine &rArr; ShowQQCharL &rArr; WRDataL &rArr; SPIWL &rArr; SendByteLCDL &rArr; RW &rArr; SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
+__rt_entry_main &rArr; main &rArr; displayEngine &rArr; ShowQQCharL &rArr; WRDataL &rArr; SPIWL &rArr; SendByteLCDL
 <P>
 <H3>
 Functions with no stack information
 </H3><UL>
- <LI><a href="#[220561c]">Reset_Handler</a>
- <LI><a href="#[2205694]">__user_initial_stackheap</a>
- <LI><a href="#[22057c0]">NmiSR</a>
- <LI><a href="#[2205784]">FaultISR</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed61c]">Reset_Handler</a>
+ <LI><a href="#[21ed694]">__user_initial_stackheap</a>
+ <LI><a href="#[21ed7c0]">NmiSR</a>
+ <LI><a href="#[21ed784]">FaultISR</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
 </UL>
 </UL>
 <P>
 <H3>
 Mutually Recursive functions
-</H3> <LI><a href="#[22057c0]">NmiSR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[22057c0]">NmiSR</a><BR>
- <LI><a href="#[2205784]">FaultISR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2205784]">FaultISR</a><BR>
- <LI><a href="#[2205748]">IntDefaultHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2205748]">IntDefaultHandler</a><BR>
- <LI><a href="#[22039fc]">SysCtlDelay</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[22039fc]">SysCtlDelay</a><BR>
- <LI><a href="#[2204104]">SendByteLCDH</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2204230]">RW</a><BR>
+</H3> <LI><a href="#[21ed7c0]">NmiSR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[21ed7c0]">NmiSR</a><BR>
+ <LI><a href="#[21ed784]">FaultISR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[21ed784]">FaultISR</a><BR>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[21ed748]">IntDefaultHandler</a><BR>
+ <LI><a href="#[21eb9fc]">SysCtlDelay</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[21eb9fc]">SysCtlDelay</a><BR>
 </UL>
 <P>
 <H3>
 Function Pointers
 </H3><UL>
- <LI><a href="#[220561c]">Reset_Handler</a>
- <LI><a href="#[22057c0]">NmiSR</a>
- <LI><a href="#[2205784]">FaultISR</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2205748]">IntDefaultHandler</a>
- <LI><a href="#[2e897d0]">__I$use$semihosting</a>
+ <LI><a href="#[21ed61c]">Reset_Handler</a>
+ <LI><a href="#[21ed7c0]">NmiSR</a>
+ <LI><a href="#[21ed784]">FaultISR</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[21ed748]">IntDefaultHandler</a>
+ <LI><a href="#[2e8d7d0]">__I$use$semihosting</a>
 </UL>
 <P>
 <H3>
 Global Symbols
 </H3>
-<P><STRONG><a name="[220561c]"></a>Reset_Handler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
-<BR><BR>[Calls]<UL><LI><a href="#[21f9c04]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<P><STRONG><a name="[21ed61c]"></a>Reset_Handler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[21e1c04]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
 </UL>
 
-<P><STRONG><a name="[21f9c04]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
-<BR><BR>[Calls]<UL><LI><a href="#[21f9ad8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
-<LI><a href="#[2e8728c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<P><STRONG><a name="[21e1c04]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
+<BR><BR>[Calls]<UL><LI><a href="#[21e1ad8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<LI><a href="#[2e8b28c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
-<BR>[Called By]<UL><LI><a href="#[220561c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
-</UL>
-
-<P><STRONG><a name="[2e8728c]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
-<BR><BR>[Called By]<UL><LI><a href="#[21f9c04]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<BR>[Called By]<UL><LI><a href="#[21ed61c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
 </UL>
 
-<P><STRONG><a name="[2e87250]"></a>__scatterload_rt2</STRONG> (Thumb, 44 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[21f9ad8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<P><STRONG><a name="[2e8b28c]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
+<BR><BR>[Called By]<UL><LI><a href="#[21e1c04]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
 </UL>
 
-<P><STRONG><a name="[2e87214]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
-
-<P><STRONG><a name="[2e871d8]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
-
-<P><STRONG><a name="[2e87034]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2e87034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
-</UL>
-<BR>[Called By]<UL><LI><a href="#[2e87034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+<P><STRONG><a name="[2e8b250]"></a>__scatterload_rt2</STRONG> (Thumb, 44 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21e1ad8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
-<P><STRONG><a name="[2e86f44]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+<P><STRONG><a name="[2e8b214]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[21f8cc8]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[21f9628]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
+<P><STRONG><a name="[2e8b1d8]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[2e8b034]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2e8b034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2e8b034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
 </UL>
 
-<P><STRONG><a name="[21f7198]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002A))
+<P><STRONG><a name="[2e8af44]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
 
-<P><STRONG><a name="[21f7210]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000028))
-
-<P><STRONG><a name="[21f75d0]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
-
-<P><STRONG><a name="[21f7468]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
-
-<P><STRONG><a name="[21f70a8]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
-
-<P><STRONG><a name="[21f7120]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
-
-<P><STRONG><a name="[21f74e0]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
-
-<P><STRONG><a name="[21f73f0]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
-
-<P><STRONG><a name="[21f79cc]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000006))
-
-<P><STRONG><a name="[21f7828]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000D))
-
-<P><STRONG><a name="[21f77b0]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000F))
-
-<P><STRONG><a name="[21f7738]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
-
-<P><STRONG><a name="[21f76c0]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
-
-<P><STRONG><a name="[21f7648]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
-
-<P><STRONG><a name="[21f78dc]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
-
-<P><STRONG><a name="[21f706c]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002F))
-
-<P><STRONG><a name="[21f7558]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
-
-<P><STRONG><a name="[21f7378]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
-
-<P><STRONG><a name="[21f7954]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000008))
-
-<P><STRONG><a name="[2e89b18]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[2e8a34c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
+<P><STRONG><a name="[21e0cc8]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[21e1628]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
 </UL>
 
-<P><STRONG><a name="[2e88eac]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
+<P><STRONG><a name="[21df198]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002A))
 
-<P><STRONG><a name="[2e88ccc]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
+<P><STRONG><a name="[21df210]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000028))
 
-<P><STRONG><a name="[2e88c90]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+<P><STRONG><a name="[21df5d0]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
 
-<P><STRONG><a name="[2e88df8]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
+<P><STRONG><a name="[21df468]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
 
-<P><STRONG><a name="[2e88f60]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000003))
+<P><STRONG><a name="[21df0a8]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
 
-<P><STRONG><a name="[2e88d80]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B))
+<P><STRONG><a name="[21df120]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
 
-<P><STRONG><a name="[21f9ad8]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry.o(.ARM.Collect$$rtentry$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[21f9c04]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
-<LI><a href="#[2e87250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+<P><STRONG><a name="[21df4e0]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+
+<P><STRONG><a name="[21df3f0]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+
+<P><STRONG><a name="[21df9cc]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000006))
+
+<P><STRONG><a name="[21df828]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000D))
+
+<P><STRONG><a name="[21df7b0]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000F))
+
+<P><STRONG><a name="[21df738]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+
+<P><STRONG><a name="[21df6c0]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+
+<P><STRONG><a name="[21df648]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+
+<P><STRONG><a name="[21df8dc]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+
+<P><STRONG><a name="[21df06c]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002F))
+
+<P><STRONG><a name="[21df558]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+
+<P><STRONG><a name="[21df378]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+
+<P><STRONG><a name="[21df954]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000008))
+
+<P><STRONG><a name="[2e8db18]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[2e8e34c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
 </UL>
 
-<P><STRONG><a name="[21f96dc]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+<P><STRONG><a name="[2e8ceac]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
 
-<P><STRONG><a name="[21f9358]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry4.o(.ARM.Collect$$rtentry$$00000004))
+<P><STRONG><a name="[2e8cccc]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
+
+<P><STRONG><a name="[2e8cc90]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+
+<P><STRONG><a name="[2e8cdf8]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
+
+<P><STRONG><a name="[2e8cf60]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000003))
+
+<P><STRONG><a name="[2e8cd80]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B))
+
+<P><STRONG><a name="[21e1ad8]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry.o(.ARM.Collect$$rtentry$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[21e1c04]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[2e8b250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+</UL>
+
+<P><STRONG><a name="[21e16dc]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+
+<P><STRONG><a name="[21e1358]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry4.o(.ARM.Collect$$rtentry$$00000004))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_sh &rArr; __user_setup_stackheap
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21f922c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+<BR>[Calls]<UL><LI><a href="#[21e122c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[21f9628]"></a>__rt_entry_li</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
-<BR><BR>[Calls]<UL><LI><a href="#[21f8cc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
+<P><STRONG><a name="[21e1628]"></a>__rt_entry_li</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+<BR><BR>[Calls]<UL><LI><a href="#[21e0cc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
 </UL>
 
-<P><STRONG><a name="[21f9664]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+<P><STRONG><a name="[21e1664]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
-<P><STRONG><a name="[21f9574]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
-<LI>Call Chain = __rt_entry_main &rArr; main &rArr; displayEngine &rArr; ShowQQCharL &rArr; WRDataL &rArr; SPIWL &rArr; SendByteLCDL &rArr; RW &rArr; SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
+<P><STRONG><a name="[21e1574]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_main &rArr; main &rArr; displayEngine &rArr; ShowQQCharL &rArr; WRDataL &rArr; SPIWL &rArr; SendByteLCDL
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21f90c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
-<LI><a href="#[2203b28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[21f95b0]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
-
-<P><STRONG><a name="[21f8548]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[21f90c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+<BR>[Calls]<UL><LI><a href="#[21e10c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+<LI><a href="#[21ebb28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[2e8a34c]"></a>__rt_exit_ls</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
-<BR><BR>[Calls]<UL><LI><a href="#[2e89b18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
+<P><STRONG><a name="[21e15b0]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+
+<P><STRONG><a name="[21e0548]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[21e10c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
-<P><STRONG><a name="[2e8a388]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
-
-<P><STRONG><a name="[2e8a310]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
-<BR><BR>[Calls]<UL><LI><a href="#[2e8a004]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+<P><STRONG><a name="[2e8e34c]"></a>__rt_exit_ls</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+<BR><BR>[Calls]<UL><LI><a href="#[2e8db18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
 </UL>
 
-<P><STRONG><a name="[22039fc]"></a>SysCtlDelay</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sysctl.o(.emb_text))
-<BR><BR>[Calls]<UL><LI><a href="#[22039fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
-</UL>
-<BR>[Called By]<UL><LI><a href="#[22039fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
-<LI><a href="#[2203a38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
-<LI><a href="#[2204140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_us
-<LI><a href="#[220417c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_ms
+<P><STRONG><a name="[2e8e388]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+
+<P><STRONG><a name="[2e8e310]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[2e8e004]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
 </UL>
 
-<P><STRONG><a name="[2205694]"></a>__user_initial_stackheap</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[21f922c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+<P><STRONG><a name="[21eb9fc]"></a>SysCtlDelay</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sysctl.o(.emb_text))
+<BR><BR>[Calls]<UL><LI><a href="#[21eb9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21eb9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+<LI><a href="#[21eba38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
+<LI><a href="#[21ec140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_us
+<LI><a href="#[21ec17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_ms
 </UL>
 
-<P><STRONG><a name="[2204320]"></a>delay10US</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, lcd19264.o(.text), UNUSED)
-
-<P><STRONG><a name="[22042e4]"></a>WaitNms</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, lcd19264.o(.text), UNUSED)
-
-<P><STRONG><a name="[22042a8]"></a>E2</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lcd19264.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[2203ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
-</UL>
-<BR>[Called By]<UL><LI><a href="#[2204014]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendByteLCDL
+<P><STRONG><a name="[21ed694]"></a>__user_initial_stackheap</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[21e122c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[220426c]"></a>E1</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lcd19264.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[2203ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+<P><STRONG><a name="[21ec320]"></a>delay10US</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, lcd19264.o(.text), UNUSED)
+
+<P><STRONG><a name="[21ec2e4]"></a>WaitNms</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, lcd19264.o(.text), UNUSED)
+
+<P><STRONG><a name="[21ec2a8]"></a>E2</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lcd19264.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[21ebab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2204104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendByteLCDH
+<BR>[Called By]<UL><LI><a href="#[21ec014]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendByteLCDL
 </UL>
 
-<P><STRONG><a name="[2204230]"></a>RW</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lcd19264.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = RW &rArr; SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
+<P><STRONG><a name="[21ec26c]"></a>E1</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lcd19264.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[21ebab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2203ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
-<LI><a href="#[22040c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIWH
-</UL>
-<BR>[Called By]<UL><LI><a href="#[2204014]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendByteLCDL
-<LI><a href="#[2204104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendByteLCDH
+<BR>[Called By]<UL><LI><a href="#[21ec104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendByteLCDH
 </UL>
 
-<P><STRONG><a name="[22041f4]"></a>RS</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lcd19264.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[2203ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+<P><STRONG><a name="[21ec230]"></a>RW</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lcd19264.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[21ebab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2203f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
-<LI><a href="#[2203f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
-<LI><a href="#[2204050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
-<LI><a href="#[220408c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
+<BR>[Called By]<UL><LI><a href="#[21ec014]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendByteLCDL
+<LI><a href="#[21ec104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendByteLCDH
 </UL>
 
-<P><STRONG><a name="[22041b8]"></a>REST</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lcd19264.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2203ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+<P><STRONG><a name="[21ec1f4]"></a>RS</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lcd19264.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[21ebab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21ebf60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
+<LI><a href="#[21ebf9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
+<LI><a href="#[21ec050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
+<LI><a href="#[21ec08c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
 </UL>
 
-<P><STRONG><a name="[220417c]"></a>Syswait_ms</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, lcd19264.o(.text))
+<P><STRONG><a name="[21ec1b8]"></a>REST</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lcd19264.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21ebab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+</UL>
+
+<P><STRONG><a name="[21ec17c]"></a>Syswait_ms</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, lcd19264.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Syswait_ms &rArr; SysCtlClockGet
 </UL>
-<BR>[Calls]<UL><LI><a href="#[22039fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
-<LI><a href="#[2203a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
+<BR>[Calls]<UL><LI><a href="#[21eb9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+<LI><a href="#[21eba74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2203b28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[2203f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
+<BR>[Called By]<UL><LI><a href="#[21ebb28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[21ebf24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
 </UL>
 
-<P><STRONG><a name="[2204140]"></a>Syswait_us</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, lcd19264.o(.text))
+<P><STRONG><a name="[21ec140]"></a>Syswait_us</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, lcd19264.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Syswait_us &rArr; SysCtlClockGet
 </UL>
-<BR>[Calls]<UL><LI><a href="#[22039fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
-<LI><a href="#[2203a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
+<BR>[Calls]<UL><LI><a href="#[21eb9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+<LI><a href="#[21eba74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2203f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
-<LI><a href="#[220408c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
-</UL>
-
-<P><STRONG><a name="[2204104]"></a>SendByteLCDH</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, lcd19264.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16 + In Cycle
-<LI>Call Chain = SendByteLCDH &rArr;  RW (Cycle)
-</UL>
-<BR>[Calls]<UL><LI><a href="#[2204230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RW
-<LI><a href="#[220426c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E1
-</UL>
-<BR>[Called By]<UL><LI><a href="#[22040c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIWH
+<BR>[Called By]<UL><LI><a href="#[21ebf9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
+<LI><a href="#[21ec08c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
 </UL>
 
-<P><STRONG><a name="[22040c8]"></a>SPIWH</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, lcd19264.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
+<P><STRONG><a name="[21ec104]"></a>SendByteLCDH</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, lcd19264.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SendByteLCDH
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2204104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendByteLCDH
+<BR>[Calls]<UL><LI><a href="#[21ec230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RW
+<LI><a href="#[21ec26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E1
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2204050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
-<LI><a href="#[220408c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
-<LI><a href="#[2204230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RW
-</UL>
-
-<P><STRONG><a name="[220408c]"></a>WRCommandH</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd19264.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = WRCommandH &rArr; SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
-</UL>
-<BR>[Calls]<UL><LI><a href="#[22040c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIWH
-<LI><a href="#[2204140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_us
-<LI><a href="#[22041f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RS
-</UL>
-<BR>[Called By]<UL><LI><a href="#[2203c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRGDRAM1
-<LI><a href="#[2203d08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLEARGDRAMH
-<LI><a href="#[2203d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowCGCharH
-<LI><a href="#[2203df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCGRAMH
-<LI><a href="#[2203e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowNUMCharH
-<LI><a href="#[2203ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharH
-<LI><a href="#[2203f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
+<BR>[Called By]<UL><LI><a href="#[21ec0c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIWH
 </UL>
 
-<P><STRONG><a name="[2204050]"></a>WRDataH</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, lcd19264.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = WRDataH &rArr; SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
+<P><STRONG><a name="[21ec0c8]"></a>SPIWH</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, lcd19264.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SPIWH &rArr; SendByteLCDH
 </UL>
-<BR>[Calls]<UL><LI><a href="#[22040c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIWH
-<LI><a href="#[22041f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RS
+<BR>[Calls]<UL><LI><a href="#[21ec104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendByteLCDH
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2203c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRGDRAM1
-<LI><a href="#[2203d08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLEARGDRAMH
-<LI><a href="#[2203d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowCGCharH
-<LI><a href="#[2203df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCGRAMH
-<LI><a href="#[2203e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowNUMCharH
-<LI><a href="#[2203ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharH
+<BR>[Called By]<UL><LI><a href="#[21ec050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
+<LI><a href="#[21ec08c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
 </UL>
 
-<P><STRONG><a name="[2204014]"></a>SendByteLCDL</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, lcd19264.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = SendByteLCDL &rArr; RW &rArr; SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
+<P><STRONG><a name="[21ec08c]"></a>WRCommandH</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd19264.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = WRCommandH &rArr; SPIWH &rArr; SendByteLCDH
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2204230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RW
-<LI><a href="#[22042a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2
+<BR>[Calls]<UL><LI><a href="#[21ec0c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIWH
+<LI><a href="#[21ec140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_us
+<LI><a href="#[21ec1f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RS
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2203fd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIWL
-</UL>
-
-<P><STRONG><a name="[2203fd8]"></a>SPIWL</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, lcd19264.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = SPIWL &rArr; SendByteLCDL &rArr; RW &rArr; SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
-</UL>
-<BR>[Calls]<UL><LI><a href="#[2204014]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendByteLCDL
-</UL>
-<BR>[Called By]<UL><LI><a href="#[2203f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
-<LI><a href="#[2203f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
+<BR>[Called By]<UL><LI><a href="#[21ebc90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRGDRAM1
+<LI><a href="#[21ebd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLEARGDRAMH
+<LI><a href="#[21ebd80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowCGCharH
+<LI><a href="#[21ebdf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCGRAMH
+<LI><a href="#[21ebe70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowNUMCharH
+<LI><a href="#[21ebee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharH
+<LI><a href="#[21ebf24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
 </UL>
 
-<P><STRONG><a name="[2203f9c]"></a>WRCommandL</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd19264.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = WRCommandL &rArr; SPIWL &rArr; SendByteLCDL &rArr; RW &rArr; SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
+<P><STRONG><a name="[21ec050]"></a>WRDataH</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, lcd19264.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = WRDataH &rArr; SPIWH &rArr; SendByteLCDH
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2203fd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIWL
-<LI><a href="#[2204140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_us
-<LI><a href="#[22041f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RS
+<BR>[Calls]<UL><LI><a href="#[21ec0c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIWH
+<LI><a href="#[21ec1f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RS
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2203c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRGDRAM1
-<LI><a href="#[2203ccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLEARGDRAML
-<LI><a href="#[2203d44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowCGCharL
-<LI><a href="#[2203dbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCGRAML
-<LI><a href="#[2203e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowNUMCharL
-<LI><a href="#[2203eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharL
-<LI><a href="#[2203f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
+<BR>[Called By]<UL><LI><a href="#[21ebc90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRGDRAM1
+<LI><a href="#[21ebd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLEARGDRAMH
+<LI><a href="#[21ebd80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowCGCharH
+<LI><a href="#[21ebdf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCGRAMH
+<LI><a href="#[21ebe70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowNUMCharH
+<LI><a href="#[21ebee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharH
 </UL>
 
-<P><STRONG><a name="[2203f60]"></a>WRDataL</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, lcd19264.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = WRDataL &rArr; SPIWL &rArr; SendByteLCDL &rArr; RW &rArr; SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
+<P><STRONG><a name="[21ec014]"></a>SendByteLCDL</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, lcd19264.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SendByteLCDL
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2203fd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIWL
-<LI><a href="#[22041f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RS
+<BR>[Calls]<UL><LI><a href="#[21ec230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RW
+<LI><a href="#[21ec2a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2203c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRGDRAM1
-<LI><a href="#[2203ccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLEARGDRAML
-<LI><a href="#[2203d44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowCGCharL
-<LI><a href="#[2203dbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCGRAML
-<LI><a href="#[2203e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowNUMCharL
-<LI><a href="#[2203eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharL
+<BR>[Called By]<UL><LI><a href="#[21ebfd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIWL
 </UL>
 
-<P><STRONG><a name="[2203f24]"></a>LCDInit</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, lcd19264.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = LCDInit &rArr; WRCommandL &rArr; SPIWL &rArr; SendByteLCDL &rArr; RW &rArr; SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
+<P><STRONG><a name="[21ebfd8]"></a>SPIWL</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, lcd19264.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SPIWL &rArr; SendByteLCDL
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2203f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
-<LI><a href="#[220408c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
-<LI><a href="#[220417c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_ms
+<BR>[Calls]<UL><LI><a href="#[21ec014]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendByteLCDL
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2203b28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[2203ee8]"></a>ShowQQCharH</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, lcd19264.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = ShowQQCharH &rArr; WRDataH &rArr; SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
-</UL>
-<BR>[Calls]<UL><LI><a href="#[2204050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
-<LI><a href="#[220408c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
-</UL>
-<BR>[Called By]<UL><LI><a href="#[2203b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayEngine
-<LI><a href="#[2203ba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayCHINSE2
-<LI><a href="#[2203bdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayCHINSE1
-<LI><a href="#[2203c18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayCHINSE
+<BR>[Called By]<UL><LI><a href="#[21ebf60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
+<LI><a href="#[21ebf9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
 </UL>
 
-<P><STRONG><a name="[2203eac]"></a>ShowQQCharL</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, lcd19264.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ShowQQCharL &rArr; WRDataL &rArr; SPIWL &rArr; SendByteLCDL &rArr; RW &rArr; SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
+<P><STRONG><a name="[21ebf9c]"></a>WRCommandL</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd19264.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = WRCommandL &rArr; SPIWL &rArr; SendByteLCDL
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2203f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
-<LI><a href="#[2203f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
+<BR>[Calls]<UL><LI><a href="#[21ebfd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIWL
+<LI><a href="#[21ec140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_us
+<LI><a href="#[21ec1f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RS
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2203b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayEngine
-<LI><a href="#[2203ba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayCHINSE2
-<LI><a href="#[2203bdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayCHINSE1
-<LI><a href="#[2203c18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayCHINSE
-</UL>
-
-<P><STRONG><a name="[2203e70]"></a>ShowNUMCharH</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, lcd19264.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2204050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
-<LI><a href="#[220408c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
-</UL>
-<BR>[Called By]<UL><LI><a href="#[2203c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayTEST
+<BR>[Called By]<UL><LI><a href="#[21ebc90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRGDRAM1
+<LI><a href="#[21ebccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLEARGDRAML
+<LI><a href="#[21ebd44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowCGCharL
+<LI><a href="#[21ebdbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCGRAML
+<LI><a href="#[21ebe34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowNUMCharL
+<LI><a href="#[21ebeac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharL
+<LI><a href="#[21ebf24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
 </UL>
 
-<P><STRONG><a name="[2203e34]"></a>ShowNUMCharL</STRONG> (Thumb, 52 bytes, Stack size 24 bytes, lcd19264.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2203f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
-<LI><a href="#[2203f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
+<P><STRONG><a name="[21ebf60]"></a>WRDataL</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, lcd19264.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = WRDataL &rArr; SPIWL &rArr; SendByteLCDL
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2203c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayTEST
+<BR>[Calls]<UL><LI><a href="#[21ebfd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIWL
+<LI><a href="#[21ec1f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RS
 </UL>
-
-<P><STRONG><a name="[2203df8]"></a>WRCGRAMH</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, lcd19264.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2204050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
-<LI><a href="#[220408c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
-</UL>
-
-<P><STRONG><a name="[2203dbc]"></a>WRCGRAML</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, lcd19264.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2203f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
-<LI><a href="#[2203f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
+<BR>[Called By]<UL><LI><a href="#[21ebc90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRGDRAM1
+<LI><a href="#[21ebccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLEARGDRAML
+<LI><a href="#[21ebd44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowCGCharL
+<LI><a href="#[21ebdbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCGRAML
+<LI><a href="#[21ebe34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowNUMCharL
+<LI><a href="#[21ebeac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharL
 </UL>
 
-<P><STRONG><a name="[2203d80]"></a>ShowCGCharH</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, lcd19264.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2204050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
-<LI><a href="#[220408c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
+<P><STRONG><a name="[21ebf24]"></a>LCDInit</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, lcd19264.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = LCDInit &rArr; WRCommandL &rArr; SPIWL &rArr; SendByteLCDL
+</UL>
+<BR>[Calls]<UL><LI><a href="#[21ebf9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
+<LI><a href="#[21ec08c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
+<LI><a href="#[21ec17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_ms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21ebb28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[2203d44]"></a>ShowCGCharL</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, lcd19264.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2203f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
-<LI><a href="#[2203f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
+<P><STRONG><a name="[21ebee8]"></a>ShowQQCharH</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, lcd19264.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = ShowQQCharH &rArr; WRDataH &rArr; SPIWH &rArr; SendByteLCDH
+</UL>
+<BR>[Calls]<UL><LI><a href="#[21ec050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
+<LI><a href="#[21ec08c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21ebb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayEngine
+<LI><a href="#[21ebba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayCHINSE2
+<LI><a href="#[21ebbdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayCHINSE1
+<LI><a href="#[21ebc18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayCHINSE
 </UL>
 
-<P><STRONG><a name="[2203d08]"></a>CLEARGDRAMH</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, lcd19264.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2204050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
-<LI><a href="#[220408c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
+<P><STRONG><a name="[21ebeac]"></a>ShowQQCharL</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, lcd19264.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = ShowQQCharL &rArr; WRDataL &rArr; SPIWL &rArr; SendByteLCDL
+</UL>
+<BR>[Calls]<UL><LI><a href="#[21ebf60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
+<LI><a href="#[21ebf9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21ebb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayEngine
+<LI><a href="#[21ebba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayCHINSE2
+<LI><a href="#[21ebbdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayCHINSE1
+<LI><a href="#[21ebc18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayCHINSE
 </UL>
 
-<P><STRONG><a name="[2203ccc]"></a>CLEARGDRAML</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, lcd19264.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2203f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
-<LI><a href="#[2203f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
+<P><STRONG><a name="[21ebe70]"></a>ShowNUMCharH</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, lcd19264.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21ec050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
+<LI><a href="#[21ec08c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21ebc54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayTEST
 </UL>
 
-<P><STRONG><a name="[2203c90]"></a>WRGDRAM1</STRONG> (Thumb, 298 bytes, Stack size 24 bytes, lcd19264.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2203f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
-<LI><a href="#[2203f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
-<LI><a href="#[2204050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
-<LI><a href="#[220408c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
+<P><STRONG><a name="[21ebe34]"></a>ShowNUMCharL</STRONG> (Thumb, 52 bytes, Stack size 24 bytes, lcd19264.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21ebf60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
+<LI><a href="#[21ebf9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21ebc54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayTEST
 </UL>
 
-<P><STRONG><a name="[2203c54]"></a>displayTEST</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, lcd19264.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2203e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowNUMCharL
-<LI><a href="#[2203e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowNUMCharH
+<P><STRONG><a name="[21ebdf8]"></a>WRCGRAMH</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, lcd19264.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21ec050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
+<LI><a href="#[21ec08c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
 </UL>
 
-<P><STRONG><a name="[2203c18]"></a>displayCHINSE</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, lcd19264.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2203eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharL
-<LI><a href="#[2203ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharH
+<P><STRONG><a name="[21ebdbc]"></a>WRCGRAML</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, lcd19264.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21ebf60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
+<LI><a href="#[21ebf9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
 </UL>
 
-<P><STRONG><a name="[2203bdc]"></a>displayCHINSE1</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd19264.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2203eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharL
-<LI><a href="#[2203ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharH
+<P><STRONG><a name="[21ebd80]"></a>ShowCGCharH</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, lcd19264.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21ec050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
+<LI><a href="#[21ec08c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
 </UL>
 
-<P><STRONG><a name="[2203ba0]"></a>displayCHINSE2</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, lcd19264.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[2203eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharL
-<LI><a href="#[2203ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharH
+<P><STRONG><a name="[21ebd44]"></a>ShowCGCharL</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, lcd19264.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21ebf60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
+<LI><a href="#[21ebf9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
 </UL>
 
-<P><STRONG><a name="[2203b64]"></a>displayEngine</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, lcd19264.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = displayEngine &rArr; ShowQQCharL &rArr; WRDataL &rArr; SPIWL &rArr; SendByteLCDL &rArr; RW &rArr; SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
-</UL>
-<BR>[Calls]<UL><LI><a href="#[2203eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharL
-<LI><a href="#[2203ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharH
-</UL>
-<BR>[Called By]<UL><LI><a href="#[2203b28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<P><STRONG><a name="[21ebd08]"></a>CLEARGDRAMH</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, lcd19264.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21ec050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
+<LI><a href="#[21ec08c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
 </UL>
 
-<P><STRONG><a name="[2203b28]"></a>main</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, lcd19264.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = main &rArr; displayEngine &rArr; ShowQQCharL &rArr; WRDataL &rArr; SPIWL &rArr; SendByteLCDL &rArr; RW &rArr; SPIWH &rArr; SendByteLCDH &rArr;  RW (Cycle)
-</UL>
-<BR>[Calls]<UL><LI><a href="#[22039c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
-<LI><a href="#[2203a38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
-<LI><a href="#[2203aec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
-<LI><a href="#[2203b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayEngine
-<LI><a href="#[2203f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
-<LI><a href="#[220417c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_ms
-</UL>
-<BR>[Called By]<UL><LI><a href="#[21f9574]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+<P><STRONG><a name="[21ebccc]"></a>CLEARGDRAML</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, lcd19264.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21ebf60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
+<LI><a href="#[21ebf9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
 </UL>
 
-<P><STRONG><a name="[21f9d6c]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[21ebc90]"></a>WRGDRAM1</STRONG> (Thumb, 298 bytes, Stack size 24 bytes, lcd19264.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21ebf60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataL
+<LI><a href="#[21ebf9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandL
+<LI><a href="#[21ec050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRDataH
+<LI><a href="#[21ec08c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WRCommandH
+</UL>
 
-<P><STRONG><a name="[21f9d30]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[21ebc54]"></a>displayTEST</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, lcd19264.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21ebe34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowNUMCharL
+<LI><a href="#[21ebe70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowNUMCharH
+</UL>
 
-<P><STRONG><a name="[21f9cf4]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[21ebc18]"></a>displayCHINSE</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, lcd19264.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21ebeac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharL
+<LI><a href="#[21ebee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharH
+</UL>
 
-<P><STRONG><a name="[21f922c]"></a>__user_setup_stackheap</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
+<P><STRONG><a name="[21ebbdc]"></a>displayCHINSE1</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd19264.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21ebeac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharL
+<LI><a href="#[21ebee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharH
+</UL>
+
+<P><STRONG><a name="[21ebba0]"></a>displayCHINSE2</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, lcd19264.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21ebeac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharL
+<LI><a href="#[21ebee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharH
+</UL>
+
+<P><STRONG><a name="[21ebb64]"></a>displayEngine</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, lcd19264.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = displayEngine &rArr; ShowQQCharL &rArr; WRDataL &rArr; SPIWL &rArr; SendByteLCDL
+</UL>
+<BR>[Calls]<UL><LI><a href="#[21ebeac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharL
+<LI><a href="#[21ebee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowQQCharH
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21ebb28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[21ebb28]"></a>main</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, lcd19264.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = main &rArr; displayEngine &rArr; ShowQQCharL &rArr; WRDataL &rArr; SPIWL &rArr; SendByteLCDL
+</UL>
+<BR>[Calls]<UL><LI><a href="#[21eb9c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[21eba38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
+<LI><a href="#[21ebaec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[21ebb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayEngine
+<LI><a href="#[21ebf24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
+<LI><a href="#[21ec17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_ms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21e1574]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[21e1d6c]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[21e1d30]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[21e1cf4]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[21e122c]"></a>__user_setup_stackheap</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = __user_setup_stackheap
 </UL>
-<BR>[Calls]<UL><LI><a href="#[21f8638]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
-<LI><a href="#[2205694]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+<BR>[Calls]<UL><LI><a href="#[21e0638]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+<LI><a href="#[21ed694]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21f9358]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
-</UL>
-
-<P><STRONG><a name="[21f90c4]"></a>exit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, exit.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[21f8548]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
-</UL>
-<BR>[Called By]<UL><LI><a href="#[21f9574]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+<BR>[Called By]<UL><LI><a href="#[21e1358]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
 </UL>
 
-<P><STRONG><a name="[21f8674]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
-
-<P><STRONG><a name="[21f8638]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[21f922c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+<P><STRONG><a name="[21e10c4]"></a>exit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, exit.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[21e0548]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21e1574]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[21f85fc]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[21e0674]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
-<P><STRONG><a name="[2e8a004]"></a>_sys_exit</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, sys_exit.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[2e8a310]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+<P><STRONG><a name="[21e0638]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[21e122c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[2e897d0]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text))
+<P><STRONG><a name="[21e05fc]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[2e8e004]"></a>_sys_exit</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, sys_exit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2e8e310]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+</UL>
+
+<P><STRONG><a name="[2e8d7d0]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> sys_exit.o(.text)
 </UL>
-<P><STRONG><a name="[2e89794]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[2e8d794]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[2200900]"></a>GPIODirModeSet</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, gpio.o(i.GPIODirModeSet))
-<BR><BR>[Called By]<UL><LI><a href="#[2203aec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<P><STRONG><a name="[21e8900]"></a>GPIODirModeSet</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, gpio.o(i.GPIODirModeSet))
+<BR><BR>[Called By]<UL><LI><a href="#[21ebaec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
 </UL>
 
-<P><STRONG><a name="[2200810]"></a>GPIOPadConfigSet</STRONG> (Thumb, 176 bytes, Stack size 0 bytes, gpio.o(i.GPIOPadConfigSet))
-<BR><BR>[Called By]<UL><LI><a href="#[2203aec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<P><STRONG><a name="[21e8810]"></a>GPIOPadConfigSet</STRONG> (Thumb, 176 bytes, Stack size 0 bytes, gpio.o(i.GPIOPadConfigSet))
+<BR><BR>[Called By]<UL><LI><a href="#[21ebaec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
 </UL>
 
-<P><STRONG><a name="[2203aec]"></a>GPIOPinTypeGPIOOutput</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeGPIOOutput))
+<P><STRONG><a name="[21ebaec]"></a>GPIOPinTypeGPIOOutput</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeGPIOOutput))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypeGPIOOutput
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2200810]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-<LI><a href="#[2200900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<BR>[Calls]<UL><LI><a href="#[21e8810]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[21e8900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2203b28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[2203ab0]"></a>GPIOPinWrite</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio.o(i.GPIOPinWrite))
-<BR><BR>[Called By]<UL><LI><a href="#[22041b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;REST
-<LI><a href="#[22041f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RS
-<LI><a href="#[2204230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RW
-<LI><a href="#[220426c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E1
-<LI><a href="#[22042a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2
+<BR>[Called By]<UL><LI><a href="#[21ebb28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[2203a74]"></a>SysCtlClockGet</STRONG> (Thumb, 294 bytes, Stack size 8 bytes, sysctl.o(i.SysCtlClockGet))
+<P><STRONG><a name="[21ebab0]"></a>GPIOPinWrite</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio.o(i.GPIOPinWrite))
+<BR><BR>[Called By]<UL><LI><a href="#[21ec1b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;REST
+<LI><a href="#[21ec1f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RS
+<LI><a href="#[21ec230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RW
+<LI><a href="#[21ec26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E1
+<LI><a href="#[21ec2a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2
+</UL>
+
+<P><STRONG><a name="[21eba74]"></a>SysCtlClockGet</STRONG> (Thumb, 294 bytes, Stack size 8 bytes, sysctl.o(i.SysCtlClockGet))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SysCtlClockGet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2204140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_us
-<LI><a href="#[220417c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_ms
+<BR>[Called By]<UL><LI><a href="#[21ec140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_us
+<LI><a href="#[21ec17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Syswait_ms
 </UL>
 
-<P><STRONG><a name="[2203a38]"></a>SysCtlClockSet</STRONG> (Thumb, 290 bytes, Stack size 24 bytes, sysctl.o(i.SysCtlClockSet))
+<P><STRONG><a name="[21eba38]"></a>SysCtlClockSet</STRONG> (Thumb, 290 bytes, Stack size 24 bytes, sysctl.o(i.SysCtlClockSet))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SysCtlClockSet
 </UL>
-<BR>[Calls]<UL><LI><a href="#[22039fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+<BR>[Calls]<UL><LI><a href="#[21eb9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2203b28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[21ebb28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[22039c0]"></a>SysCtlPeripheralEnable</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, sysctl.o(i.SysCtlPeripheralEnable))
-<BR><BR>[Called By]<UL><LI><a href="#[2203b28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<P><STRONG><a name="[21eb9c0]"></a>SysCtlPeripheralEnable</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, sysctl.o(i.SysCtlPeripheralEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[21ebb28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 <P>
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[22057c0]"></a>NmiSR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
-<BR><BR>[Calls]<UL><LI><a href="#[22057c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
+<P><STRONG><a name="[21ed7c0]"></a>NmiSR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[21ed7c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
 </UL>
-<BR>[Called By]<UL><LI><a href="#[22057c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
-</UL>
-<P><STRONG><a name="[2205784]"></a>FaultISR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
-<BR><BR>[Calls]<UL><LI><a href="#[2205784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
-</UL>
-<BR>[Called By]<UL><LI><a href="#[2205784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
+<BR>[Called By]<UL><LI><a href="#[21ed7c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
 </UL>
-<P><STRONG><a name="[2205748]"></a>IntDefaultHandler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
-<BR><BR>[Calls]<UL><LI><a href="#[2205748]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
+<P><STRONG><a name="[21ed784]"></a>FaultISR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[21ed784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2205748]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
+<BR>[Called By]<UL><LI><a href="#[21ed784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[21ed748]"></a>IntDefaultHandler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[21ed748]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21ed748]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
 </UL><P>

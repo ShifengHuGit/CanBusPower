@@ -16,7 +16,7 @@
 ### ADS-LD Output File: '.\rvmdk\qs_ek-lm3s8962.axf'
 ### ADS-LD Command File: '.\rvmdk\qs_ek-lm3s8962.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\rvmdk\qs_ek-lm3s8962.lnp', Handle=0x00000CE4
+### Creating CmdFile '.\rvmdk\qs_ek-lm3s8962.lnp', Handle=0x000012B8
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\rvmdk\qs_ek-lm3s8962.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

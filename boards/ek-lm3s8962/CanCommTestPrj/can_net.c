@@ -60,12 +60,15 @@
 #define MSGOBJ_AIR_INSIDETEMP       18
 #define MSGOBJ_SES_CTRL             31
 
+
 #define CANMSGID_ECU_ENG               0x07E8
 #define CANMSGID_TESTER_ENG            0x07E0
 #define CANMSGID_ECU_GEARBOX              0x07E9
 #define CANMSGID_TESTER_GEARBOX           0x07E1
 #define CANMSGID_ECU_SESSION             0x077A
 #define CANMSGID_TESTER_SESSION          0x0710
+#define CANMSGID_TESTER_INSIDETEMP          0x0746
+#define CANMSGID_ECU_INSIDETEMP          0x07B0
 
 
 #define FLAG_RX_ENG_STATUS                 0x00000010
@@ -91,8 +94,9 @@
 // to receive commands.
 //
 //*****************************************************************************
-tCANMsgObject g_MsgObjectRx;
+tCANMsgObject g_MsgObjectRx,CanRxInsideTemp;
 tCANMsgObject CanMsg_SessionCtl_TX;
+tCANMsgObject CanMsg_SessionCtl_RX;
 //*****************************************************************************
 //
 // This holds the information for the data send message object that is used
@@ -337,6 +341,7 @@ ProcessInterrupts(void)
 {
 
     unsigned char SessionFrameTX[8] = {0x06, 0x50, 0x03, 0x00, 0x32,0x01,0xf4,0xaa};
+    unsigned char CMD_TEMP_FrameTX[8] = {0x05, 0x62, 0x26, 0x13, 0x00, 0xd4, 0xaa, 0xaa};
     //
     // A request to set or clear the LED was received.
     //
@@ -359,243 +364,79 @@ ProcessInterrupts(void)
         g_ulFlags &= ~(FLAG_RX_SES_CTRL);
          g_ulFlags = 0 ;
     }
-
-   
-// zhongduan -- print 
-//--set FLAG
-// Process --Check Flag
-//         --Sent  CAN --- 
-//                 --Interrupt --Print
-//                              --Set-Flag
-//          Sent-Complete
-// Clear Flag
+    if(g_ulFlags == FLAG_RX_AIR_INSIDETEMP)
+    {
+        UARTSend("SentTemp:",9);
+        CanMsg_SessionCtl_TX.ulMsgID = CANMSGID_ECU_INSIDETEMP;
+        CanMsg_SessionCtl_TX.pucMsgData = CMD_TEMP_FrameTX;
+        CANMessageSet(CAN0_BASE, MSGOBJ_NUM_DATA_TX, &CanMsg_SessionCtl_TX,
+                              MSG_OBJ_TYPE_TX);
+            //
+            // Clear the flag.
+            //
+            g_ulFlags &= ~(FLAG_RX_AIR_INSIDETEMP);
+             g_ulFlags = 0 ;
+    }
 }
 
 
-//*****************************************************************************
-//
-// This function sends a message to retrieve the firmware version from the
-// target board.
-//
-//*****************************************************************************
-int
-CANGetTargetVersion(unsigned long *pulVersion)
-{
-    static unsigned char ucVerCmd = CMD_GET_VERSION;
-
-    //
-    // If there was already a previous message being transmitted then just
-    // return.
-    //
-    if(g_ulFlags & FLAG_DATA_TX_PEND)
-    {
-        return(-1);
-    }
-
-    //
-    // A transmit request is about to be pending.
-    //
-    g_ulFlags |= FLAG_DATA_TX_PEND;
-
-    //
-    // Send the button update request.
-    //
-    g_MsgObjectTx.pucMsgData = &ucVerCmd;
-    g_MsgObjectTx.ulMsgLen = 1;
-
-    CANMessageSet(CAN0_BASE, MSGOBJ_NUM_DATA_TX, &g_MsgObjectTx,
-                  MSG_OBJ_TYPE_TX);
-
-    //
-    // Wait for some data back from the target.
-    //
-    while ((g_ulFlags & FLAG_DATA_RECV) == 0)
-    {
-    }
-
-    //
-    // Read the data from the message object.
-    //
-    g_MsgObjectRx.pucMsgData = (unsigned char *)pulVersion;
-    g_MsgObjectRx.ulMsgLen = 4;
-    CANMessageGet(CAN0_BASE, MSGOBJ_NUM_DATA_RX, &g_MsgObjectRx, 1);
-
-    return(0);
-}
-
-//*****************************************************************************
-//
-// This function sends a message to set the current brightness for the LED on
-// the target board.
-//
-//*****************************************************************************
-void
-CANUpdateTargetLED(unsigned char ucLevel, tBoolean bFlash)
-{
-    //
-    // If there was already a previous message being transmitted then just
-    // return.
-    //
-    if(g_ulFlags & FLAG_LED_TX_PEND)
-    {
-        return;
-    }
-
-    //
-    // Set the global LED level.
-    //
-    g_ucLEDLevel = ucLevel;
-
-    //
-    // If a flash was requested then set the flag.
-    //
-    if(bFlash == true)
-    {
-        g_ucLEDLevel |= LED_FLASH_ONCE;
-    }
-
-    //
-    // A transmit request is about to be pending.
-    //
-    g_ulFlags |= FLAG_LED_TX_PEND;
-
-    //
-    // Send the button update request.
-    //
-    CANMessageSet(CAN0_BASE, MSGOBJ_NUM_LED, &g_MsgObjectLED,
-                  MSG_OBJ_TYPE_TX);
-}
-
-//*****************************************************************************
-//
-// This function configures the message objects used by this application.
-// The following four message objects used by this application:
-// MSGOBJ_ID_BUTTON, MSGOBJ_ID_LED, MSGOBJ_ID_DATA_TX, and MSGOBJ_ID_DATA_RX.
-//
-//*****************************************************************************
 void
 CANConfigureNetwork(void)
 {
-    //
-    // Set the identifier and mask for the button object.
-    //
-    g_MsgObjectButton.ulMsgID = MSGOBJ_ID_BUTTON;
-    g_MsgObjectButton.ulMsgIDMask = 0;
-
-    //
-    // This enables interrupts for received messages.
-    //
-    g_MsgObjectButton.ulFlags = MSG_OBJ_RX_INT_ENABLE;
-
-    //
-    // Set the size of the message and the data buffer used.
-    //
-    g_MsgObjectButton.ulMsgLen = 2;
-    g_MsgObjectButton.pucMsgData = g_pucButtonMsg;
-
-    //
-    // Configure the Button receive message object.
-    //
-    CANMessageSet(CAN0_BASE, MSGOBJ_NUM_BUTTON, &g_MsgObjectButton,
-                  MSG_OBJ_TYPE_RX);
-
-    //
-    // This message object will receive updates to the LED.
-    //
-    g_MsgObjectLED.ulMsgID = MSGOBJ_ID_LED;
-    g_MsgObjectLED.ulMsgIDMask = 0;
-
-    //
-    // This enables interrupts for received messages.
-    //
-    g_MsgObjectLED.ulFlags = MSG_OBJ_TX_INT_ENABLE;
-
-    //
-    // Set the length of the message and the data buffer used.
-    //
-    g_MsgObjectLED.ulMsgLen = 1;
-    g_MsgObjectLED.pucMsgData = &g_ucLEDLevel;
 
 
+  // g_MsgObjectTx.ulMsgID = 0x17;
+  // g_MsgObjectTx.ulMsgIDMask = 0;
+  // g_MsgObjectTx.ulFlags = MSG_OBJ_TX_INT_ENABLE;
+  // g_MsgObjectTx.ulMsgLen = 8;
+  // g_MsgObjectTx.pucMsgData = (unsigned char *)0xffffffff;
+
+  //  CANMessageSet(CAN0_BASE, MSGOBJ_NUM_DATA_TX, &g_MsgObjectTx,
+  //            MSG_OBJ_TYPE_RX);
 
 
-
-    //
-    // This message object will transmit commands.
-    //
-    g_MsgObjectTx.ulMsgID = 0x17;
-    g_MsgObjectTx.ulMsgIDMask = 0;
-
-    //
-    // This enables interrupts for received messages.
-    //
-    g_MsgObjectTx.ulFlags = MSG_OBJ_TX_INT_ENABLE;
-
-    //
-    // The length of the message, which should only be one byte.  Don't set
-    // the pointer until it is used.
-    //
-    g_MsgObjectTx.ulMsgLen = 8;
-    g_MsgObjectTx.pucMsgData = (unsigned char *)0xffffffff;
-
-
-
-     CANMessageSet(CAN0_BASE, MSGOBJ_NUM_DATA_TX, &g_MsgObjectTx,
-               MSG_OBJ_TYPE_RX);
-
-
-
-
-
-    //
-    // This message object will received data from commands.
-    //
+ //
+ // This message object will received data from commands.
+ //
     g_MsgObjectRx.ulMsgID = MSGOBJ_ID_DATA_RX;
     g_MsgObjectRx.ulMsgIDMask = 0;
-
-    //
-    // This enables interrupts for received messages.
-    //
-    g_MsgObjectRx.ulFlags = MSG_OBJ_RX_INT_ENABLE|MSG_OBJ_USE_ID_FILTER;;
-
-    //
-    // The length of the message, which should only be one byte.  Don't set
-    // the pointer until it is used.
-    //
-    g_MsgObjectRx.ulMsgLen = 8;
+    g_MsgObjectRx.ulFlags = MSG_OBJ_RX_INT_ENABLE;
+    g_MsgObjectRx.ulMsgLen = 1;
     g_MsgObjectRx.pucMsgData = (unsigned char *)0xffffffff;
-
-    //
-    // Configure the data receive message object.
-    //
-    CANMessageSet(CAN0_BASE, 31, &g_MsgObjectRx,
+    CANMessageSet(CAN0_BASE, MSGOBJ_NUM_DATA_RX, &g_MsgObjectRx,
                   MSG_OBJ_TYPE_RX);
 
 
-    //
-    // This message object will received data from commands.
-    //
     CanMsg_SessionCtl_TX.ulMsgID = CANMSGID_ECU_SESSION;
     CanMsg_SessionCtl_TX.ulMsgIDMask = 0;
-
-    //
-    // This enables interrupts for received messages.
-    //
     CanMsg_SessionCtl_TX.ulFlags = MSG_OBJ_TX_INT_ENABLE;
-
-    //
-    // The length of the message, which should only be one byte.  Don't set
-    // the pointer until it is used.
     // 06-|50 03 00 32 01 f4 aa
     CanMsg_SessionCtl_TX.ulMsgLen = 8;
     CanMsg_SessionCtl_TX.pucMsgData = (unsigned char *)0xffffffff;
-    
 
     //
-    // Configure the data receive message object.
+    // This message object will received data from commands.
     //
-    //CANMessageSet(CAN0_BASE, 31, &g_MsgObjectRx,
-     //             MSG_OBJ_TYPE_RX);
+    CanMsg_SessionCtl_RX.ulMsgID = CANMSGID_TESTER_SESSION;
+    CanMsg_SessionCtl_RX.ulMsgIDMask = 0x7FF;
+    CanMsg_SessionCtl_RX.ulFlags = MSG_OBJ_RX_INT_ENABLE|MSG_OBJ_USE_ID_FILTER;;
+    CanMsg_SessionCtl_RX.ulMsgLen = 8;
+    CanMsg_SessionCtl_RX.pucMsgData = (unsigned char *)0xffffffff;
+    CANMessageSet(CAN0_BASE, MSGOBJ_SES_CTRL, &CanMsg_SessionCtl_RX,
+                  MSG_OBJ_TYPE_RX);
+
+
+
+    //
+    // This message object will received data from Client for Temp.
+    //
+    CanRxInsideTemp.ulMsgID = CANMSGID_TESTER_INSIDETEMP;
+    CanRxInsideTemp.ulMsgIDMask = 0x7FF;
+    CanRxInsideTemp.ulFlags = MSG_OBJ_RX_INT_ENABLE|MSG_OBJ_USE_ID_FILTER;;
+    CanRxInsideTemp.ulMsgLen = 8;
+    CanRxInsideTemp.pucMsgData = (unsigned char *)0xffffffff;
+    CANMessageSet(CAN0_BASE, MSGOBJ_AIR_INSIDETEMP, &CanRxInsideTemp,
+                  MSG_OBJ_TYPE_RX);
 
                   
 }
@@ -633,57 +474,7 @@ CANHandler(void)
 
     switch(ulStatus)
     {
-        //
-        // Let the forground loop handle sending this, just set a flag to
-        // indicate that the data should be sent.
-        //
-        case MSGOBJ_NUM_BUTTON:
-        {
-            //
-            // Read the Button Message.
-            //
-            CANMessageGet(CAN0_BASE, MSGOBJ_NUM_BUTTON,
-                &g_MsgObjectButton, 1);
 
-            //
-            // Only respond to buttons being release.
-            //
-            if(g_MsgObjectButton.pucMsgData[0] == EVENT_BUTTON_RELEASED)
-            {
-                //
-                // Check if the up button was released.
-                //
-                if(g_MsgObjectButton.pucMsgData[1] == TARGET_BUTTON_UP)
-                {
-                    //
-                    // Adjust the volume up by 10.
-                    //
-                    AudioVolumeUp(10);
-                }
-
-                //
-                // Check if the down button was released.
-                //
-                if(g_MsgObjectButton.pucMsgData[1] == TARGET_BUTTON_DN)
-                {
-                    //
-                    // Adjust the volume down by 10.
-                    //
-                    AudioVolumeDown(10);
-                }
-            }
-            break;
-        }
-
-        //
-        // When the LED message object interrupts, just clear the flag so that
-        // more LED messages are allowed to transfer.
-        //
-        case MSGOBJ_NUM_LED:
-        {
-            g_ulFlags &= (~FLAG_LED_TX_PEND);
-            break;
-        }
 
         //
         // When the transmit data message object interrupts, clear the
@@ -713,9 +504,18 @@ CANHandler(void)
          case MSGOBJ_SES_CTRL:
         {
              g_ulFlags = FLAG_RX_SES_CTRL;
-             g_MsgObjectRx.pucMsgData = pucData;
-             g_MsgObjectRx.ulMsgLen = 8;
-             CANMessageGet(CAN0_BASE, MSGOBJ_SES_CTRL, &g_MsgObjectRx, 8);
+             CanMsg_SessionCtl_RX.pucMsgData = pucData;
+             CanMsg_SessionCtl_RX.ulMsgLen = 8;
+             CANMessageGet(CAN0_BASE, MSGOBJ_SES_CTRL, &CanMsg_SessionCtl_RX, 8);
+             UARTSend(pucData, 8);
+            break;
+        }   
+         case MSGOBJ_AIR_INSIDETEMP:
+        {
+             g_ulFlags = FLAG_RX_AIR_INSIDETEMP;
+             CanRxInsideTemp.pucMsgData = pucData;
+             CanRxInsideTemp.ulMsgLen = 8;
+             CANMessageGet(CAN0_BASE, ulStatus, &CanRxInsideTemp, 8);
              UARTSend(pucData, 8);
             break;
         }   

@@ -3,17 +3,17 @@
 ### Creating ADS-LD Command Line
 ### List of Objects: adding '"startup.o"'
 ### List of Objects: adding '"19264lcddriver.o"'
-### List of Objects: adding '"cantest.o"'
+### List of Objects: adding '"clienttester.o"'
 ### List of Objects: adding '"..\..\..\driverlib\rvmdk\driverlib.lib"'
 ### List of Objects: adding '"ustdlib.o"'
 ### ADS-LD Command completed:
---device DLM "startup.o" "19264lcddriver.o" "cantest.o" "..\..\..\driverlib\rvmdk\driverlib.lib" "ustdlib.o" --ro-base 0x00000000 --entry Reset_Handler --rw-base 0x20000000 --first __Vectors --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--device DLM "startup.o" "19264lcddriver.o" "clienttester.o" "..\..\..\driverlib\rvmdk\driverlib.lib" "ustdlib.o" --ro-base 0x00000000 --entry Reset_Handler --rw-base 0x20000000 --first __Vectors --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\VWCanbus.map" -o "VWCanbus.axf"### Preparing Environment (PrepEnvAds)
 ### ADS-LD Output File: 'VWCanbus.axf'
 ### ADS-LD Command File: 'VWCanbus.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'VWCanbus.lnp', Handle=0x00000E20
+### Creating CmdFile 'VWCanbus.lnp', Handle=0x00001304
 ### Writing '.lnp' file
 ### ADS-LD Command file 'VWCanbus.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

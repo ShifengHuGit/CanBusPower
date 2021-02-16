@@ -1,0 +1,17 @@
+clienttester.o: ClientTester.c
+clienttester.o: C:\Keil\ARM\RV31\INC\string.h
+clienttester.o: ..\..\..\inc/hw_ints.h
+clienttester.o: ..\..\..\inc/hw_memmap.h
+clienttester.o: ..\..\..\inc/hw_sysctl.h
+clienttester.o: ..\..\..\inc/hw_types.h
+clienttester.o: ..\..\..\driverlib/can.h
+clienttester.o: ..\..\..\driverlib/debug.h
+clienttester.o: ..\..\..\driverlib/gpio.h
+clienttester.o: ..\..\..\driverlib/interrupt.h
+clienttester.o: ..\..\..\driverlib/sysctl.h
+clienttester.o: ..\..\..\driverlib/systick.h
+clienttester.o: C:\Keil\ARM\INC\Luminary\can.h
+clienttester.o: ..\..\..\driverlib/uart.h
+clienttester.o: 19264LCDdriver.h
+clienttester.o: ..\..\..\utils/ustdlib.h
+clienttester.o: C:\Keil\ARM\RV31\INC\stdarg.h

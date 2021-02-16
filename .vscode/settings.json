@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "can_net.h": "c"
+        "can_net.h": "c",
+        "sysctl.h": "c"
     }
 }

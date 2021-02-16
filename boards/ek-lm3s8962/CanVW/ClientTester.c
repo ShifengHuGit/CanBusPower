@@ -1,4 +1,4 @@
-  #include <string.h>
+#include <string.h>
 #include "inc/hw_ints.h"
 #include "inc/hw_memmap.h"
 #include "inc/hw_sysctl.h"
@@ -9,209 +9,16 @@
 #include "driverlib/interrupt.h"
 #include "driverlib/sysctl.h"
 #include "driverlib/systick.h"
-//#include "can_common.h"
 #include "can.h"
 #include "driverlib/uart.h"
 #include "19264LCDdriver.h"
 #include "utils/ustdlib.h"
+#include "my.h"
 
-tCANBitClkParms CANBitClkSettings[] =
-{
-    {9,6,4,4},  // CANBAUD_125K
-    {5,2,2,4},  // CANBAUD_250K
-    {5,2,2,2},  // CANBAUD_500K
-    {5,2,2,1}   // CANBAUD_1M
-};
-#define CANBAUD_500K            2
-
-#define MSGOBJ_NUM_BUTTON           1
-#define MSGOBJ_NUM_LED              2
-#define MSGOBJ_NUM_DATA_TX          3
-#define MSGOBJ_NUM_DATA_RX          4
-#define MSGOBJ_ENG_STATUS           5
-#define MSGOBJ_ENG_RPM              6
-#define MSGOBJ_ENG_WORKLOAD         7
-#define MSGOBJ_ENG_MILE             8
-#define MSGOBJ_ENG_TURBO            9
-#define MSGOBJ_ENG_OILLEVEL         10
-#define MSGOBJ_ENG_THROLLTEPOSITION 11
-#define MSGOBJ_ENG_COOLTEMP         12
-#define MSGOBJ_GBX_SHIFTPOSITION    13
-#define MSGOBJ_GPS_ATT              14
-#define MSGOBJ_GPS_LONG             15
-#define MSGOBJ_GPS_SETLNUM          16
-#define MSGOBJ_GPS_SETLTRACKED      17
-#define MSGOBJ_AIR_INSIDETEMP       18
-#define MSGOBJ_SES_CTRL             31
-
-
-
-#define FLAG_BUTTON_PEND        0x00000001
-#define FLAG_UPDATE_LED         0x00000002
-#define FLAG_DATA_TX_PEND       0x00000004
-#define FLAG_DATA_RECV          0x00000008
-
-
-#define MSG_OBJ_B0_PRESSED      0x01
-#define MSG_OBJ_B0_RELEASED     0x02
-#define MSG_OBJ_B1_PRESSED      0x04
-#define MSG_OBJ_B1_RELEASED     0x08
-
-#define FLAG_RX_ENG_STATUS                 0x00000010
-#define FLAG_RX_ENG_RPM                    0x00000020
-#define FLAG_RX_ENG_WORKLOAD               0x00000040
-#define FLAG_RX_ENG_MILE                   0x00000080
-#define FLAG_RX_ENG_TURBO                  0x00000100
-#define FLAG_RX_ENG_OILLEVEL               0x00000200
-#define FLAG_RX_ENG_THROLLTEPOSITION       0x00000400
-#define FLAG_RX_ENG_COOLTEMP               0x00000800
-#define FLAG_RX_GBX_SHIFTPOSITION          0x00001000
-#define FLAG_RX_GPS_ATT                    0x00002000
-#define FLAG_RX_GPS_LONG                   0x00004000
-#define FLAG_RX_GPS_SETLNUM                0x00008000
-#define FLAG_RX_GPS_SETLTRACKED            0x00010000
-#define FLAG_RX_AIR_INSIDETEMP             0x00020000
-
-#define FLAG_RX_SES_CTRL                   0x00040000
-
-
-
-
-
-#define CANMSGID_ECU_ENG               0x07E8
-#define CANMSGID_TESTER_ENG            0x07E0
-#define CANMSGID_ECU_GEARBOX              0x07E9
-#define CANMSGID_TESTER_GEARBOX           0x07E1
-#define CANMSGID_ECU_SESSION             0x077A
-#define CANMSGID_TESTER_SESSION          0x0710
-
-#define CANMSGID_TESTER_INSIDETEMP          0x0746
-#define CANMSGID_ECU_INSIDETEMP          0x07B0
-
-
-
-//***********************************************************************
-//
-// Volkswagen ECU 0x20 opreation CODE
-//
-//***********************************************************************
-
-
-#define RPM_CODE                        0x0000F40C
-#define ENGINE_STATUS_CODE              0x00003953
-#define ENGINE_WORKLOAD_PRECENTAGE      0x000011E9
-#define SHIFT_GEAR_POSITION             0x00003808
-#define TURBO_PRESSURE                  0x00002029
-#define THROTTLE_PRECENTAGE             0x0000F411
-
-
-tCANMsgObject CanMsg_ENG_STATUS;             
-tCANMsgObject CanMsg_ENG_RPM  ;          
-tCANMsgObject CanMsg_ENG_WORKLOAD ;      
-tCANMsgObject CanMsg_ENG_MILE  ;         
-tCANMsgObject CanMsg_ENG_TURBO   ;        
-tCANMsgObject CanMsg_ENG_OILLEVEL ;       
-tCANMsgObject CanMsg_ENG_THROLLTEPOSITION;
-tCANMsgObject CanMsg_ENG_COOLTEMP  ;      
-tCANMsgObject CanMsg_GBX_SHIFTPOSITION ;  
-tCANMsgObject CanMsg_SessionCtl;
-tCANMsgObject CanMsg_SessionCtl_TX;
-tCANMsgObject CanMsg_SessionCtl_RX;
-
-
-unsigned char rpmRawDataRX[8];
-unsigned char rpmRawDataTX[8];
-
-//*****************************************************************************
-//
-// This holds the information for the data receive message object that is used
-// to receive commands.
-//
-//*****************************************************************************
 tCANMsgObject g_MsgObjectRx;
 tCANMsgObject CanTxOnce;
 tCANMsgObject CanRxInsideTemp;
-
-//*****************************************************************************
-//
-// This holds the information for the data send message object that is used
-// to send commands and to send command responses.
-//
-//*****************************************************************************
 tCANMsgObject g_MsgObjectTx;
-
-//*****************************************************************************
-//
-// This holds the information for the LED message object that is used
-// to receive updates for the LED.  This message object receives a single
-// byte that indicates the brightness level for the LED.
-//
-//*****************************************************************************
-tCANMsgObject g_MsgObjectLED;
-
-//*****************************************************************************
-//
-// This holds the information for the button request message object.  It is
-// used to transmit the current status of the buttons on the target board.
-// It does this by sending a single byte containing the bitmask of the
-// buttons.
-//
-//*****************************************************************************
-tCANMsgObject g_MsgObjectButton;
-
-//*****************************************************************************
-//
-// The counter of the number of consecutive times that the buttons have
-// remained constant.
-//
-//*****************************************************************************
-static unsigned long g_ulDebounceCounter;
-
-//*****************************************************************************
-//
-// The counter value used to turn off the led after receiving a command to
-// pulse the LED.
-//
-//*****************************************************************************
-static long g_lFlashCounter = -1;
-
-//*****************************************************************************
-//
-// This variable holds the last stable raw button status.
-//
-//*****************************************************************************
-volatile unsigned char g_ucButtonStatus;
-
-//*****************************************************************************
-//
-// This variable holds flags indicating which buttons have been pressed and
-// released.
-//
-//*****************************************************************************
-volatile unsigned char g_ucButtonFlags = 0;
-
-//*****************************************************************************
-//
-// This used to hold the message data for the button message object.
-//
-//*****************************************************************************
-unsigned char g_pucButtonMsg[2];
-
-//*****************************************************************************
-//
-// This value holds the current LED brightness level.
-//
-//*****************************************************************************
-unsigned char g_ucLEDLevel = 0;
-
-//*****************************************************************************
-//
-// This holds the constant that holds the firmware version for this
-// application.
-//
-//*****************************************************************************
-//static unsigned long const g_ulVersion = CURRENT_VERSION;
-
 //*****************************************************************************
 //
 // This global holds the flags used to indicate the state of the message
@@ -220,16 +27,9 @@ unsigned char g_ucLEDLevel = 0;
 //*****************************************************************************
 static volatile unsigned long g_ulFlags = 0;
 
-
-
-//*****************************************************************************
-//
-// The error routine that is called if the driver library encounters an error.
-//
-//*****************************************************************************
-
-
+//------------------------------------------------------------------
 //UART Send to COnsole
+//------------------------------------------------------------------
 void
 UARTSend(const unsigned char *pucBuffer, unsigned long ulCount)
 {
@@ -247,13 +47,13 @@ UARTSend(const unsigned char *pucBuffer, unsigned long ulCount)
 }
 
 
-//-----------
+//------------------------------------------------------------------
 // CAN Interrupt Function
+//------------------------------------------------------------------
 void
 CANHandler(void)
 {
     unsigned long ulStatus;
-     unsigned char pucData[8];
     //UARTSend((unsigned char *)"CAN Interrupt Triggered", 23);
     //
     // Find the cause of the interrupt, if it is a status interrupt then just
@@ -300,7 +100,9 @@ CANHandler(void)
     CANIntClear(CAN0_BASE, ulStatus);
 }
 
-
+//------------------------------------------------------------------
+// CAN Message Object Configure
+//------------------------------------------------------------------
 void
 CANConfigureNetwork(void)
 {
@@ -336,19 +138,18 @@ CANConfigureNetwork(void)
     CanRxInsideTemp.ulMsgLen = 8;
     CANMessageSet(CAN0_BASE, MSGOBJ_AIR_INSIDETEMP, &CanRxInsideTemp,
                   MSG_OBJ_TYPE_RX);
-    
 
 }
 
+//------------------------------------------------------------------
+// Initialize the Session with ECU
+//------------------------------------------------------------------
 
 int ECU_Session_setup(){
     //CanID-??10 07?? Can Data->?? 02-|10 03 55 55 55 55 55 |]  
     unsigned char SessionFrameTX[8] = {0x02, 0x10, 0x03, 0x55, 0x55,0x55,0x55,0x55};
-    unsigned char SessionFrameRX[8],DisplayBuf[24];
-    unsigned char RespFlag; 
-    unsigned char RespSIDCode, RespLength;
-    unsigned long RespData = 0; 
-    unsigned long FunctionCode; 
+    unsigned char SessionFrameRX[8];
+	char DisplayBuf[24];
 
     CanMsg_SessionCtl_TX.pucMsgData = SessionFrameTX;
     CANMessageSet(CAN0_BASE, MSGOBJ_NUM_DATA_TX, &CanMsg_SessionCtl_TX,
@@ -364,7 +165,7 @@ int ECU_Session_setup(){
     CANMessageGet(CAN0_BASE, MSGOBJ_SES_CTRL, &CanMsg_SessionCtl_RX, 1);
     
     usprintf(DisplayBuf, "Resp: %12X", SessionFrameRX);
-    ShowQQCharH(0x90, (unsigned char *)DisplayBuf,9);
+    ShowQQCharH(0x90, (Uchar *)DisplayBuf,9);
     ////  
     //UARTSend((unsigned char *)"ID |", 4);
     //UARTSend((unsigned char *)&(CanMsg_SessionCtl_RX.ulMsgID), 4);
@@ -389,17 +190,15 @@ int ECU_Session_setup(){
      g_ulFlags &= (~FLAG_RX_SES_CTRL);
      return 0;
  }
-//  
-
-   
-
 }
 
+
+//------------------------------------------------------------------
+// Handle the CAN interrupt
+//------------------------------------------------------------------
 void
 ProcessInterrupts(void)
 {
-
-    unsigned char SessionFrameTX[8] = {0x06, 0x50, 0x03, 0x00, 0x32,0x01,0xf4,0xaa};
     //03 22 26 13 55 55 55 55
     unsigned char TempRX[8] ;
     int temp,tempI,tempD;
@@ -421,16 +220,17 @@ ProcessInterrupts(void)
             g_ulFlags &= ~(FLAG_RX_AIR_INSIDETEMP);
              g_ulFlags = 0 ;
     }
-    
 }
 
 
+
+//------------------------------------------------------------------
+// Main 
+//------------------------------------------------------------------
 int main(void)
 {   
-    int r, count;
-    unsigned long ulLoop,ulLoop2;
+    int i,SessionResult, count;
     char DisplayBuf[24];
-    unsigned char CMD_AIR_TEMP[8] = {0x03, 0x22, 0x26, 0x13, 0x55, 0x55, 0x55, 0x55};
 
     memset(DisplayBuf, 0, 24);
     //Set clock
@@ -507,35 +307,36 @@ int main(void)
 
    // GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
     ShowQQCharH(0x80, "----Volkswagen-Power----", 12);
-   r = ECU_Session_setup();
-   
+    SessionResult = ECU_Session_setup();
+    GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
 
-GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
-
-   
-   count=7;
     while(1)
-    {
-        if(r==1)
         {
-            ShowQQCharL(0x80, "----Session Failed -----", 12);
-        }
-        else{
-    
-         ShowQQCharL(0x80, "-----Session   OK  -----", 12);
-       
-         CanTxOnce.ulMsgID = CANMSGID_TESTER_INSIDETEMP;
-         CanTxOnce.pucMsgData = CMD_AIR_TEMP;
-         CANMessageSet(CAN0_BASE, MSGOBJ_NUM_DATA_TX, &CanTxOnce,
-                 MSG_OBJ_TYPE_TX);
+            if(SessionResult==1)
+            {
+                ShowQQCharL(0x80, "----Session Failed -----", 12);
+            }
+            else{
+            
+                ShowQQCharL(0x80, "-----Session   OK  -----", 12);
+//------------------------------------------------------------------
+//  Send all Query Requset to ECU with the interval 10 miliseconds
+//  And its response will be checked once interrupt raised
+//  Response may not replied with as same sequence as request 
+//------------------------------------------------------------------
+                 for(i=0;  i<MAX_CMD_LINE; i++){
+                     Syswait_ms(10);
+                     CanTxOnce.ulMsgID = CMDList[i].ulMsgID;
+                     CanTxOnce.pucMsgData = CMDList[i].pucMsgData;
+                     CANMessageSet(CAN0_BASE, 
+                            MSGOBJ_NUM_DATA_TX, 
+                            &CanTxOnce,
+                            MSG_OBJ_TYPE_TX);
+                 }
 
-          
-        Syswait_ms(1000);
-         count+=1;
-         if(count == 10)
-         {count = 0;}
-        ProcessInterrupts();
+                Syswait_ms(500);
+                ProcessInterrupts();
+             }
         }
-    }
 
 }

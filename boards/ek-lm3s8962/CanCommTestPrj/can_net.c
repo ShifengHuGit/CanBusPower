@@ -437,7 +437,6 @@ CANConfigureNetwork(void)
     CanRxInsideTemp.pucMsgData = (unsigned char *)0xffffffff;
     CANMessageSet(CAN0_BASE, MSGOBJ_AIR_INSIDETEMP, &CanRxInsideTemp,
                   MSG_OBJ_TYPE_RX);
-
                   
 }
 

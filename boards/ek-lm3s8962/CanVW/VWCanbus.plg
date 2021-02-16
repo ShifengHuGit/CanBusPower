@@ -11,26 +11,764 @@ Build target 'CanVW-TestPrj'
 assembling Startup.s...
 compiling 19264LCDdriver.c...
 compiling ClientTester.c...
-ClientTester.c(256): warning:  #177-D: variable "pucData" was declared but never referenced
-ClientTester.c(366): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
-ClientTester.c(348): warning:  #177-D: variable "RespFlag" was declared but never referenced
-ClientTester.c(349): warning:  #177-D: variable "RespSIDCode" was declared but never referenced
-ClientTester.c(349): warning:  #177-D: variable "RespLength" was declared but never referenced
-ClientTester.c(350): warning:  #177-D: variable "RespData" was declared but never referenced
-ClientTester.c(351): warning:  #177-D: variable "FunctionCode" was declared but never referenced
-ClientTester.c(402): warning:  #177-D: variable "SessionFrameTX" was declared but never referenced
-ClientTester.c(533): warning:  #223-D: function "Syswait_ms" declared implicitly
-ClientTester.c(431): warning:  #177-D: variable "ulLoop" was declared but never referenced
-ClientTester.c(431): warning:  #177-D: variable "ulLoop2" was declared but never referenced
-ClientTester.c(168): warning:  #177-D: variable "g_ulDebounceCounter" was declared but never referenced
-ClientTester.c(176): warning:  #177-D: variable "g_lFlashCounter" was declared but never referenced
+ClientTester.c(144): warning:  #177-D: variable "pucData" was declared but never referenced
+ClientTester.c(254): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+ClientTester.c(236): warning:  #177-D: variable "RespFlag" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespSIDCode" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespLength" was declared but never referenced
+ClientTester.c(238): warning:  #177-D: variable "RespData" was declared but never referenced
+ClientTester.c(239): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+ClientTester.c(290): warning:  #177-D: variable "SessionFrameTX" was declared but never referenced
+ClientTester.c(410): warning:  #174-D: expression has no effect
+ClientTester.c(422): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(318): warning:  #177-D: variable "count" was declared but never referenced
+ClientTester.c(319): warning:  #177-D: variable "ulLoop" was declared but never referenced
+ClientTester.c(319): warning:  #177-D: variable "ulLoop2" was declared but never referenced
+ClientTester.c(56): warning:  #177-D: variable "g_ulDebounceCounter" was declared but never referenced
+ClientTester.c(64): warning:  #177-D: variable "g_lFlashCounter" was declared but never referenced
 compiling ustdlib.c...
 linking...
-Program Size: Code=7952 RO-data=236 RW-data=532 ZI-data=716  
-"VWCanbus.axf" - 0 Error(s), 13 Warning(s).
+Program Size: Code=7964 RO-data=236 RW-data=700 ZI-data=716  
+"VWCanbus.axf" - 0 Error(s), 15 Warning(s).
 Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\CanVW\\VWCanbus.AXF" 
 Connecting: Mode=JTAG, Speed=1000000Hz
-Connection failed!, error code=&d
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'CanVW-TestPrj'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+compiling ClientTester.c...
+ClientTester.c(144): warning:  #177-D: variable "pucData" was declared but never referenced
+ClientTester.c(254): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+ClientTester.c(236): warning:  #177-D: variable "RespFlag" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespSIDCode" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespLength" was declared but never referenced
+ClientTester.c(238): warning:  #177-D: variable "RespData" was declared but never referenced
+ClientTester.c(239): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+ClientTester.c(290): warning:  #177-D: variable "SessionFrameTX" was declared but never referenced
+ClientTester.c(410): error:  #18: expected a ")"
+ClientTester.c(422): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(318): warning:  #177-D: variable "count" was declared but never referenced
+ClientTester.c(319): warning:  #177-D: variable "ulLoop" was declared but never referenced
+ClientTester.c(319): warning:  #177-D: variable "ulLoop2" was declared but never referenced
+ClientTester.c(56): warning:  #177-D: variable "g_ulDebounceCounter" was declared but never referenced
+ClientTester.c(64): warning:  #177-D: variable "g_lFlashCounter" was declared but never referenced
+compiling ustdlib.c...
+Target not created
+Build target 'CanVW-TestPrj'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+compiling ClientTester.c...
+ClientTester.c(144): warning:  #177-D: variable "pucData" was declared but never referenced
+ClientTester.c(254): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+ClientTester.c(236): warning:  #177-D: variable "RespFlag" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespSIDCode" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespLength" was declared but never referenced
+ClientTester.c(238): warning:  #177-D: variable "RespData" was declared but never referenced
+ClientTester.c(239): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+ClientTester.c(290): warning:  #177-D: variable "SessionFrameTX" was declared but never referenced
+ClientTester.c(422): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(318): warning:  #177-D: variable "count" was declared but never referenced
+ClientTester.c(319): warning:  #177-D: variable "ulLoop" was declared but never referenced
+ClientTester.c(319): warning:  #177-D: variable "ulLoop2" was declared but never referenced
+ClientTester.c(56): warning:  #177-D: variable "g_ulDebounceCounter" was declared but never referenced
+ClientTester.c(64): warning:  #177-D: variable "g_lFlashCounter" was declared but never referenced
+compiling ustdlib.c...
+linking...
+Program Size: Code=7960 RO-data=236 RW-data=700 ZI-data=716  
+"VWCanbus.axf" - 0 Error(s), 14 Warning(s).
+Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\CanVW\\VWCanbus.AXF" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'CanVW-TestPrj'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+compiling ClientTester.c...
+ClientTester.c(144): warning:  #177-D: variable "pucData" was declared but never referenced
+ClientTester.c(254): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+ClientTester.c(236): warning:  #177-D: variable "RespFlag" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespSIDCode" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespLength" was declared but never referenced
+ClientTester.c(238): warning:  #177-D: variable "RespData" was declared but never referenced
+ClientTester.c(239): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+ClientTester.c(290): warning:  #177-D: variable "SessionFrameTX" was declared but never referenced
+ClientTester.c(411): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(422): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(318): warning:  #177-D: variable "count" was declared but never referenced
+ClientTester.c(319): warning:  #177-D: variable "ulLoop" was declared but never referenced
+ClientTester.c(319): warning:  #177-D: variable "ulLoop2" was declared but never referenced
+ClientTester.c(56): warning:  #177-D: variable "g_ulDebounceCounter" was declared but never referenced
+ClientTester.c(64): warning:  #177-D: variable "g_lFlashCounter" was declared but never referenced
+compiling ustdlib.c...
+linking...
+Program Size: Code=7964 RO-data=236 RW-data=700 ZI-data=716  
+"VWCanbus.axf" - 0 Error(s), 15 Warning(s).
+Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\CanVW\\VWCanbus.AXF" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'CanVW-TestPrj'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+compiling ClientTester.c...
+ClientTester.c(144): warning:  #177-D: variable "pucData" was declared but never referenced
+ClientTester.c(254): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+ClientTester.c(236): warning:  #177-D: variable "RespFlag" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespSIDCode" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespLength" was declared but never referenced
+ClientTester.c(238): warning:  #177-D: variable "RespData" was declared but never referenced
+ClientTester.c(239): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+ClientTester.c(290): warning:  #177-D: variable "SessionFrameTX" was declared but never referenced
+ClientTester.c(411): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(418): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(318): warning:  #177-D: variable "count" was declared but never referenced
+ClientTester.c(319): warning:  #177-D: variable "ulLoop" was declared but never referenced
+ClientTester.c(319): warning:  #177-D: variable "ulLoop2" was declared but never referenced
+ClientTester.c(56): warning:  #177-D: variable "g_ulDebounceCounter" was declared but never referenced
+ClientTester.c(64): warning:  #177-D: variable "g_lFlashCounter" was declared but never referenced
+compiling ustdlib.c...
+linking...
+Program Size: Code=7964 RO-data=236 RW-data=700 ZI-data=716  
+"VWCanbus.axf" - 0 Error(s), 15 Warning(s).
+Build target 'CanVW-TestPrj'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+compiling ClientTester.c...
+ClientTester.c(253): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+ClientTester.c(235): warning:  #177-D: variable "RespFlag" was declared but never referenced
+ClientTester.c(236): warning:  #177-D: variable "RespSIDCode" was declared but never referenced
+ClientTester.c(236): warning:  #177-D: variable "RespLength" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespData" was declared but never referenced
+ClientTester.c(238): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+ClientTester.c(289): warning:  #177-D: variable "SessionFrameTX" was declared but never referenced
+ClientTester.c(410): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(417): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(317): warning:  #177-D: variable "count" was declared but never referenced
+ClientTester.c(318): warning:  #177-D: variable "ulLoop" was declared but never referenced
+ClientTester.c(318): warning:  #177-D: variable "ulLoop2" was declared but never referenced
+ClientTester.c(56): warning:  #177-D: variable "g_ulDebounceCounter" was declared but never referenced
+ClientTester.c(64): warning:  #177-D: variable "g_lFlashCounter" was declared but never referenced
+compiling ustdlib.c...
+linking...
+Program Size: Code=7964 RO-data=236 RW-data=700 ZI-data=716  
+"VWCanbus.axf" - 0 Error(s), 14 Warning(s).
+Build target 'CanVW-TestPrj'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+compiling ClientTester.c...
+ClientTester.c(255): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "Uchar *"
+ClientTester.c(236): warning:  #177-D: variable "RespFlag" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespSIDCode" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespLength" was declared but never referenced
+ClientTester.c(238): warning:  #177-D: variable "RespData" was declared but never referenced
+ClientTester.c(239): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+ClientTester.c(290): warning:  #177-D: variable "SessionFrameTX" was declared but never referenced
+ClientTester.c(411): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(418): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(318): warning:  #177-D: variable "count" was declared but never referenced
+ClientTester.c(319): warning:  #177-D: variable "ulLoop" was declared but never referenced
+ClientTester.c(319): warning:  #177-D: variable "ulLoop2" was declared but never referenced
+ClientTester.c(56): warning:  #177-D: variable "g_ulDebounceCounter" was declared but never referenced
+ClientTester.c(64): warning:  #177-D: variable "g_lFlashCounter" was declared but never referenced
+compiling ustdlib.c...
+linking...
+Program Size: Code=7964 RO-data=236 RW-data=700 ZI-data=716  
+"VWCanbus.axf" - 0 Error(s), 14 Warning(s).
+Build target 'CanVW-TestPrj'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+compiling ClientTester.c...
+ClientTester.c(236): warning:  #177-D: variable "RespFlag" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespSIDCode" was declared but never referenced
+ClientTester.c(237): warning:  #177-D: variable "RespLength" was declared but never referenced
+ClientTester.c(238): warning:  #177-D: variable "RespData" was declared but never referenced
+ClientTester.c(239): warning:  #177-D: variable "FunctionCode" was declared but never referenced
+ClientTester.c(290): warning:  #177-D: variable "SessionFrameTX" was declared but never referenced
+ClientTester.c(411): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(418): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(318): warning:  #177-D: variable "count" was declared but never referenced
+ClientTester.c(319): warning:  #177-D: variable "ulLoop" was declared but never referenced
+ClientTester.c(319): warning:  #177-D: variable "ulLoop2" was declared but never referenced
+ClientTester.c(56): warning:  #177-D: variable "g_ulDebounceCounter" was declared but never referenced
+ClientTester.c(64): warning:  #177-D: variable "g_lFlashCounter" was declared but never referenced
+compiling ustdlib.c...
+linking...
+Program Size: Code=7964 RO-data=236 RW-data=700 ZI-data=716  
+"VWCanbus.axf" - 0 Error(s), 13 Warning(s).
+Build target 'CanVW-TestPrj'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+compiling ClientTester.c...
+ClientTester.c(286): warning:  #177-D: variable "SessionFrameTX" was declared but never referenced
+ClientTester.c(407): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(414): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(314): warning:  #177-D: variable "count" was declared but never referenced
+ClientTester.c(315): warning:  #177-D: variable "ulLoop" was declared but never referenced
+ClientTester.c(315): warning:  #177-D: variable "ulLoop2" was declared but never referenced
+ClientTester.c(56): warning:  #177-D: variable "g_ulDebounceCounter" was declared but never referenced
+ClientTester.c(64): warning:  #177-D: variable "g_lFlashCounter" was declared but never referenced
+compiling ustdlib.c...
+linking...
+Program Size: Code=7964 RO-data=236 RW-data=700 ZI-data=716  
+"VWCanbus.axf" - 0 Error(s), 8 Warning(s).
+Build target 'CanVW-TestPrj'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+compiling ClientTester.c...
+ClientTester.c(405): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(412): warning:  #223-D: function "Syswait_ms" declared implicitly
+ClientTester.c(312): warning:  #177-D: variable "count" was declared but never referenced
+ClientTester.c(313): warning:  #177-D: variable "ulLoop" was declared but never referenced
+ClientTester.c(313): warning:  #177-D: variable "ulLoop2" was declared but never referenced
+ClientTester.c(56): warning:  #177-D: variable "g_ulDebounceCounter" was declared but never referenced
+ClientTester.c(64): warning:  #177-D: variable "g_lFlashCounter" was declared but never referenced
+compiling ustdlib.c...
+linking...
+Program Size: Code=7948 RO-data=236 RW-data=700 ZI-data=716  
+"VWCanbus.axf" - 0 Error(s), 7 Warning(s).
+Build target 'CanVW-TestPrj'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+19264LCDdriver.h(8): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(547): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(548): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(548): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(548): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(548): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(549): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(549): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(549): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(549): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(550): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(550): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(550): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(550): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(550): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(550): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(550): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.c(550): warning:  #870-D: invalid multibyte character sequence
+compiling ClientTester.c...
+19264LCDdriver.h(8): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(9): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(10): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(11): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(13): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(14): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(15): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(16): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+19264LCDdriver.h(18): warning:  #870-D: invalid multibyte character sequence
+ClientTester.c(312): warning:  #177-D: variable "count" was declared but never referenced
+ClientTester.c(313): warning:  #177-D: variable "ulLoop" was declared but never referenced
+ClientTester.c(313): warning:  #177-D: variable "ulLoop2" was declared but never referenced
+ClientTester.c(56): warning:  #177-D: variable "g_ulDebounceCounter" was declared but never referenced
+ClientTester.c(64): warning:  #177-D: variable "g_lFlashCounter" was declared but never referenced
+compiling ustdlib.c...
+linking...
+Program Size: Code=7956 RO-data=236 RW-data=1012 ZI-data=716  
+"VWCanbus.axf" - 0 Error(s), 487 Warning(s).
+Build target 'CanVW-TestPrj'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+compiling ClientTester.c...
+ClientTester.c(312): warning:  #177-D: variable "count" was declared but never referenced
+ClientTester.c(313): warning:  #177-D: variable "ulLoop" was declared but never referenced
+ClientTester.c(313): warning:  #177-D: variable "ulLoop2" was declared but never referenced
+ClientTester.c(56): warning:  #177-D: variable "g_ulDebounceCounter" was declared but never referenced
+ClientTester.c(64): warning:  #177-D: variable "g_lFlashCounter" was declared but never referenced
+compiling ustdlib.c...
+linking...
+Program Size: Code=7948 RO-data=236 RW-data=700 ZI-data=716  
+"VWCanbus.axf" - 0 Error(s), 5 Warning(s).
+Build target 'CanVW-TestPrj'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+compiling ClientTester.c...
+ClientTester.c(312): warning:  #177-D: variable "count" was declared but never referenced
+ClientTester.c(313): warning:  #177-D: variable "ulLoop" was declared but never referenced
+ClientTester.c(313): warning:  #177-D: variable "ulLoop2" was declared but never referenced
+ClientTester.c(56): warning:  #177-D: variable "g_ulDebounceCounter" was declared but never referenced
+ClientTester.c(64): warning:  #177-D: variable "g_lFlashCounter" was declared but never referenced
+compiling ustdlib.c...
+linking...
+Program Size: Code=7948 RO-data=236 RW-data=700 ZI-data=716  
+"VWCanbus.axf" - 0 Error(s), 5 Warning(s).
+Build target 'CanVW-TestPrj'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+compiling ClientTester.c...
+ClientTester.c(298): warning:  #177-D: variable "count" was declared but never referenced
+compiling ustdlib.c...
+linking...
+Program Size: Code=7948 RO-data=236 RW-data=692 ZI-data=716  
+"VWCanbus.axf" - 0 Error(s), 1 Warning(s).
+Build target 'CanVW-TestPrj'
+assembling Startup.s...
+compiling 19264LCDdriver.c...
+compiling ClientTester.c...
+ClientTester.c(232): warning:  #177-D: variable "count" was declared but never referenced
+compiling ustdlib.c...
+linking...
+Program Size: Code=7948 RO-data=236 RW-data=684 ZI-data=676  
+"VWCanbus.axf" - 0 Error(s), 1 Warning(s).
 Load "G:\\Git\\CanBusPower\\boards\\ek-lm3s8962\\CanVW\\VWCanbus.AXF" 
 Connecting: Mode=JTAG, Speed=1000000Hz
 Erase Done.

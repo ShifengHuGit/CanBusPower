@@ -15,3 +15,4 @@ clienttester.o: ..\..\..\driverlib/uart.h
 clienttester.o: 19264LCDdriver.h
 clienttester.o: ..\..\..\utils/ustdlib.h
 clienttester.o: C:\Keil\ARM\RV31\INC\stdarg.h
+clienttester.o: my.h

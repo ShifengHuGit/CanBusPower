@@ -135,7 +135,7 @@ tCANObjFlags;
 //! message object in the CAN controller.
 //
 //*****************************************************************************
-typedef struct
+typedef struct CANMsgObj
 {
     //
     //! The CAN message identifier used for 11 or 29 bit identifiers.

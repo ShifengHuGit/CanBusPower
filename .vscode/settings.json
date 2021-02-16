@@ -1,6 +1,13 @@
 {
     "files.associations": {
         "can_net.h": "c",
-        "sysctl.h": "c"
+        "sysctl.h": "c",
+        "can.h": "c",
+        "concepts": "cpp",
+        "vector": "cpp",
+        "memory_resource": "cpp",
+        "type_traits": "cpp",
+        "limits": "cpp",
+        "utility": "cpp"
     }
 }

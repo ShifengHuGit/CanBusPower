@@ -103,4 +103,6 @@ void displayCHINSE(void);
 void displayCHINSE1(void);
 void displayCHINSE2(void);
 void displayEngine(void);
+void Syswait_ms(int Count);
+void Syswait_us(int Count);
 #endif

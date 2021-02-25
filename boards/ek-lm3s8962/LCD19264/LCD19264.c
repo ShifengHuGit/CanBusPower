@@ -657,7 +657,7 @@ int main(void)
 
   //LCDInit();//初始化
   //WaitNms(500);
-  //displayTEST();  //显示8*16字符演示 ， 自编图形演示，横竖点
+  displayTEST();  //显示8*16字符演示 ， 自编图形演示，横竖点
   //SysCtlDelay( SysCtlClockGet() / 20);
   //WRCommandH(0x01); //清除显示DDRAM
   //WRCommandL(0x01); //清除显示DDRAM

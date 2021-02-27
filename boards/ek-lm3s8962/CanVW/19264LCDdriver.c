@@ -317,7 +317,68 @@ void CLEARGDRAML(Uchar c)
      }
   
 }
+void reg_h(Uchar x,Uchar y,Uchar x2,Uchar y2,Uchar d1,Uchar d2 ) {
+ //0x80,0,12,2,0xff,0xff
+Uchar j,i; 
+WRCommandH(0x34); 
+WRCommandH(0x36); 
+for(j=0;j<y2;j++)
+//去扩展指令寄存器 //打开绘图功能
+//2行 画两横上边框
+   {
+   WRCommandH(0x80+y+j); //Y总坐标,即第几行
+   WRCommandH(x); //X坐标，即横数第几个字节开始写起,80H为第一个字节 ,x坐标会自动加1
+   for(i=0;i<x2;i++) //写入一行
+       {
+        WRDataH(d1);
+        WRDataH(d2);
+      } 
+   }
+}
 
+int DrawModel(Uchar x, Uchar y, Uchar Xsize, Uchar Ysize, Uchar *Model)
+{
+     Uint k;
+     Uchar j;
+     Uchar i;
+
+ if(x>=12 || y >= 64 || x*16+Xsize >=192 || y+Ysize >=64)
+ {
+    return 1;
+ }
+
+  WRCommandH(0x34);//去扩展指令寄
+  WRCommandH(0x36);//打开绘图功能
+  WRCommandL(0x34);
+  WRCommandL(0x36);
+   
+     for(j=0;j<Ysize;j++)//32行
+     {
+        if(y>32 || (y+j)>=32) 
+        {
+            WRCommandL(0x80+(y-32)+j);
+            WRCommandL(0x80+x);
+        }
+        else
+        {
+            WRCommandH(0x80+y+j);
+            WRCommandH(0x80+x);  //Y总坐标,即第几行
+        }
+    for(i=0;i<Xsize/8;i++)//写入一行
+      {
+       if(y>32 || (y+j)>=32) {  
+         WRDataL(Model[(Xsize/8)*j+i]);
+       }
+       else
+       {
+         WRDataH(Model[(Xsize/8)*j+i]);
+       }
+      }
+     
+   }
+  return 0;
+
+}
 
 //写入GDRAM 绘图,Y是行绘图坐标,2个字节一行,CLONG是图形长度,以字节为单位;字节横向加一
 //HIGHT是图形高度,TAB是图形数据表.16064M的图形显示是相当于
@@ -326,7 +387,7 @@ void CLEARGDRAML(Uchar c)
 //16064:clong为20,hingt为32
 //19264:clong为24,hingt为32
 //24064:clong为30,hingt为32
-/*
+
 void WRGDRAM(Uchar Y1,Uchar clong,Uchar hight,Uchar *TAB1)
 {    
        Uint k;
@@ -356,7 +417,7 @@ void WRGDRAM(Uchar Y1,Uchar clong,Uchar hight,Uchar *TAB1)
       }
    }
 }
-*/
+
 void WRGDRAM1(Uchar x,Uchar l,Uchar r )
 {    
 
@@ -544,9 +605,9 @@ void displayCHINSE2(void)
 }
 void displayEngine(void)
 {
-   ShowQQCharH(0x80, "状态: 怠速  这他妈的闹的", 12);
-   ShowQQCharH(0x90, "转速: 713rpm/m", 7);
-   ShowQQCharL(0x80, "档位: D4",4);
-   ShowQQCharL(0x90, "涡轮压力: 1.45Bar ",9);
+//  ShowQQCharH(0x80, "状态: 怠速  这他妈的闹的", 12);
+//  ShowQQCharH(0x90, "转速: 713rpm/m", 7);
+//  ShowQQCharL(0x80, "档位: D4",4);
+//  ShowQQCharL(0x90, "涡轮压力: 1.45Bar ",9);
 
 }

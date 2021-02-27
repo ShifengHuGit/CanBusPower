@@ -165,7 +165,7 @@ int ECU_Session_setup(){
     CANMessageGet(CAN0_BASE, MSGOBJ_SES_CTRL, &CanMsg_SessionCtl_RX, 1);
     
     usprintf(DisplayBuf, "Resp: %12X", SessionFrameRX);
-    ShowQQCharH(0x90, (Uchar *)DisplayBuf,9);
+   // ShowQQCharH(0x90, (Uchar *)DisplayBuf,9);
     ////  
     //UARTSend((unsigned char *)"ID |", 4);
     //UARTSend((unsigned char *)&(CanMsg_SessionCtl_RX.ulMsgID), 4);
@@ -222,6 +222,24 @@ ProcessInterrupts(void)
     }
 }
 
+void DisplayMenu(void)
+{
+    /*----
+    xxxxxxxxxxxxxxxxxxxxxxxx
+    xxxxxxxxxxxxxxxxxxxxxxxx
+    xxxxxxxxxxxxxxxxxxxxxxxx
+    xxxxxxxxxxxxxxxxxxxxxxxx
+
+    |xxx|xxxxxxxxxxxxxxxxxxx
+    |xxx|xxxxxxxxxxxxxxxxxxx
+    |xxx|xxxxxxxxxxxxxxxxxxx
+    |xxx|xxxxxxxxx �¶�: 21.2
+
+    -----*/
+
+    Uchar line1[48],line2[48],line3[48],line4[48];
+    
+}
 
 
 //------------------------------------------------------------------
@@ -306,37 +324,62 @@ int main(void)
    // SysTickIntEnable();
 
    // GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
-    ShowQQCharH(0x80, "----Volkswagen-Power----", 12);
+   // ShowQQCharH(0x80, "----Volkswagen-Power----", 12);
     SessionResult = ECU_Session_setup();
     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
-
+    
+    // Display Test
+    CLEARGDRAMH(0x00);
+    CLEARGDRAML(0x00);
+    DrawModel(3, 29, 104,34,VWcar);
+    DrawModel(0, 0, 24,39, Shift_S);
+    DrawModel(8, 9, 32,32, Xiexian32x32);
+    DrawModel(10,17, 24,16,ENG);
+    WRCommandL(0x01);
+    WRCommandL(0x20);
+    WRCommandH(0x01);
+    WRCommandH(0x20);
+    ShowQQCharH(0x8A, "17% ",2);  
+    ShowQQCharL(0x9A, "22.5",2);
+ // 
     while(1)
         {
+
+           // WRGDRAM1(0xFF,0xC0,0x03);
+          // DrawModel(0,0, 24,16,ENG);
+           
+          
+           //reg_h(0x80,0,12,2,0xff,0xff);
+          //WRGDRAM(1,1,16,Cha);
+           Syswait_ms(500);
             if(SessionResult==1)
             {
-                ShowQQCharL(0x80, "----Session Failed -----", 12);
+                
             }
-            else{
-            
-                ShowQQCharL(0x80, "-----Session   OK  -----", 12);
-//------------------------------------------------------------------
-//  Send all Query Requset to ECU with the interval 10 miliseconds
-//  And its response will be checked once interrupt raised
-//  Response may not replied with as same sequence as request 
-//------------------------------------------------------------------
-                 for(i=0;  i<MAX_CMD_LINE; i++){
-                     Syswait_ms(10);
-                     CanTxOnce.ulMsgID = CMDList[i].ulMsgID;
-                     CanTxOnce.pucMsgData = CMDList[i].pucMsgData;
-                     CANMessageSet(CAN0_BASE, 
-                            MSGOBJ_NUM_DATA_TX, 
-                            &CanTxOnce,
-                            MSG_OBJ_TYPE_TX);
-                 }
 
-                Syswait_ms(500);
-                ProcessInterrupts();
-             }
+//               ShowQQCharL(0x80, "----Session Failed -----", 12);
+//           }
+//           else{
+//           
+//               ShowQQCharL(0x80, "-----Session   OK  -----", 12);
+///------------------------------------------------------------------
+///  Send all Query Requset to ECU with the interval 10 miliseconds
+///  And its response will be checked once interrupt raised
+///  Response may not replied with as same sequence as request 
+///------------------------------------------------------------------
+//                for(i=0;  i<MAX_CMD_LINE; i++){
+//                    Syswait_ms(10);
+//                    CanTxOnce.ulMsgID = CMDList[i].ulMsgID;
+//                    CanTxOnce.pucMsgData = CMDList[i].pucMsgData;
+//                    CANMessageSet(CAN0_BASE, 
+//                           MSGOBJ_NUM_DATA_TX, 
+//                           &CanTxOnce,
+//                           MSG_OBJ_TYPE_TX);
+//                }
+//
+//               Syswait_ms(500);
+//               ProcessInterrupts();
+//            }
         }
 
 }

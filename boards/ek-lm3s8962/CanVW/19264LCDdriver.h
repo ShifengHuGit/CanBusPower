@@ -68,6 +68,10 @@ void ShowNUMCharH(Uchar addr,Uchar i,Uchar count);
 //下半屏显示连续字串(半宽字符)
 void ShowNUMCharL(Uchar addr,Uchar i,Uchar count);
 
+void WRGDRAM(Uchar Y1,Uchar clong,Uchar hight,Uchar *TAB1);
+void reg_h(Uchar x,Uchar y,Uchar x2,Uchar y2,Uchar d1,Uchar d2 );
+int DrawModel(Uchar x, Uchar y, Uchar Xsize, Uchar Ysize, Uchar *Model);
+
 //自定义字符写入CGRAM
 //data1是高八位,data2是低八位,一存必须存两个字节,横向存两字节,后纵向累加,共16行
 //一个自定义字符为16*16点阵
